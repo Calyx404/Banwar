@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # ensures full commit history is available
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -22,4 +24,4 @@ jobs:
 
       - name: Run Commitlint on PR commits
         run: |
-          npx commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.sha }}
+          npx commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }}
