@@ -1,9 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/root.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <title>Prototype</title>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="col-1">
+            <img class="logo" src="assets/logo.png" alt="Logo">
+            <span>BRUH</span>
+        </div>
+
+        <div class="col-2">
+            <div class="search-bar">
+                <img src="assets/search-icon.svg" alt="Icon">
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="export-btn">
+                <h4>Export</h4>
+            </div>
+
+            <div class="theme-btn">
+                <div class="icon"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <!-- HOME CONTAINER -->
+    <div class="content-container">
+        <section id="home-content">
+            <div class="hero">
+                <div class="col-1">
+                    <h1 class="home-title">Explore Cordillera Like Never Before</h1>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
+
+                    <div class="btns">
+                        <a href="map" class="btn">Explore Map</a>
+                        <a href="map" class="btn">About Us</a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <img src="assets/map.png" alt="Map Image">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER CONTENT -->
+    <footer>
+        <div class="content-container footgrid">
+            <div class="col">
+                <h3>Banwar</h3>
+                <p class="subtle">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</p>
+            </div>
+
+            <div class="col">
+                <ul class="linklist">
+                    <li>Home</li>
+                    <li>Map</li>
+                    <li>About</li>
+                </ul>
+            </div>
+            
+            <div class="col">
+                <h3>Contact</h3>
+                <div class="email">
+                    <img src="assets/email-icon.svg" alt="Icon">
+                    <a href="mailto: email.email@gmail.com">email.email@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- BACKGROUND SECTION (DO NOT TOUCH!) -->
+    <div class="overlay"></div>
+    <img class="background-img" src="assets/background.png" alt="Background Image">
+
+
+    <!-- FOR TESTING PURPOSES (DELETE IF NEEDED) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.querySelector(".theme-btn");
+
+            if (themeBtn) {
+                themeBtn.addEventListener("click", () => {
+                    themeBtn.classList.toggle("clicked");
+                    console.log("Theme button clicked!");
+                });
+            }
+        });
+    </script>
+</body>
 </html>
