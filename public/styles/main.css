@@ -169,7 +169,7 @@ header {
                 border-radius: 50%;
                 width: 2rem;
                 height: 2rem;
-                background: url(ASSETS/light-icon.svg) no-repeat center;
+                background: url(../assets/light-icon.svg) no-repeat center;
                 background-color: rgba(78, 52, 46, 0.93);
                 transition: all 0.3s ease;
             }
@@ -180,7 +180,7 @@ header {
             transition: all 0.3s ease;
             
             & .icon {
-                background: url(ASSETS/dark-icon.svg) no-repeat center;
+                background: url(../assets/dark-icon.svg) no-repeat center;
                 background-color: var(--background-color-2);
                 transform: translateX(2rem);
             }
