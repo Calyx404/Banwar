@@ -35,6 +35,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Create map-config.js
+        run: |
+          echo "const MAPS_API_KEY = '${{ secrets.MAPS_API_KEY }}';" > public/scripts/map-config.js
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
