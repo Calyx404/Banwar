@@ -6,13 +6,16 @@
 }
 
 :root {
-    --text-color: #111;
-    --muted-color: #364357;
-    --background-color: #F9F5F0;
+    --muted-color: #313131;
+    --background-color: #E2DCDE;
     --background-color-2: #E9EAF0;
-    --primary-color: #4E342E;
-    --accent-color: #2D4D43;
+    --primary-color: #2D4D43;
     --font-title-1: "Merriweather Sans", sans-serif;
     --font-title-2: "IM Fell English", serif;
     --font-text: SF Pro, sans-serif;
+}
+
+:root[data-theme="dark"] {
+    --text-color: #fff
+    --primary-color: #262C38
 }
