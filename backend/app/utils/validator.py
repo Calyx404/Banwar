@@ -28,13 +28,12 @@ class Fields:
 
         normalized_row = {self.to_snake_case(k): v for k, v in row.items()}
         geometry_type = None
-        coords_value = None
 
         # Validate required fields
         for field, ftype in self.required_fields:
             f = Field(field, normalized_row.get(field, ""), required=True, ftype=ftype)
 
-            if ftype == "geometry_type":
+            if ftype == "geometry":
                 val, status, msg = f.validate()
                 if status == "error":
                     errors.append(f"({field}) : {msg}")
@@ -46,8 +45,6 @@ class Fields:
 
             elif ftype == "coordinates":
                 val, status, msg = f.validate(geometry=geometry_type)
-                coords_value = val
-
                 if status == "error":
                     errors.append(f"({field}) : {msg}")
                 else:
@@ -63,10 +60,6 @@ class Fields:
                     clean_row[field] = val
                     if status == "warning":
                         warnings.append(f"({field}) : {msg}")
-
-        if coords_value is None:
-            clean_row["geometry_type"] = None
-            clean_row["coordinates"] = None
 
         # Validate extra fields
         for field, value in normalized_row.items():
@@ -91,7 +84,7 @@ class Field:
 
     def validate(self, geometry=None):
         """Validate and normalize this field value."""
-        if self.required and (not self.value or self.value is None or str(self.value).strip() == ""):
+        if self.required and (self.value is None or str(self.value).strip() == ""):
             return None, "error", f"Missing required value in '{self.name}'"
 
         if self.ftype == "int":
@@ -100,7 +93,7 @@ class Field:
             return self._validate_float()
         elif self.ftype == "category":
             return self._validate_category()
-        elif self.ftype == "geometry_type":
+        elif self.ftype == "geometry":
             return self._validate_geometry()
         elif self.ftype == "coordinates":
             return self._validate_coordinates(geometry)
@@ -156,17 +149,16 @@ class Field:
         if val not in allowed:
             return None, "error", f"Invalid geometry type '{val}'"
         if val != self.value:
-            return val, "warning", f"Normalized geometry type to uppercase '{val}'"
-        return val, "ok", "Valid geometry type"
+            return val, "warning", f"Normalized geometry to uppercase '{val}'"
+        return val, "ok", "Valid geometry"
 
     def _validate_coordinates(self, geometry=None):
         """
         Parse CSV-style coordinates: "[lon lat],[lon lat]..."
         """
-        if str(self.value).strip().lower() in ["null", "n/a", "none", "no present data can be found", "no present data can be found."]:
-            return None, "ok", f"No coordinates provided for '{self.name}', coordinates will be set to null"
-
         raw = str(self.value).replace("[", "").replace("]", "").strip()
+        if not raw:
+            return None, "error", f"Empty coordinates in '{self.name}'"
 
         # Split into coordinate pairs
         parts = [p.strip() for p in raw.split(",") if p.strip()]
@@ -176,13 +168,13 @@ class Field:
             if len(nums) != 2:
                 return None, "error", f"Invalid coordinate pair '{part}' in '{self.name}'"
             try:
-                lat, lon = float(nums[0]), float(nums[1])
+                lon, lat = float(nums[0]), float(nums[1])
             except ValueError:
                 return None, "error", f"Coordinates must be numeric in '{self.name}'"
-            if not (-90 <= lat <= 90):
-                return None, "error", f"Latitude {lat} out of range"
             if not (-180 <= lon <= 180):
                 return None, "error", f"Longitude {lon} out of range"
+            if not (-90 <= lat <= 90):
+                return None, "error", f"Latitude {lat} out of range"
             coords.append([lon, lat])
 
         # Geometry-specific validation
@@ -201,4 +193,4 @@ class Field:
                 coords.append(coords[0])
             return [coords], "ok", "Valid POLYGON coordinates"
         else:
-            return coords, "warning", "Geometry type not provided, raw coordinates returned"
+            return coords, "warning", "Geometry not provided, raw coordinates returned"
