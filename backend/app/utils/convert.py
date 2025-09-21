@@ -15,10 +15,10 @@ def convert(input_file: Path):
             coordinates = None
 
             for key, value in row.items():
-                if key not in ["geometry_type", "coordinates"]:
+                if key not in ["geometry", "coordinates"]:
                     properties[key] = value
 
-                if key == "geometry_type":
+                if key == "geometry":
                     if value == "POINT":
                         geometry_type = "Point"
 
@@ -29,23 +29,14 @@ def convert(input_file: Path):
                         geometry_type = "Polygon"
 
                 if key == "coordinates":
-                    try:
-                        coordinates = json.loads(value)
-                    except json.JSONDecodeError:
-                        coordinates = None
-
-            if geometry_type is None or coordinates is None:
-                geometry = None
-
-            else:
-                geometry = {
-                    "type": geometry_type,
-                    "coordinates": coordinates
-                }
+                    coordinates = json.loads(value)
 
             feature = {
                 "type": "Feature",
-                "geometry": geometry,
+                "geometry": {
+                    "type": geometry_type,
+                    "coordinates": coordinates
+                },
                 "properties": properties
             }
 
