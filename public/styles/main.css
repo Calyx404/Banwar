@@ -385,8 +385,10 @@
             font-weight: 500;
         }
 
-        & p:first-of-type {
-            text-align: justify;
+        & .col:first-of-type {
+            & p {
+                text-align: justify;
+            }
         }
 
         & :is(p.disclaimer, p.subtle) {
