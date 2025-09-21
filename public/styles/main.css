@@ -283,8 +283,10 @@
             position: absolute;
             top: 0;
             left: 0px; 
-            transform: translateY(-100%);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transform: translateY(-99%);
+            border: 0.3rem solid #fff;
+            border-bottom: none;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
         }
 
         .ABcontent{
