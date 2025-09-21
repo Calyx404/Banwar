@@ -41,16 +41,22 @@
         padding: 0 1rem;
     }
 
+    .disclaimer {
+        font-size: 0.9rem
+    }
+
     .subtle {
         color: var(--muted-color);
         font-size: 0.9rem;
     }
 
+
+    /***** BACKGROUND SECTION (DON'T EDIT!) *****/
     .overlay {
         position: fixed;
         inset: 0;
         z-index: -1;
-        background: rgba(249, 245, 240, 0.8);
+        background: #ffffff99;
     }
 
     .background-img {
@@ -90,12 +96,9 @@
     /***** HEADER SECTION (DON'T EDIT) *****/
     header {
         display: flex;
-        position: sticky;
-        top: 0;
-        padding: 1rem;
+        padding: 1rem 2.4rem;
         align-items: center;
         z-index: 1;
-        background-color: color-mix(in oklab, var(--background-color) 95%, transparent);
         justify-content: space-between;
 
         & :is(.col-1, .col-2) {
@@ -112,7 +115,7 @@
             cursor: pointer;
 
             & .logo {
-                width: 3.5rem;
+                width: 8rem;
             }
         }
 
@@ -152,6 +155,8 @@
                 }
 
                 & input {
+                    font-family: var(--font-text);
+                    font-weight: 500;
                     font-size: 0.9rem;
                     position: absolute;
                     top: 50%;
@@ -197,13 +202,13 @@
                     width: 2rem;
                     height: 2rem;
                     background: url(../assets/light-icon.svg) no-repeat center;
-                    background-color: rgba(78, 52, 46, 0.93);
+                    background-color: var(--primary-color);
                     transition: all 0.3s ease;
                 }
             }
 
             & .theme-btn.clicked {
-                background-color: rgba(78, 52, 46, 0.93);
+                background-color: var(--primary-color);
                 transition: all 0.3s ease;
                 
                 & .icon {
@@ -247,29 +252,6 @@
 
             & p {
                 font-family: var(--font-text);
-            }
-
-            & .btns {
-                display: flex;
-                gap: 3rem;
-
-                & .btn {
-                    width: 12rem;
-                    font-size: 1.1rem;
-                    text-align: center;
-                    color: var(--background-color);
-                    padding: 0.6rem;
-                    border-radius: 0.8rem;
-                    box-shadow: 0 0.2rem 0.2rem rgba(38, 47, 51, 0.2);
-
-                    &:first-of-type {
-                        background-color: var(--primary-color);
-                    }
-
-                    &:last-of-type {
-                        background-color: var(--accent-color);
-                    }
-                }
             }
         }
 
@@ -392,33 +374,86 @@
 
     /***** FOOTER SECTION (DON'T EDIT)*****/
     footer {
-        background-color: color-mix(in oklab, var(--background-color) 50%, transparent);
-        border-top: 0.4rem solid #444;
+        position: relative;
+        background-color: color-mix(in oklab, var(--background-color) 100%, transparent);
         
+        & h3 {
+            margin-bottom: 1.6rem;
+        }
+
+        & p {
+            font-weight: 500;
+        }
+
+        & p:first-of-type {
+            text-align: justify;
+        }
+
+        & :is(p.disclaimer, p.subtle) {
+            font-weight: normal;
+            text-align: justify;
+        }
+
+        & p:nth-of-type(2) {
+            margin: 1rem 0 0 0;
+        }
+
         & li {
-            margin: 0.25rem 0;
+            margin: 0.6rem 0;
             cursor: pointer;
+            font-weight: 500;
         }
 
         & .footnote {
+            z-index: 1;
             padding: 0.8rem 0;
             text-align: center;
             color: #fff;
-            background: var(--accent-color);
+            background: var(--primary-color);
         }
 
         & .logos {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            gap: 2rem;
+            margin-bottom: 1.4rem;
 
             & img[alt="Logo 1"] {
-                width: 30%;
+                width: 4rem;
             }
 
             & img[alt="Logo 2"] {
-                width: 60%;
+                width: 9rem;
             }
+        }
+
+        & .ref-list {
+            display: flex;
+            gap: 4rem;
+        }
+
+        & .logo {
+            position: absolute;
+            height: 18rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(0, -50%);
+            opacity: 0.1;
+        }
+
+        & .btn {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-weight: 500;
+            margin-top: 1rem;
+            padding: 0.2rem 0.6rem;
+            width: fit-content;
+            color: #fff;
+            background: var(--primary-color);
+            border-radius: 0.8rem;
+            box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
         }
     }
 
@@ -426,16 +461,7 @@
         display: grid;
         gap: 8rem;
         grid-template-columns: 1fr;
-        padding: 1rem 0;
-
-        & h4 {
-            margin: 0 0 0.5rem;
-        }
-
-        & p {
-            text-align: justify;
-            margin: 1rem 0 0 0;
-        }
+        padding: 2rem 0;
     }
 
 
@@ -448,7 +474,7 @@
     /***** RESPONSIVE SECTION *****/
     @media (min-width: 720px) {
         .footgrid {
-            grid-template-columns: 4fr 1fr 1fr 3fr;
+            grid-template-columns: 1.4fr 1fr 1fr;
         }
     }
 
