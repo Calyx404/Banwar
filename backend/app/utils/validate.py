@@ -9,7 +9,7 @@ REQUIRED_FIELDS = [
     ("historical_name", "text"),
     ("modern_name", "text"),
     ("category", "category"),
-    ("geometry", "geometry"),
+    ("geometry_type", "geometry_type"),
     ("coordinates", "coordinates"),
     ("present_day_location", "text"),
     ("primary_description", "text"),
