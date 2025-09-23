@@ -17,7 +17,7 @@ REQUIRED_FIELDS = [
 ]
 
 def validate(input_file: Path, output_file: Path, log_file: Path):
-    with open(input_file, "r", encoding="utf-8", newline="") as in_csv:
+    with open(input_file, "r", encoding="utf-8-sig", newline="") as in_csv:
         reader = csv.DictReader(in_csv)
 
         # Initialize Fields validator
