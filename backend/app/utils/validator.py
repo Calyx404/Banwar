@@ -91,7 +91,7 @@ class Field:
 
     def validate(self, geometry=None):
         """Validate and normalize this field value."""
-        if self.required and (self.value is None or str(self.value).strip() == ""):
+        if self.required and (not self.value or self.value is None or str(self.value).strip() == ""):
             return None, "error", f"Missing required value in '{self.name}'"
 
         if self.ftype == "int":
@@ -163,13 +163,10 @@ class Field:
         """
         Parse CSV-style coordinates: "[lon lat],[lon lat]..."
         """
-        if str(self.value).strip().lower() in ["null", "n/a", "none", "no data", "no data can be found", "no present data can be found"]:
-            return None, "warning", f"No coordinates provided for '{self.name}', coordinates will be set to null"
+        if str(self.value).strip().lower() in ["null", "n/a", "none", "no present data can be found", "no present data can be found."]:
+            return None, "ok", f"No coordinates provided for '{self.name}', coordinates will be set to null"
 
         raw = str(self.value).replace("[", "").replace("]", "").strip()
-
-        if not raw:
-            return None, "error", f"Empty coordinates in '{self.name}', coordinates will be set to null"
 
         # Split into coordinate pairs
         parts = [p.strip() for p in raw.split(",") if p.strip()]
@@ -179,13 +176,13 @@ class Field:
             if len(nums) != 2:
                 return None, "error", f"Invalid coordinate pair '{part}' in '{self.name}'"
             try:
-                lon, lat = float(nums[0]), float(nums[1])
+                lat, lon = float(nums[0]), float(nums[1])
             except ValueError:
                 return None, "error", f"Coordinates must be numeric in '{self.name}'"
-            if not (-180 <= lon <= 180):
-                return None, "error", f"Longitude {lon} out of range"
             if not (-90 <= lat <= 90):
                 return None, "error", f"Latitude {lat} out of range"
+            if not (-180 <= lon <= 180):
+                return None, "error", f"Longitude {lon} out of range"
             coords.append([lon, lat])
 
         # Geometry-specific validation
