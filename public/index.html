@@ -1,1095 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- META DESCRIPTIONS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-
-    <meta name="author" content="Banwar Project Team" />
-    <meta
-      name="description"
-      content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots."
-    />
-
-    <!-- TITLE & FAVICON -->
-    <title>Banwar | Cordillera Digital Mapping</title>
-    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
-
-    <!-- STYLESHEETS -->
-    <link
-      rel="preload"
-      href="./styles/root.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <link
-      rel="preload"
-      href="./styles/pages/home_page.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-
-    <!-- COMPONENT: HEADER -->
-    <script defer src="./components/header/header.js"></script>
-    <link rel="stylesheet" href="./components/header/header.css" />
-
-    <!-- COMPONENT: CAROUSEL -->
-    <script defer src="./components/carousel/carousel.js"></script>
-    <link rel="stylesheet" href="./components/carousel/carousel.css" />
-
-    <!-- COMPONENT: FOOTER -->
-    <script defer src="./components/footer/footer.js"></script>
-    <link rel="stylesheet" href="./components/footer/footer.css" />
-
-    <!-- COMPONENT : SEARCH -->
-    <link rel="stylesheet" href="./components/search/search.css" />
-
-    <!-- PAGE CONTROLLER -->
-    <script type="module" src="./scripts/pages/home_page.js"></script>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/root.css" />
+    <link rel="icon" type="image" href="assets/logo.png" />
+    <title>Prototype</title>
   </head>
-
   <body>
-    <!-- PAGE HEADER -->
-    <header id="header"></header>
+    <!-- RADIO BUTTONS (FOR SWITCHING SECTIONS, DON'T EDIT) -->
+    <input type="radio" id="home" name="selection" hidden checked />
+    <input type="radio" id="about" name="selection" hidden />
+    <input type="radio" id="maps" name="selection" hidden />
+    <input type="radio" id="context" name="selection" hidden />
 
-    <!-- TODO: PAGE MAIN CONTENT -->
-    <main id="main">
-      <!-- MAIN : HERO -->
-      <div class="content-container">
-        <section id="home-content">
-          <div class="hero">
-            <div class="col-1">
-              <h1 class="home-title">Explore Cordillera Like Never Before</h1>
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
-              </p>
-            </div>
-
-            <div class="col-2">
-              <img src="./assets/images/map.png" alt="Map Image" />
-            </div>
-          </div>
-
-          <div id="carousel"></div>
-        </section>
+    <!-- HEADER SECTION (NAVBAR)-->
+    <header>
+      <div class="col-1">
+        <label for="home"
+          ><img class="logo" src="assets/logo-word-light.png" alt="Logo"
+        /></label>
       </div>
 
-      <!-- MAIN : MAP -->
-      <div class="content-container">
-        <section id="maps-content">
-          <!-- EDIT HERE -->
-          Maps Page
-        </section>
+      <div class="col-2">
+        <div class="search-bar">
+          <img src="assets/search-icon.svg" alt="Icon" />
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <div class="export-btn">
+          <h4>Export</h4>
+        </div>
+
+        <div class="theme-btn">
+          <div class="icon"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENTS -->
+
+    <!-- HOME-PAGE CONTENT (DON'T EDIT)-->
+    <div class="content-container">
+      <section id="home-content">
+        <div class="hero">
+          <div class="col-1">
+            <h1 class="home-title">Explore Cordillera Like Never Before</h1>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
+
+          <div class="col-2">
+            <img src="assets/map.png" alt="Map Image" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ABOUT-US PAGE CONTENT (FEEL FREE TO EDIT)-->
+    <div class="content-container">
+      <section id="about-content">
+        <h1>ABOUT US</h1>
+
+        <div class="ABheader">
+          <div class="ABtitle">About Us Page</div>
+
+          <div class="ABcontent">
+            <p>
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+              iste, ut iusto et veniam totam perferendis in dignissimos
+              repudiandae ab atque aliquid quibusdam unde laborum officiis!
+              Provident deserunt rem dolores."
+            </p>
+          </div>
+        </div>
+
+        <div class="ABheader">
+          <div class="ABtitle">PURPOSE</div>
+
+          <div class="ABcontent">
+            <p>
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+              iste, ut iusto et veniam totam perferendis in dignissimos
+              repudiandae ab atque aliquid quibusdam unde laborum officiis!
+              Provident deserunt rem dolores."
+            </p>
+          </div>
+        </div>
+
+        <div class="ABheader">
+          <div class="ABtitle">REFERENCES</div>
+
+          <div class="ABcontent">
+            <p>
+              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+              iste, ut iusto et veniam totam perferendis in dignissimos
+              repudiandae ab atque aliquid quibusdam unde laborum officiis!
+              Provident deserunt rem dolores."
+            </p>
+          </div>
+        </div>
+
+        <div class="ABspace">
+          <h1>THE CREATORS</h1>
+        </div>
+
+        <div class="ABboxes">
+          <div class="ABcreators">
+            <div class="ABtitle">&#x2654; Executive Committee</div>
+
+            <div class="ABcreatorscont">WHO YOU IRAQ? ????? <.<</div>
+            <br />
+            <h3>MEMBERS</h3>
+            <hr />
+            <p>
+              <b>Arian Dave S. Abat</b><br />
+              abat.arian13@gmail.com<br />
+              <br />
+              Jovic Kyle G. Acyapas &emsp; trials<br />
+              email@gmail.com<br />
+              <br />
+              Raymond Allen W. Agustin<br />
+              email@gmail.com<br />
+              <br />
+              Kurt G. Dumepnas<br />
+              email@gmail.com<br />
+              <br />
+              Allison Marie A. Kingkingan<br />
+              allixonkk@gmail.com<br />
+            </p>
+          </div>
+
+          <div class="ABcreators">
+            <div class="ABtitle">&#x2702; Design Committee</div>
+
+            <div class="ABcreatorscont">
+              Focuses on creating professional visual assets, layouts, and
+              user-centered designs to enhance usability and overall user
+              experience.
+            </div>
+
+            <div class="ABmembers">
+              <br />
+              <h3>Members</h3>
+              <hr />
+
+              <div class="ABmemberslist">
+                <div class="ABmembersnames">
+                  <b>Allison Marie A. Kingkingan</b><br />
+                  allixonkk@gmail.com<br />
+                  <br />
+                </div>
+
+                <div class="ABmembersnames">
+                  Basiliza A. Binay-an<br />
+                  email@gmail.com<br />
+                  <br />
+                </div>
+
+                <div class="ABmembersnames">
+                  MJ G. De Ocampo<br />
+                  email@gmail.com<br />
+                  <br />
+                </div>
+
+                <div class="ABmembersnames">
+                  Christa Grace B. Ebusca<br />
+                  email@gmail.com<br />
+                  <br />
+                </div>
+
+                <div class="ABmembersnames">
+                  Gemma W. Epad<br />
+                  email@gmail.combr<br />
+                  <br />
+                </div>
+
+                <div class="ABmembersnames">
+                  Mayumi P. Facsoy<br />
+                  email@gmail.combr<br />
+                  <br />
+                </div>
+
+                <div class="ABmembersnames">
+                  Ryan Kurt L. Laoyan<br />
+                  email@gmail.combr<br />
+                  <br />
+                </div>
+
+                <div class="ABmembersnames">
+                  Eathan John T. Na-oy<br />
+                  email@gmail.combr<br />
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ABcreators">
+            <div class="ABtitle">&#x2752; Front-End Committee</div>
+
+            <div class="ABcreatorscont">
+              Responsible for developing and maintaining the user interface,
+              ensuring that the platform is accessible, responsive, and visually
+              consistent.
+            </div>
+
+            <br />
+            <h3>Members</h3>
+            <hr />
+
+            <p>
+              <b>Arian Dave S. Abat</b><br />
+              abat.arian13@gmail.com<br />
+              <br />
+              Emerson L. Baliag<br />
+              email@gmail.com<br />
+              <br />
+              Raven Jesrael E. Garcia<br />
+              email@gmail.com<br />
+              <br />
+              Jandervien B. Lastimozo<br />
+              email@gmail.com<br />
+              <br />
+              Carl Andrei V. Valdez<br />
+              allixonkk@gmail.com<br />
+            </p>
+          </div>
+
+          <div class="ABcreators">
+            <div class="ABtitle">&#x2601; Back-End Committee</div>
+
+            <div class="ABcreatorscont">
+              Oversees server-side development, database management, and system
+              integration to ensure secure, efficient, and reliable
+              functionality.
+            </div>
+
+            <br />
+            <h3>Members</h3>
+            <hr />
+
+            <p>
+              <b>Raymond Allen W. Agustin</b><br />
+              email@gmail.com<br />
+              <br />
+              Sander T. Listana<br />
+              email@gmail.com<br />
+              <br />
+              Jared A. Peralta<br />
+              email@gmail.com<br />
+              <br />
+              Raymond G. Torio<br />
+              email@gmail.com<br />
+              <br />
+            </p>
+          </div>
+
+          <div class="ABcreators">
+            <div class="ABtitle">&#x1F50E;&#xFE0E; Research Committee</div>
+            <div class="ABcreatorscont">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
+              recusandae ea magni mollitia illo qui minus ipsam assumenda
+              debitis! Nobis fugiat cumque unde vero ipsa ut enim veniam
+              adipisci odio.
+            </div>
+            <br />
+            <h3>Members</h3>
+            <hr />
+            <div class="ABmemberslist">
+              <div class="ABmembersnames">
+                <b>Jovic Kyle G. Acyapas</b><br />
+                email@gmail.com<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Grach Banganan<br />
+                email@gmail.com<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Kochina A. Batan<br />
+                email@gmail.com<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Rheniel Bay-an<br />
+                email@gmail.com<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Frances Burgos<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Christopher S. Cadalig<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Harvey Cangsan<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Rhollie A. Domingo<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Wilmoore Dorencio<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Johanna Fay N. Estoque<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Justin D. Fama<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Dan Anilov Fontanos<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Jade Rhyss Francis<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Aijelle T. Gumatin<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Denise Mae Jose<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Joshua Lag-ey<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Jarmaine Reisha A. Lomayna<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Macklien Luaña<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Rhamztyn Manadao<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Rolan Mangiwet<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Gwyneth Gail D. Nana<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Romel Necer<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Rjhay Pagtiilan<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Genesis Quintero<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Jeryl Anne A. Santos<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Patrick S. Tundagui Jr.<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Mekaiah Joyce C. Ulban<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+              <div class="ABmembersnames">
+                Hans Dave P. Yamoto<br />
+                email@gmail.combr<br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- MAPS PAGE CONTENT-->
+    <div class="content-container">
+      <section id="maps-content">
+        <!-- EDIT HERE -->
+        Maps Page
+      </section>
+    </div>
+
+    <!-- CONTEXT PAGE CONTENT-->
+    <div class="content-container">
+      <section id="context-content">
+        <!-- EDIT HERE -->
+        Context Page
+      </section>
+    </div>
+
+    <!-- ERROR PAGE CONTENT-->
+    <div class="content-container">
+      <section id="error-content">
+        <!-- EDIT HERE -->
+        Error Page
+      </section>
+    </div>
+
+    <!-- FOOTER CONTENT (DON'T EDIT)-->
+    <footer>
+      <div class="content-container footgrid">
+        <div class="col">
+          <div class="logos">
+            <img src="assets/logo-dark.png" alt="Logo 1" />
+            <img src="assets/logo-word-light.png" alt="Logo 2" />
+          </div>
+          <p>
+            From Antolín’s 18th-century writings to modern cartography, trace
+            the ancestral domains of Northen Luzon's peaks, valleys, and rivers.
+          </p>
+          <div class="btn">
+            <img src="assets/arrow-top-icon.svg" alt="Icon" />
+            <span>Back to Top</span>
+          </div>
+        </div>
+
+        <div class="col ref-list">
+          <div class="col">
+            <h3>Site Map</h3>
+            <ul class="linklist">
+              <li><label for="home">Homepage</label></li>
+              <li><label for="maps">Map</label></li>
+              <li><label for="about">About Us</label></li>
+              <li><label for="">Contact Us</label></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>Legal</h3>
+            <ul class="linklist">
+              <li>Privacy Policy</li>
+              <li>Terms of Use</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <p class="disclaimer">
+            Disclaimer: This site is an academic project. The information
+            provided is for education purposes only and should not be considered
+            authoritative for navigation or land-use decisions.
+          </p>
+          <p class="subtle">
+            Map data © OpenStreetMap contributors. Historical sources adapted
+            from Antolín’s Notices of the Pagan Igorots (Scrott, 1974).
+          </p>
+        </div>
+
+        <!-- BACKGROUND LOGO (DON'T EDIT!) -->
+        <img class="logo" src="assets/logo-dark.png" alt="Logo" />
       </div>
 
-      <!-- MAIN : CONTEXT PAGE -->
-      <div class="content-container">
-        <section id="context-content">
-          <div class="context-page-container">
-            <h1 class="context-page-title">Context Page</h1>
-
-            <span class="context-page-header"
-              ><img
-                class="context-page-img2"
-                src="assets/area_chart.png"
-                alt="web"
-              />Mountain & Sacred Sites</span
-            >
-            <div class="context-page-section">
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-            </div>
-
-            <span class="context-page-header"
-              ><img
-                class="context-page-img"
-                src="assets/holiday_village.png"
-                alt="web"
-              />Igorot Settlements & Territories</span
-            >
-            <div class="context-page-section">
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-            </div>
-
-            <span class="context-page-header"
-              ><img
-                class="context-page-img"
-                src="assets/Vector.png"
-                alt="web"
-              />Mines & Natural Resources</span
-            >
-            <div class="context-page-section">
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-            </div>
-
-            <span class="context-page-header"
-              ><img
-                class="context-page-img"
-                src="assets/wave_svgrepo.com.png"
-                alt="web"
-              />Rivers & Trade Corridors</span
-            >
-            <div class="context-page-section">
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-            </div>
-
-            <span class="context-page-header"
-              ><img
-                class="context-page-img3"
-                src="assets/dash_svgrepo.com.png"
-                alt="web"
-              /><img
-                class="context-page-img3"
-                src="assets/dash_svgrepo.com.png"
-                alt="web"
-              /><img
-                class="context-page-img3"
-                src="assets/dash_svgrepo.com.png"
-                alt="web"
-              />Trade Routes</span
-            >
-            <div class="context-page-section">
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-            </div>
-
-            <span class="context-page-header"
-              ><img
-                class="context-page-img"
-                src="assets/Vector (1).png"
-                alt="web"
-              />Spanish Missions & Outposts</span
-            >
-            <div class="context-page-section">
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-            </div>
-
-            <span class="context-page-header"
-              ><img
-                class="context-page-img"
-                src="assets/explore_nearby.png"
-                alt="web"
-              />Provinces & Territories</span
-            >
-            <div class="context-page-section">
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-              <div class="context-page-content">
-                <span
-                  ><img
-                    class="context-page-img5"
-                    src="assets/location_on.png"
-                    alt="web"
-                  />Kurt’s Copper and Gold Mine</span
-                >
-                <span class="context-page-locations"
-                  >Quirino Hill, Ilocos Sur
-                </span>
-                <img
-                  class="context-page-img4"
-                  src="assets/Chevron right.png"
-                  alt="web"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+      <div class="footnote">
+        <p>Copyright © 2025, Banwar, All Rights Reserved.</p>
       </div>
+    </footer>
 
-      <!-- MAIN : CONTEXT PAGE (TEMPLATE) -->
-      <div class="content-container">
-        <section id="context-content-template">
-          <!-- SECTION HEADER -->
-          <h1 class="context-main-header">MOUNT POLAC/ PULAG</h1>
+    <!-- BACKGROUND SECTION (DON'T EDIT!) -->
+    <div class="overlay"></div>
+    <img
+      class="background-img"
+      src="assets/background.png"
+      alt="Background Image"
+    />
 
-          <!-- SECTION 1: MAP + INFO CARD -->
-          <div class="context-container">
-            <!-- INSERT MAP HERE -->
-            <div class="context-box">
-              <img
-                src="https://i.pinimg.com/736x/f8/64/6a/f8646a048d23b1cde48202bb1bc17a18.jpg"
-                alt="Map Pin"
-              />
-            </div>
+    <!-- FOR TESTING PURPOSES (DELETE IF NEEDED) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const themeBtn = document.querySelector(".theme-btn");
 
-            <div class="context-card">
-              <div class="context-card-header">
-                <strong>Historical Name</strong> <em>(Present Name)</em>
-              </div>
-
-              <!-- CHANGE COORDINATES HERE -->
-              <div class="context-section">
-                <label>COORDINATES</label>
-                <hr class="context-maps-hr" />
-                <div class="context-field">16.5975° N, 120.8992° E</div>
-              </div>
-
-              <!-- CHANGE PRESENT DAY LOCATION HERE -->
-              <div class="context-section">
-                <label>PRESENT DAY LOCATION</label>
-                <hr class="context-maps-hr" />
-                <div class="context-field">Seoul, South Korea</div>
-              </div>
-
-              <!-- CHANGE DESCRIPTION DETAILS HERE -->
-              <div class="context-section">
-                <label>DESCRIPTION FROM ANTOLIN</label>
-                <hr class="context-maps-hr" />
-                <div class="context-notes">To.....</div>
-              </div>
-
-              <!-- CHANGE SUPPORTING NOTES DETAILS HERE-->
-              <div class="context-section">
-                <label>SUPPORTING NOTES</label>
-                <hr class="context-maps-hr" />
-                <div class="context-notes">To.....</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SECTION 2 : MINES -->
-          <div class="context-container2">
-            <div class="context-card3">
-              <span class="context-header"
-                ><img src="./assets/icons/mines.svg" alt="Icon" />Mines &
-                Natural Resources</span
-              >
-
-              <div class="context-map-section">
-                <div class="context-section">
-                  <label>RESOURCE TYPE</label>
-                  <hr class="context-maps-hr2" />
-                  <div class="context-field">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam,
-                  </div>
-                </div>
-
-                <div class="context-section">
-                  <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum."
-                  </p>
-                  <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum."
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SECTION 3 : MOUNTAINS -->
-          <div class="context-container2">
-            <div class="context-box">
-              <img
-                src="https://i.pinimg.com/736x/f8/64/6a/f8646a048d23b1cde48202bb1bc17a18.jpg"
-                alt="Map Pin"
-              />
-            </div>
-
-            <div class="context-card3">
-              <span class="context-header"
-                ><img src="./assets/icons/mount.svg" alt="Icon" />Mountains &
-                Sacred Sites</span
-              >
-
-              <div class="context-map-section">
-                <div class="context-section">
-                  <label>MODERN EQUIVALENT</label>
-                  <hr class="context-maps-hr2" />
-
-                  <div class="context-field">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam,
-                  </div>
-
-                  <div class="context-section">
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum."
-                    </p>
-                  </div>
-                </div>
-
-                <div class="context-section">
-                  <label>PRESENT CONDITION</label>
-                  <hr class="context-maps-hr2" />
-
-                  <div class="context-field">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam,
-                  </div>
-
-                  <div class="context-section">
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SECTION 4 : SETTLEMENTS -->
-          <div class="context-container2">
-            <div class="context-card3">
-              <span class="context-header"
-                ><img src="./assets/icons/village.svg" alt="Icon" />Settlements
-                & Territories</span
-              >
-
-              <div class="context-map-section">
-                <div class="context-section">
-                  <label>PRESENT CONDITION</label>
-                  <hr class="context-maps-hr2" />
-
-                  <div class="context-field">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam,
-                  </div>
-
-                  <div class="context-section">
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="context-box2">
-              <img
-                src="https://i.pinimg.com/736x/f8/64/6a/f8646a048d23b1cde48202bb1bc17a18.jpg"
-                alt="Map Pin"
-              />
-            </div>
-          </div>
-
-          <!-- SECTION 5 : TRADE -->
-          <div class="context-container2">
-            <div class="context-card3">
-              <span class="context-header"
-                ><img src="./assets/icons/trade.svg" alt="Icon" />Trade
-                Routes</span
-              >
-
-              <div class="context-map-section">
-                <div class="context-section">
-                  <label>RIVALRIES</label>
-                  <hr class="context-maps-hr2" />
-
-                  <div class="context-filed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam,
-                  </div>
-
-                  <div class="context-section">
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum."
-                    </p>
-                  </div>
-
-                  <div class="context-section">
-                    <label>CULTURAL EXCHANGE</label>
-                    <hr class="context-maps-hr2" />
-                    <div class="context-field">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam,
-                    </div>
-                  </div>
-
-                  <div class="context-section">
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SECTION 6 : RIVERS -->
-          <div class="context-container2">
-            <div class="context-box">
-              <img
-                src="https://i.pinimg.com/736x/f8/64/6a/f8646a048d23b1cde48202bb1bc17a18.jpg"
-                alt="Map Pin"
-              />
-            </div>
-
-            <div class="context-card3">
-              <span class="context-header"
-                ><img src="./assets/icons/wave.svg" alt="Icon" />Rivers & Trade
-                Corridors</span
-              >
-
-              <div class="context-map-section">
-                <div class="context-section">
-                  <label>Cultural Exchange</label>
-                  <hr class="context-maps-hr2" />
-
-                  <div class="context-field">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam,
-                  </div>
-
-                  <div class="context-section">
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SECTION 7 : PROVINCE -->
-          <div class="context-container2">
-            <div class="context-card3">
-              <span class="context-header"
-                ><img src="./assets/icons/map-pin.svg" alt="Icon" />Provinces &
-                Terriroties</span
-              >
-
-              <div class="context-map-section">
-                <div class="context-section">
-                  <label>MODERN EQUIVALENT</label>
-                  <hr class="context-maps-hr2" />
-
-                  <div class="context-field">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam,
-                  </div>
-
-                  <div class="context-section">
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum."
-                    </p>
-                  </div>
-                </div>
-                <div class="context-section">
-                  <label>PRESENT CONDITION</label>
-                  <hr class="context-maps-hr2" />
-
-                  <div class="context-field">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam,
-                  </div>
-
-                  <div class="context-section">
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="context-box2">
-              <img
-                src="https://i.pinimg.com/736x/f8/64/6a/f8646a048d23b1cde48202bb1bc17a18.jpg"
-                alt="Map Pin"
-              />
-            </div>
-          </div>
-
-          <!-- SECTION 8 : SPANISH -->
-          <div class="context-container2">
-            <div class="context-card3">
-              <span class="context-header"
-                ><img src="./assets/icons/church.svg" alt="Icon" />Spanish
-                Missions & Outposts</span
-              >
-
-              <div class="context-map-section">
-                <div class="context-section">
-                  <label>HISTORICAL ROLE</label>
-                  <hr class="context-maps-hr2" />
-
-                  <div class="context-field">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam,
-                  </div>
-
-                  <div class="context-section">
-                    <p>
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SECTION 9 : REFERENCES -->
-          <div class="context-container2">
-            <div class="context-card3">
-              <span class="context-header"
-                ><img src="./assets/icons/list.svg" alt="Icon" />Citation &
-                References</span
-              >
-
-              <div class="context-map-section">
-                <div class="context-section">
-                  <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum."
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <!-- PAGE FOOTER -->
-    <footer id="footer"></footer>
+        if (themeBtn) {
+          themeBtn.addEventListener("click", () => {
+            themeBtn.classList.toggle("clicked");
+            console.log("Theme button clicked!");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
