@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://calyx404.github.io/Banwar/index.html</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Documentation -->
+  <url>
+    <loc>https://calyx404.github.io/Banwar/docs/</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Public datasets -->
+  <url>
+    <loc>https://calyx404.github.io/Banwar/data/sites.geojson</loc>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
