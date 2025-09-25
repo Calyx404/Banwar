@@ -2,8 +2,10 @@ User-agent: *
 
 Allow: /index.html
 Allow: /docs/
+Allow: /public/data/
 
 Disallow: /backend/
-Disallow: /public/data/
+Disallow: /data/raw/
+Disallow: /data/export/
 
 Sitemap: https://calyx404.github.io/Banwar/sitemap.xml
