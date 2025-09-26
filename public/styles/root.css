@@ -1,6 +1,25 @@
 /* IMPORTS */
+@import "./page/home_page.css";
+@import "./page/map_page.css";
+
+@import "./components/carousel.css";
+@import "./components/map.css";
+
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+/* CUSTOM FONTS */
+@font-face {
+  font-family: "IM Fell";
+  src: url("../assets/fonts/IM_Fell_DW_Pica.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  src: url("../assets/fonts/Merriweather_Sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* CUSTOM FONTS */
 @font-face {
   font-family: "IM Fell";
@@ -17,10 +36,11 @@
 @font-face {
   font-family: "SF Pro";
   src: url("../assets/fonts/SF_Pro.ttf") format("truetype");
-  /* font-weight: normal; */
-  /* font-style: normal; */
+  font-weight: normal;
+  font-style: normal;
 }
 
+/* ROOT VARIABLES */
 /* ROOT VARIABLES */
 :root {
   /* ROOT : Font Faces */
@@ -36,11 +56,14 @@
 
   /* ROOT : Colors - Light Theme */
 
-  --color-primary: #effaf7;
-  --color-secondary: #f3fbf9;
+  --color-primary: #f8f8f9;
+  --color-secondary: #c8bdb9;
   --color-accent: #11362a;
-  --color-text: #11362a;
+  --color-text: #262c38;
   --color-overlay: rgba(248, 248, 249, 0.6);
+
+  /* #9e4821 desired */
+  /* #532522 output */
 
   /* ROOT : Sizes */
   --radius-sm: 8px;
@@ -53,56 +76,45 @@
   --padding-lg: 5rem;
 
   /* ROOT : Transitions */
-  --transition-fast: all 0.25s ease-in;
-  --transition-medium: all 0.5s ease-in;
-  --transition-slow: all 1s ease-in;
+  --transition-fast: all 0.25s ease;
+  --transition-medium: all 0.5s ease;
+  --transition-slow: all 1s ease;
 
   /* ROOT : Shadows */
-  --shadow-sm: 0 1px 5px var(--color-accent);
-  --shadow-md: 0 5px 10px var(--color-accent);
+  --shadow-sm: 0 1px 20px var(--color-accent);
+  --shadow-md: 0 2px 6px var(--color-accent);
   --shadow-lg: 0 10px 15px var(--color-accent);
 }
 
 /* DARK THEME */
+/* DARK THEME */
 :root[data-theme="dark"] {
   /* ROOT : Colors - Dark Theme */
-  --color-primary: #3b1a21;
-  --color-secondary: #f7edef;
-  --color-accent: #5d2a34;
-  --color-text: #f7edef;
+  --color-primary: #4a2129;
+  --color-accent: #262c38;
+  --color-text: #f8f8f9;
   --color-overlay: rgba(0, 0, 0, 0.7);
-
-  & img.icon {
-    filter: brightness(0) invert(1);
-  }
 }
 
 /* SCROLLBAR */
-body::-webkit-scrollbar {
-  width: 0.5rem;
-  background-color: var(--color-accent);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: var(--color-secondary);
-}
-
 *::-webkit-scrollbar {
   width: 0.5rem;
-  background-color: var(--color-secondary);
+  background-color: var(--color-accent);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--color-accent);
+  background-color: var(--color-secondary);
 }
 
 /* ANIMATIONS */
-@keyframes rotate {
+@keyframes slide-in-top {
   from {
-    transform: rotate(0deg);
+    transform: translateY(-6px);
+    opacity: 0;
   }
   to {
-    transform: rotate(-360deg);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -111,7 +123,6 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: var(--transition-fast);
 }
 
 html {
@@ -120,7 +131,7 @@ html {
 
 body {
   width: 100svw;
-  min-height: 100svh;
+  height: 100svh;
   overflow-x: hidden;
   font-family: var(--font-text);
   font-size: var(--font-size-base);
@@ -165,15 +176,11 @@ h4 {
   font-size: var(--font-size-h4);
 }
 
-p {
-  line-height: 1.5;
-}
-
 a {
   position: relative;
   text-decoration: none;
   color: var(--color-text);
-  transition: var(--transition-fast);
+  transition: var(--transition-medium);
 
   &::after {
     content: "";
@@ -183,37 +190,12 @@ a {
     width: 0;
     height: 2px;
     background: var(--color-text);
-    transition: var(--transition-fast);
+    transition: var(--transition-medium);
   }
 
   &:hover::after,
   &:focus::after {
     width: 100%;
-  }
-}
-
-strong {
-  position: relative;
-  display: inline-block;
-  z-index: 0;
-  cursor: default;
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--color-accent);
-    transform: scaleX(0);
-    transform-origin: left;
-    z-index: -1;
-    transition: transform 0.3s ease;
-  }
-
-  &:hover {
-    color: var(--color-secondary);
-    &::after {
-      transform: scaleX(1);
-    }
   }
 }
 
@@ -225,11 +207,6 @@ img {
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
-
-  &.icon {
-    filter: none;
-    transition: var(--transition-fast);
-  }
 }
 
 label {
@@ -252,7 +229,7 @@ button {
 
   & img {
     aspect-ratio: 1/1;
-    width: auto;
+    width: var(--font-size-h3);
     height: var(--font-size-h3);
     filter: brightness(0) invert(1);
     object-fit: contain;
@@ -280,45 +257,4 @@ button {
   &:active {
     transform: scale(0.9);
   }
-
-  &.unfill {
-    background: var(--color-secondary);
-
-    & img {
-      filter: brightness(1) invert(0);
-    }
-
-    & span {
-      color: var(--color-accent);
-    }
-
-    &:hover {
-      background: var(--color-accent);
-      color: var(--color-secondary);
-
-      & img {
-        filter: brightness(0) invert(1);
-      }
-
-      & span {
-        color: var(--color-secondary);
-      }
-    }
-  }
-}
-
-/* LOGOS */
-.logo {
-  user-select: none;
-  aspect-ratio: 1/1;
-  height: calc(var(--font-size-h1) + var(--font-size-h3));
-  width: calc(var(--font-size-h1) + var(--font-size-h3));
-  filter: drop-shadow(var(--shadow-sm));
-}
-
-.logo-name {
-  user-select: none;
-  height: var(--font-size-h1);
-  width: auto;
-  filter: drop-shadow(var(--shadow-sm));
 }
