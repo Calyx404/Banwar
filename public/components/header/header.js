@@ -16,27 +16,26 @@ function Header() {
            onclick="document.location='./index.html'">
     </section>
 
-    <section class="header-item" id="header-feature">
-      <div class="feature-item" id="header-buttons">
-        <div id="header-theme">
-          <button id="header-icon" title="Change Theme">
-            <img src="./assets/icons/sun.svg" alt="Theme">
-          </button>
-        </div>
-        <button id="header-export" title="Export Data">
-          <img src="./assets/icons/archive.svg" alt="Export">
-        </button>
-      </div>
-      <div class="separator"></div>
-      <form class="feature-item" id="header-search">
-        <input type="search" name="search" placeholder="Explore the Cordillera!" autocomplete="off"/>
-        <div id="search-results"></div>
-        <button type="submit" title="Explore Map">
-          <img src="./assets/icons/search.svg" alt="Explore" />
-        </button>
-      </form>
-    </section>
-  `;
+        <section class="header-item" id="header-feature">
+            <div class="feature-item" id="header-buttons">
+                <div id="header-theme">
+                    <button id="header-icon" title="Change Theme">
+                        <img src="./assets/icons/sun.svg" alt="Theme">
+                    </button>
+                </div>
+                <button id="header-export" title="Export Data">
+                    <img src="./assets/icons/archive.svg" alt="Export">
+                </button>
+            </div>
+            <div class="separator"></div>
+            <form action="./map.html" class="feature-item" id="header-search">
+                <input type="search" name="search" placeholder="Explore the Cordillera!">
+                <button type="submit" form="header-search" value="Search" title="Explore Map">
+                    <img src="./assets/icons/search.svg" alt="Explore">
+                </button>
+            </form>
+        </section>
+    `;
 }
 
 /**
