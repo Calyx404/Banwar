@@ -42,9 +42,6 @@
   --color-text: #262C38;
   --color-overlay: rgba(248, 248, 249, 0.6);
 
-  /* #9e4821 desired */
-  /* #532522 output */
-
   /* ROOT : Sizes */
   --radius-sm: 8px;
   --radius-md: 15px;
@@ -222,4 +219,17 @@ button {
     &:active {
         transform: scale(0.9);
     }
+}
+
+/* LOGOS */
+.logo {
+    user-select: none;
+    aspect-ratio: 1/1;
+    height: calc(var(--font-size-h1) + var(--font-size-h1));
+    width: calc(var(--font-size-h1) + var(--font-size-h1));
+}
+
+.logo-name {
+    user-select: none;
+    height: var(--font-size-h1);
 }

@@ -21,7 +21,7 @@ function Header() {
                 </button>
             </div>
             <div class="separator"></div>
-            <form action="./pages/map.html" class="feature-item" id="header-search">
+            <form action="./map.html" class="feature-item" id="header-search">
                 <input type="search" name="search" placeholder="Explore the Cordillera!">
                 <button type="submit" form="header-search" value="Search" title="Explore Map">
                     <img src="./assets/icons/search.svg" alt="Explore">

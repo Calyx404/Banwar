@@ -10,25 +10,6 @@
     display: block;
 }
 
-.logo {
-    user-select: none;
-    aspect-ratio: 1/1;
-    height: calc(var(--font-size-h1) + var(--font-size-h1));
-    width: calc(var(--font-size-h1) + var(--font-size-h1));
-}
-
-.logo-name {
-    user-select: none;
-    height: var(--font-size-h1);
-}
-
-.hr-separator {
-    height: 2px;
-    width: 100%;
-    margin: var(--padding-xs) 0;
-    background: var(--color-text);
-}
-
 /* !FIX : PAGE MAIN CONTENT */
 main {
     width: 100%;

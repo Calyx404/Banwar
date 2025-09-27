@@ -22,7 +22,7 @@ function Footer() {
             <div class="content-item" id="content-lists">
                 <div class="list">
                     <h4>Site Map</h4>
-                    <div class="hr-separator"></div>
+                    <div class="separator"></div>
                     <ul>
                         <li><label for="home"><a href="index.html">Home</a></label></li>
                         <li><label for="maps"><a href="./map.html">Map</a></label></li>
@@ -30,7 +30,7 @@ function Footer() {
                 </div>
                 <div class="list">
                     <h4>Legal</h4>
-                    <div class="hr-separator"></div>
+                    <div class="separator"></div>
                     <ul>
                         <li><a href="./legal.html#privacy-policy">Privacy Policy</a></li>
                         <li><a href="./legal.html#terms-of-use">Terms of Use</a></li>
@@ -39,7 +39,7 @@ function Footer() {
                 </div>
                 <div class="list">
                     <h4>Attributions</h4>
-                    <div class="hr-separator"></div>
+                    <div class="separator"></div>
                     <ul>
                         <li><a target="_blank" href="https://geojson.io/">GeoJSON &nearr;</a></li>
                         <li><a target="_blank" href="https://www.openstreetmap.org">OpenStreetMaps &nearr;</a></li>
