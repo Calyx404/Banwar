@@ -1,3 +1,5 @@
+@import "../root.css";
+
 footer {
   width: 100%;
   display: flex;
@@ -19,14 +21,12 @@ footer {
     padding: var(--padding-md) 0;
 
     &#footer-content {
-      flex: 1;
-      padding: var(--padding-md) 0;
       grid-template-columns: 1fr 2fr;
 
       & .content-item {
         align-items: start;
         justify-content: start;
-        padding: var(--padding-lg) 0;
+        padding: var(--padding-md);
         height: 100%;
 
         &#content-details {
@@ -39,10 +39,6 @@ footer {
             display: flex;
             align-items: center;
             gap: var(--padding-sm);
-
-            & .message {
-              width: 70%;
-            }
           }
         }
 
@@ -58,7 +54,7 @@ footer {
             content: "";
             position: absolute;
             inset: 0;
-            background: url("../../assets/logos/logo-icon.png") no-repeat center
+            background: url("../assets/logos/logo-icon.png") no-repeat center
               center;
             background-size: contain;
             opacity: 0.25;
@@ -77,13 +73,6 @@ footer {
               display: flex;
               flex-direction: column;
               gap: var(--padding-sm);
-            }
-
-            & .separator {
-              height: 2px;
-              width: 100%;
-              margin: var(--padding-xs) 0;
-              background: var(--color-text);
             }
           }
         }
