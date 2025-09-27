@@ -3,7 +3,7 @@
 <head>
     <!-- META DESCRIPTIONS -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="robots" content="index, follow">
 
     <meta name="author" content="Banwar Project Team">
@@ -13,20 +13,34 @@
     <title>Banwar | Explore Map</title>
     <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png">
 
-    <!-- STYLESHEETS -->
+    <!-- PRELOAD -->
     <link rel="preload" href="./styles/root.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="./styles/pages/map_page.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 
-    <!-- SCRIPTS -->
+    <!-- LEAFLET JS : MAP -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-    <!-- COMPONENTS -->
+    <!-- LEAFLET JS : LOCATE -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    <script defer src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+
+    <!-- LEAFLET JS : FULLSCREEN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.css" />
+    <script defer src="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.js"></script>
+
+    <!-- COMPONENT : HEADER -->
     <script defer src="./components/header/header.js"></script>
     <link rel="stylesheet" href="./components/header/header.css">
 
+    <!-- COMPONENT : FOOTER -->
     <script defer src="./components/footer/footer.js"></script>
     <link rel="stylesheet" href="./components/footer/footer.css">
+
+    <!-- COMPONENT : MAP -->
+    <script defer src="./components/map/map.js"></script>
+    <script defer src="./components/map/map-model.js"></script>
+    <link rel="stylesheet" href="./components/map/map.css">
 </head>
 <body>
 
@@ -35,7 +49,7 @@
 
     <!-- PAGE MAIN CONTENT -->
      <main>
-        <div class="map"></div>
+        <section class="main-item" id="map"></section>
      </main>
 
     <!-- PAGE FOOTER -->
