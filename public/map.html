@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- META -->
+    <!-- META DESCRIPTIONS -->
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <meta name="robots" content="index, follow" />
+
     <meta name="author" content="Banwar Project Team" />
     <meta
       name="description"
@@ -18,16 +19,10 @@
     <title>Banwar | Explore Map</title>
     <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
 
-    <!-- PRELOAD STYLES -->
+    <!-- PRELOAD -->
     <link
       rel="preload"
       href="./styles/root.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <link
-      rel="preload"
-      href="./components/splash/splash.css"
       as="style"
       onload="this.rel='stylesheet'"
     />
@@ -38,22 +33,21 @@
       onload="this.rel='stylesheet'"
     />
 
-    <!-- SPLASH -->
-    <script defer src="./components/splash/splash.js"></script>
-
-    <!-- LEAFLET -->
+    <!-- LEAFLET JS : MAP -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
     <script
       defer
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
 
-    <!-- LEAFLET PLUGINS -->
+    <!-- LEAFLET JS : LOCATE -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css"
@@ -63,6 +57,7 @@
       src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"
     ></script>
 
+    <!-- LEAFLET JS : FULLSCREEN -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.css"
@@ -73,44 +68,27 @@
     ></script>
 
     <!-- COMPONENT : HEADER -->
-    <link rel="stylesheet" href="./components/header/header.css" />
     <script defer src="./components/header/header.js"></script>
 
     <!-- COMPONENT : FOOTER -->
-    <link rel="stylesheet" href="./components/footer/footer.css" />
     <script defer src="./components/footer/footer.js"></script>
+    <link rel="stylesheet" href="./components/footer/footer.css" />
 
     <!-- COMPONENT : MAP -->
-    <link rel="stylesheet" href="./components/map-core/map.css" />
-
-    <!-- COMPONENT : SEARCH -->
-    <link rel="stylesheet" href="./components/search/search.css" />
-
-    <!-- COMPONENT : CAROUSEL -->
-    <link rel="stylesheet" href="./components/carousel/carousel.css" />
-
-    <!-- PAGE CONTROLLER -->
-    <script type="module" src="./scripts/pages/map_page.js"></script>
+    <script defer src="./components/map/map.js"></script>
+    <script defer src="./components/map/map-model.js"></script>
+    <link rel="stylesheet" href="./components/map/map.css" />
   </head>
-
   <body>
+    <!-- PAGE HEADER -->
     <header id="header"></header>
-    <main id="main">
-      <section class="main-item" id="map-component">
-        <div class="map-item" id="map">
-          <nav id="map-overlay">
-            <button
-              title="View Context"
-              onclick="document.location='#map-account'"
-            >
-              <img src="./assets/icons/down.svg" alt="View Context" />
-            </button>
-          </nav>
-        </div>
-        <div class="map-item" id="map-profile"></div>
-      </section>
-      <section class="main-item" id="map-account"></section>
+
+    <!-- PAGE MAIN CONTENT -->
+    <main>
+      <section class="main-item" id="map"></section>
     </main>
+
+    <!-- PAGE FOOTER -->
     <footer id="footer"></footer>
   </body>
 </html>
