@@ -1,21 +1,225 @@
+/* IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* CUSTOM FONTS */
 @font-face {
-    font-family: SF Pro;
-    src: url(../assets/SF-Pro.ttf);
+  font-family: "IM Fell";
+  src: url("../assets/fonts/IM_Fell_DW_Pica.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  src: url("../assets/fonts/Merriweather_Sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../assets/fonts/SF_Pro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
+/* ROOT VARIABLES */
 :root {
-    --muted-color: #313131;
-    --background-color: #E2DCDE;
-    --background-color-2: #E9EAF0;
-    --primary-color: #2D4D43;
-    --font-title-1: "Merriweather Sans", sans-serif;
-    --font-title-2: "IM Fell English", serif;
-    --font-text: SF Pro, sans-serif;
+  /* ROOT : Font Faces */
+  --font-heading: "IM Fell", serif;
+  --font-text: "SF Pro", "Merriweather Sans", system-ui, sans-serif;
+
+  /* ROOT : Font Sizes */
+  --font-size-h1: 3rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-base: 1rem;
+
+  /* ROOT : Colors - Light Theme */
+
+  --color-primary: #F8F8F9;
+  --color-secondary: #C8BDB9;
+  --color-accent: #11362A;
+  --color-text: #262C38;
+  --color-overlay: rgba(248, 248, 249, 0.6);
+
+  /* #9e4821 desired */
+  /* #532522 output */
+
+  /* ROOT : Sizes */
+  --radius-sm: 8px;
+  --radius-md: 15px;
+  --radius-lg: 24px;
+
+  --padding-xs: 0.5rem;
+  --padding-sm: 1rem;
+  --padding-md: 3rem;
+  --padding-lg: 5rem;
+
+  /* ROOT : Transitions */
+  --transition-fast: all 0.25s ease;
+  --transition-medium: all 0.50s ease;
+  --transition-slow: all 1s ease;
+
+  /* ROOT : Shadows */
+  --shadow-sm: 0 1px 20px var(--color-accent);
+  --shadow-md: 0 2px 6px var(--color-accent);
+  --shadow-lg: 0 10px 15px var(--color-accent);
 }
 
+/* DARK THEME */
 :root[data-theme="dark"] {
-    --text-color: #fff
-    --primary-color: #262C38
+  /* ROOT : Colors - Dark Theme */
+  --color-primary: #4A2129;
+  --color-accent: #262C38;
+  --color-text: #F8F8F9;
+  --color-overlay: rgba(0, 0, 0, 0.7);
+}
+
+/* SCROLLBAR */
+*::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--color-accent);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary);
+}
+
+/* ANIMATIONS */
+@keyframes slide-in-top{
+    from {
+        transform:translateY(-6px);
+        opacity:0
+    }
+    to {
+        transform:translateY(0);
+        opacity:1
+    }
+}
+
+/* DEFAULT STYLES */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  width: 100svw;
+  height: 100svh;
+  overflow-x: hidden;
+  font-family: var(--font-text);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background: url("../assets/images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  transition: var(--transition-slow);
+  position: relative;
+
+  &::before {
+    content: '';
+    inset: 0;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: var(--color-overlay);
+    pointer-events: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "IM Fell";
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: var(--transition-medium);
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 0;
+        height: 2px;
+        background: var(--color-text);
+        transition: var(--transition-medium);
+    }
+
+    &:hover::after,
+    &:focus::after {
+        width: 100%;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+label {
+    cursor: pointer;
+}
+
+button {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--padding-xs);
+    padding: var(--padding-xs);
+    border-radius: var(--radius-sm);
+    border: 2px solid var(--color-accent);
+    background: var(--color-accent);
+    transform: scale(1);
+    transition: var(--transition-fast);
+
+    & img {
+        aspect-ratio: 1/1;
+        width: var(--font-size-h3);
+        height: var(--font-size-h3);
+        filter: brightness(0) invert(1);
+        object-fit: contain;
+    }
+
+    & span {
+        font-family: var(--font-heading);
+        font-size: var(--font-size-h4);
+        color: var(--color-secondary);
+    }
+
+    &:hover {
+        background: var(--color-secondary);
+        color: var(--color-accent);
+
+        & img {
+            filter: brightness(1) invert(0);
+        }
+
+        & span {
+            color: var(--color-accent);
+        }
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
 }
