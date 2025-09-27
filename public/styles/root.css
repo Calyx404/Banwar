@@ -1,10 +1,4 @@
 /* IMPORTS */
-@import './page/home_page.css';
-@import './page/map_page.css';
-
-@import './components/carousel.css';
-@import './components/map.css';
-
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* CUSTOM FONTS */

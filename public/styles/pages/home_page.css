@@ -1,4 +1,113 @@
-/* MAIN : HOME */
+/* PAGE NAVIGATION */
+:is(#home-content, #about-content, #maps-content, #context-content) {
+    animation: slide-in-top 0.5s ease;
+}
+
+#home:checked ~ main .content-container #home-content,
+#about:checked ~ main .content-container #about-content,
+#maps:checked ~ main .content-container #maps-content,
+#context:checked ~ main .content-container #context-content {
+    display: block;
+}
+
+.logo {
+    user-select: none;
+    aspect-ratio: 1/1;
+    height: calc(var(--font-size-h1) + var(--font-size-h1));
+    width: calc(var(--font-size-h1) + var(--font-size-h1));
+}
+
+.logo-name {
+    user-select: none;
+    height: var(--font-size-h1);
+}
+
+.hr-separator {
+    height: 2px;
+    width: 100%;
+    margin: var(--padding-xs) 0;
+    background: var(--color-text);
+}
+
+/* !FIX : PAGE MAIN CONTENT */
+main {
+    width: 100%;
+    min-height: 100svh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-lg) 0;
+    background: var(--color-bg-main);
+
+    & section {
+        padding: var(--padding-md) var(--padding-lg);
+        min-height: 100vh;
+    }
+
+    & .content {
+        min-height: 100vh;
+    }
+
+    & .content-container {
+        max-width: 1180px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+
+        & > section {
+            display: none;
+        }
+    }
+
+    & .disclaimer {
+        font-size: 0.9rem
+    }
+
+    & .subtle {
+        color: var(--color-muted);
+        font-size: 0.9rem;
+    }
+}
+
+/* !FIX : RESPONSIVE SECTION */
+@media screen and (min-width: 720px) {
+    .footgrid {
+        grid-template-columns: 1.4fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 820px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    :is(.book-details-container, .author-details-container) .card {
+        grid-template-columns: 1fr;
+    }
+
+    .track .slides .slide {
+        grid-template-columns: 1fr;
+    }
+
+    .footgrid {
+        padding: 2rem;
+
+        & .logo {
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .member {
+        flex: 1 1 100%;
+    }
+
+    .ABcreators {
+        flex: 1 1 99%;
+    }
+}
+
+
+/* !FIX : MAIN : HOME */
 #home-content {
     padding-bottom: 0;
 }
