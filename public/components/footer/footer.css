@@ -79,16 +79,18 @@ footer {
               gap: var(--padding-sm);
             }
 
-            & .separator {
-              height: 2px;
-              width: 100%;
-              margin: var(--padding-xs) 0;
-              background: var(--color-text);
+                        }
+
+                        & .separator {
+                            height: 2px;
+                            width: 100%;
+                            margin: var(--padding-xs) 0;
+                            background: var(--color-text);
+                        }
+                    }
+                }
             }
-          }
         }
-      }
-    }
 
     &#footer-copyright {
       grid-template-columns: auto auto;

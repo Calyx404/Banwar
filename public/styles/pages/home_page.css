@@ -1,4 +1,17 @@
-#main {
+/* PAGE NAVIGATION */
+:is(#home-content, #about-content, #maps-content, #context-content) {
+  animation: slide-in-top 0.5s ease;
+}
+
+#home:checked ~ main .content-container #home-content,
+#about:checked ~ main .content-container #about-content,
+#maps:checked ~ main .content-container #maps-content,
+#context:checked ~ main .content-container #context-content {
+  display: block;
+}
+
+/* !FIX : PAGE MAIN CONTENT */
+main {
   width: 100%;
   min-height: 100svh;
   flex: 1;
@@ -6,6 +19,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: var(--padding-lg) 0;
+  background: var(--color-bg-main);
 
   & .main-item {
     padding: var(--padding-md) var(--padding-lg);
