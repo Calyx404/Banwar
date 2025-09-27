@@ -4,23 +4,26 @@
     <!-- META DESCRIPTIONS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#ffffff">
     <meta name="robots" content="index, follow">
 
     <meta name="author" content="Banwar Project Team">
     <meta name="description" content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots.">
-    <meta name="keywords" content="Banwar, Cordillera, Igorot, Francisco Antolín, Indigenous Peoples, Philippines History">
 
     <!-- TITLE & FAVICON -->
     <title>Banwar | Cordillera Digital Mapping</title>
     <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png">
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preload" href="./styles/root.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="./styles/pages/home_page.css" as="style" onload="this.rel='stylesheet'">
 
-    <!-- SCRIPTS -->
-    <script src="./scripts/main.js" defer></script>
+    <!-- COMPONENTS -->
+    <script defer src="./components/header/header.js"></script>
+    <link rel="stylesheet" href="./components/header/header.css">
+
+    <script defer src="./components/footer/footer.js"></script>
+    <link rel="stylesheet" href="./components/footer/footer.css">
+
 </head>
 
 <body>
@@ -31,31 +34,7 @@
     <input type="radio" name="selection" id="context"  hidden>
 
     <!-- PAGE HEADER -->
-    <header>
-        <section class="header-item" id="header-logo">
-            <label for="home"><img src="./assets/logos/logo-name-dark.png" alt="Banwar" class="logo-name"></label>
-        </section>
-
-        <section class="header-item" id="header-feature">
-            <div class="feature-item" id="header-buttons">
-                <div id="header-theme">
-                    <button id="header-icon" title="Change Theme">
-                        <img src="./assets/icons/sun.svg" alt="Theme">
-                    </button>
-                </div>
-                <button id="header-export" title="Export Data">
-                    <img src="./assets/icons/archive.svg" alt="Export">
-                </button>
-            </div>
-            <div class="vr-separator"></div>
-            <form class="feature-item" id="header-search">
-                <input type="search" name="search" placeholder="Explore the Cordillera!">
-                <button type="submit" form="search" value="Search" title="Search">
-                    <img src="./assets/icons/search.svg" alt="Search">
-                </button>
-            </form>
-        </section>
-    </header>
+    <header id="header"></header>
 
     <!-- TODO: PAGE MAIN CONTENT -->
     <main>
@@ -571,62 +550,6 @@
     </main>
 
     <!-- PAGE FOOTER -->
-    <footer>
-        <section class="footer-item" id="footer-content">
-            <div class="content-item" id="content-details">
-                <div class="detail">
-                    <label for="home"><img src="./assets/logos/logo-icon.png" alt="Banwar Icon" class="logo"></label>
-                    <label for="home"><img src="./assets/logos/logo-name-dark.png" alt="Banwar" class="logo-name"></label>
-                </div>
-                <div class="detail">
-                    <p>Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots.</p>
-                </div>
-                <button>
-                    <img src="./assets/icons/top.svg" alt="Top">
-                    <span>Back to Top</span>
-                </button>
-            </div>
-
-            <div class="content-item" id="content-lists">
-                <div class="list">
-                    <h4>Site Map</h4>
-                    <div class="hr-separator"></div>
-                    <ul>
-                        <li><label for="home"><a href="index.html">Home</a></label></li>
-                        <li><label for="maps"><a href="./pages/map.html">Map</a></label></li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <h4>Legal</h4>
-                    <div class="hr-separator"></div>
-                    <ul>
-                        <li><a href="./pages/legal.html#privacy-policy">Privacy Policy</a></li>
-                        <li><a href="./pages/legal.html#terms-of-use">Terms of Use</a></li>
-                        <li><a href="./pages/legal.html#licensing-notice">Licensing Notice</a></li>
-                    </ul>
-                </div>
-                <div class="list">
-                    <h4>Attributions</h4>
-                    <div class="hr-separator"></div>
-                    <ul>
-                        <li><a target="_blank" href="https://geojson.io/">GeoJSON &nearr;</a></li>
-                        <li><a target="_blank" href="https://www.openstreetmap.org">OpenStreetMaps &nearr;</a></li>
-                        <li><a target="_blank" href="https://www.python.org">Python &nearr;</a></li>
-                        <li><a target="_blank" href="https://nodejs.org">Node.js &nearr;</a></li>
-                        <li><a target="_blank" href="https://leafletjs.com">LeafletJS &nearr;</a></li>
-                        <li><a target="_blank" href="https://geopandas.org">GeoPandas &nearr;</a></li>
-                        <li><a target="_blank" href="https://fastapi.tiangolo.com">FastAPI &nearr;</a></li>
-                        <li><a target="_blank" href="https://pages.github.com">GitHub Pages &nearr;</a></li>
-                        <li><a target="_blank" href="https://render.com/docs">Render &nearr;</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="footer-item" id="footer-copyright">
-            <p>&copy; 2025 Banwar Project Team. All Rights Reserved.</p>
-            <p><a href="https://github.com/Calyx404/Banwar" target="_blank">View Source Code &nearr;</a></p>
-        </section>
-    </footer>
+    <footer id="footer"></footer>
 </body>
 </html>
