@@ -1,20 +1,13 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const headerEl = document.getElementById("header");
-  headerEl.innerHTML = Header();
-
+  document.getElementById("header").innerHTML = Header();
   initTheme();
-
-  document.dispatchEvent(new CustomEvent("header:ready"));
 });
 
 function Header() {
   return `
-    <section class="header-item" id="header-logo">
-      <img src="./assets/logos/logo-name-dark.png"
-           alt="Banwar"
-           class="logo-name"
-           onclick="document.location='./index.html'">
-    </section>
+        <section class="header-item" id="header-logo">
+            <img src="./assets/logos/logo-name-dark.png" alt="Banwar" class="logo-name" onclick="document.location='./index.html'">
+        </section>
 
         <section class="header-item" id="header-feature">
             <div class="feature-item" id="header-buttons">
@@ -38,11 +31,10 @@ function Header() {
     `;
 }
 
-/**
- * Initialize theme toggle logic
- */
 function initTheme() {
   const root = document.documentElement;
+  const toggleBtn = document.getElementById("header-theme");
+  const logoNames = document.getElementsByClassName("logo-name");
   const toggleBtn = document.getElementById("header-theme");
   const logoNames = document.getElementsByClassName("logo-name");
 
@@ -53,21 +45,41 @@ function initTheme() {
   const savedTheme = localStorage.getItem("theme") || "light";
   root.setAttribute("data-theme", savedTheme);
 
-  updateLogosAndButton(savedTheme === "dark");
+  // Automatic Theme Setting
+  const isDark = root.getAttribute("data-theme") === "dark";
+
+  if (isDark) {
+    Array.from(logoNames).forEach((logo) => {
+      logo.setAttribute("src", lightLogoName);
+    });
+    toggleBtn.classList.add("switch");
+  } else {
+    Array.from(logoNames).forEach((logo) =>
+      logo.setAttribute("src", darkLogoName)
+    );
+    toggleBtn.classList.remove("switch");
+  }
 
   // Manual Toggle Theme Setting
   toggleBtn.addEventListener("click", () => {
     const isDark = root.getAttribute("data-theme") === "dark";
-    const newTheme = isDark ? "light" : "dark";
-    root.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-    updateLogosAndButton(newTheme === "dark");
-  });
 
-  function updateLogosAndButton(isDark) {
-    Array.from(logoNames).forEach((logo) =>
-      logo.setAttribute("src", isDark ? lightLogoName : darkLogoName)
-    );
-    toggleBtn.classList.toggle("switch", isDark);
-  }
+    if (isDark) {
+      // Switch to light mode
+      root.setAttribute("data-theme", "light");
+      Array.from(logoNames).forEach((logo) =>
+        logo.setAttribute("src", darkLogoName)
+      );
+      localStorage.setItem("theme", "light");
+      toggleBtn.classList.remove("switch");
+    } else {
+      // Switch to dark mode
+      root.setAttribute("data-theme", "dark");
+      Array.from(logoNames).forEach((logo) =>
+        logo.setAttribute("src", lightLogoName)
+      );
+      localStorage.setItem("theme", "dark");
+      toggleBtn.classList.add("switch");
+    }
+  });
 }
