@@ -1,12 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("header").innerHTML = Header();
-    initThemeToggle();
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("header").innerHTML = Header();
+  initTheme();
 });
 
 function Header() {
-    return `
+  return `
         <section class="header-item" id="header-logo">
-            <img src="./assets/logos/logo-name-dark.png" alt="Banwar" class="logo-name">
+            <img src="./assets/logos/logo-name-dark.png" alt="Banwar" class="logo-name" onclick="document.location='./index.html'">
         </section>
 
         <section class="header-item" id="header-feature">
@@ -31,10 +31,10 @@ function Header() {
     `;
 }
 
-function initThemeToggle() {
+function initTheme() {
   const root = document.documentElement;
-  const toggleBtn = document.querySelector("#header-theme");
-  const logoNames = document.querySelectorAll(".logo-name");
+  const toggleBtn = document.getElementById("header-theme");
+  const logoNames = document.getElementsByClassName("logo-name");
 
   const lightLogoName = "./assets/logos/logo-name-light.png";
   const darkLogoName = "./assets/logos/logo-name-dark.png";
@@ -43,27 +43,39 @@ function initThemeToggle() {
   const savedTheme = localStorage.getItem("theme") || "light";
   root.setAttribute("data-theme", savedTheme);
 
-  // Update all logo images
-  logoNames.forEach(logo =>
-    logo.setAttribute("src", savedTheme === "dark" ? lightLogoName : darkLogoName)
-  );
+  // Automatic Theme Setting
+  const isDark = root.getAttribute("data-theme") === "dark";
 
-  if (savedTheme === "dark") toggleBtn.classList.add("switch");
+  if (isDark) {
+    Array.from(logoNames).forEach((logo) => {
+      logo.setAttribute("src", lightLogoName);
+    });
+    toggleBtn.classList.add("switch");
+  } else {
+    Array.from(logoNames).forEach((logo) =>
+      logo.setAttribute("src", darkLogoName)
+    );
+    toggleBtn.classList.remove("switch");
+  }
 
-  // Toggle Handler
+  // Manual Toggle Theme Setting
   toggleBtn.addEventListener("click", () => {
     const isDark = root.getAttribute("data-theme") === "dark";
 
     if (isDark) {
       // Switch to light mode
       root.setAttribute("data-theme", "light");
-      logoNames.forEach(logo => logo.setAttribute("src", darkLogoName));
+      Array.from(logoNames).forEach((logo) =>
+        logo.setAttribute("src", darkLogoName)
+      );
       localStorage.setItem("theme", "light");
       toggleBtn.classList.remove("switch");
     } else {
       // Switch to dark mode
       root.setAttribute("data-theme", "dark");
-      logoNames.forEach(logo => logo.setAttribute("src", lightLogoName));
+      Array.from(logoNames).forEach((logo) =>
+        logo.setAttribute("src", lightLogoName)
+      );
       localStorage.setItem("theme", "dark");
       toggleBtn.classList.add("switch");
     }

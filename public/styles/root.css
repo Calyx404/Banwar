@@ -1,5 +1,5 @@
 /* IMPORTS */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* CUSTOM FONTS */
 @font-face {
@@ -36,10 +36,10 @@
 
   /* ROOT : Colors - Light Theme */
 
-  --color-primary: #F8F8F9;
-  --color-secondary: #C8BDB9;
-  --color-accent: #11362A;
-  --color-text: #262C38;
+  --color-primary: #f8f8f9;
+  --color-secondary: #c8bdb9;
+  --color-accent: #11362a;
+  --color-text: #262c38;
   --color-overlay: rgba(248, 248, 249, 0.6);
 
   /* ROOT : Sizes */
@@ -54,7 +54,7 @@
 
   /* ROOT : Transitions */
   --transition-fast: all 0.25s ease;
-  --transition-medium: all 0.50s ease;
+  --transition-medium: all 0.5s ease;
   --transition-slow: all 1s ease;
 
   /* ROOT : Shadows */
@@ -66,59 +66,60 @@
 /* DARK THEME */
 :root[data-theme="dark"] {
   /* ROOT : Colors - Dark Theme */
-  --color-primary: #4A2129;
-  --color-accent: #262C38;
-  --color-text: #F8F8F9;
+  --color-primary: #4a2129;
+  --color-accent: #262c38;
+  --color-text: #f8f8f9;
   --color-overlay: rgba(0, 0, 0, 0.7);
 }
 
 /* SCROLLBAR */
 *::-webkit-scrollbar {
-    width: 0.5rem;
-    background-color: var(--color-accent);
+  width: 0.5rem;
+  background-color: var(--color-accent);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--color-secondary);
+  background-color: var(--color-secondary);
 }
 
 /* ANIMATIONS */
-@keyframes slide-in-top{
-    from {
-        transform:translateY(-6px);
-        opacity:0
-    }
-    to {
-        transform:translateY(0);
-        opacity:1
-    }
+@keyframes slide-in-top {
+  from {
+    transform: translateY(-6px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* DEFAULT STYLES */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
   width: 100svw;
-  height: 100svh;
+  min-height: 100svh;
   overflow-x: hidden;
   font-family: var(--font-text);
   font-size: var(--font-size-base);
   color: var(--color-text);
-  background: url("../assets/images/background.png") no-repeat center center fixed;
+  background: url("../assets/images/background.png") no-repeat center center
+    fixed;
   background-size: cover;
   transition: var(--transition-slow);
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     inset: 0;
     position: fixed;
     z-index: -1;
@@ -129,107 +130,121 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "IM Fell";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IM Fell";
 }
 
-h1 { font-size: var(--font-size-h1); }
-h2 { font-size: var(--font-size-h2); }
-h3 { font-size: var(--font-size-h3); }
-h4 { font-size: var(--font-size-h4); }
+h1 {
+  font-size: var(--font-size-h1);
+}
+h2 {
+  font-size: var(--font-size-h2);
+}
+h3 {
+  font-size: var(--font-size-h3);
+}
+h4 {
+  font-size: var(--font-size-h4);
+}
 
 a {
-    position: relative;
-    text-decoration: none;
-    color: var(--color-text);
+  position: relative;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: var(--transition-medium);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--color-text);
     transition: var(--transition-medium);
+  }
 
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -6px;
-        width: 0;
-        height: 2px;
-        background: var(--color-text);
-        transition: var(--transition-medium);
-    }
-
-    &:hover::after,
-    &:focus::after {
-        width: 100%;
-    }
+  &:hover::after,
+  &:focus::after {
+    width: 100%;
+  }
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button {
-    user-select: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--padding-xs);
-    padding: var(--padding-xs);
-    border-radius: var(--radius-sm);
-    border: 2px solid var(--color-accent);
-    background: var(--color-accent);
-    transform: scale(1);
-    transition: var(--transition-fast);
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--padding-xs);
+  padding: var(--padding-xs);
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--color-accent);
+  background: var(--color-accent);
+  transform: scale(1);
+  transition: var(--transition-fast);
+
+  & img {
+    aspect-ratio: 1/1;
+    width: auto;
+    height: var(--font-size-h3);
+    filter: brightness(0) invert(1);
+    object-fit: contain;
+  }
+
+  & span {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h4);
+    color: var(--color-secondary);
+  }
+
+  &:hover {
+    background: var(--color-secondary);
+    color: var(--color-accent);
 
     & img {
-        aspect-ratio: 1/1;
-        width: var(--font-size-h3);
-        height: var(--font-size-h3);
-        filter: brightness(0) invert(1);
-        object-fit: contain;
+      filter: brightness(1) invert(0);
     }
 
     & span {
-        font-family: var(--font-heading);
-        font-size: var(--font-size-h4);
-        color: var(--color-secondary);
+      color: var(--color-accent);
     }
+  }
 
-    &:hover {
-        background: var(--color-secondary);
-        color: var(--color-accent);
-
-        & img {
-            filter: brightness(1) invert(0);
-        }
-
-        & span {
-            color: var(--color-accent);
-        }
-    }
-
-    &:active {
-        transform: scale(0.9);
-    }
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 /* LOGOS */
 .logo {
-    user-select: none;
-    aspect-ratio: 1/1;
-    height: calc(var(--font-size-h1) + var(--font-size-h1));
-    width: calc(var(--font-size-h1) + var(--font-size-h1));
+  user-select: none;
+  aspect-ratio: 1/1;
+  height: calc(var(--font-size-h1) + var(--font-size-h3));
+  width: calc(var(--font-size-h1) + var(--font-size-h3));
 }
 
 .logo-name {
-    user-select: none;
-    height: var(--font-size-h1);
+  user-select: none;
+  height: var(--font-size-h1);
+  width: auto;
 }
