@@ -1,20 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("footer").innerHTML = Footer();
 });
+  document.getElementById("footer").innerHTML = Footer();
+});
 
 function Footer() {
+  return `
   return `
         <section class="footer-item" id="footer-content">
             <div class="content-item" id="content-details">
                 <div class="detail">
                     <img src="./assets/logos/logo-icon.png" alt="Banwar Icon" class="logo" onclick="document.location='./index.html'">
                     <img src="./assets/logos/logo-name-dark.png" alt="Banwar" class="logo-name" onclick="document.location='./index.html'">
-                    <label for="home"><img src="./assets/logos/logo-icon-dark.png" alt="Banwar Icon" class="logo"></label>
-                    <label for="home"><img src="./assets/logos/logo-name-dark.png" alt="Banwar" class="logo-name"></label>
                 </div>
                 <div class="detail">
                     <p class="message">Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots.</p>
+                    <p class="message">Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots.</p>
                 </div>
+                <button onclick="document.location='#main'">
                 <button onclick="document.location='#main'">
                     <img src="./assets/icons/top.svg" alt="Top">
                     <span>Back to Top</span>
@@ -26,6 +29,8 @@ function Footer() {
                     <h4>Site Map</h4>
                     <div class="separator"></div>
                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./map.html">Map</a></li>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="./map.html">Map</a></li>
                     </ul>
@@ -43,6 +48,8 @@ function Footer() {
                     <h4>Attributions</h4>
                     <div class="separator"></div>
                     <ul>
+                        <li><a target="_blank" href="https://geojson.io/">GeoJSON &nearr;</a></li>
+                        <li><a target="_blank" href="https://www.openstreetmap.org">OpenStreetMaps &nearr;</a></li>
                         <li><a target="_blank" href="https://leafletjs.com">LeafletJS &nearr;</a></li>
                         <li><a target="_blank" href="https://www.openstreetmap.org">OpenStreetMap &nearr;</a></li>
                         <li><a target="_blank" href="https://opentopomap.org">OpenTopoMap &nearr;</a></li>
