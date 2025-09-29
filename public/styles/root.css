@@ -58,8 +58,8 @@
   --transition-slow: all 1s ease;
 
   /* ROOT : Shadows */
-  --shadow-sm: 0 1px 20px var(--color-accent);
-  --shadow-md: 0 2px 6px var(--color-accent);
+  --shadow-sm: 0 1px 5px var(--color-accent);
+  --shadow-md: 0 5px 10px var(--color-accent);
   --shadow-lg: 0 10px 15px var(--color-accent);
 }
 
