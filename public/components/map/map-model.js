@@ -2,7 +2,7 @@
 
 class MapModel {
   constructor(
-    name = "Unknown",
+    name = "Philippines",
     geometryType = "Point",
     coordinates = [12.3792, 122.0674]
   ) {
@@ -14,13 +14,39 @@ class MapModel {
     this.overlayMaps = {};
   }
 
-  renderMap(containerId, geojsonData, profileModel, accountModel) {
-    this._initMap(containerId);
+  async render(mapContainer, profileContainer, accountContainer) {
+    const search = new Search("./data/sites.export.geojson");
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get("search") || "";
+
+    const allFeatures = await search.find(query);
+
+    const profileFields = [
+      "historical_name",
+      "modern_name",
+      "present_day_location",
+      "category",
+      "primary_description",
+    ];
+
+    const accountFields = [];
+
+    // Create models
+    const profileModel = new ProfileModel(profileContainer, profileFields);
+    const accountModel = new AccountModel(accountContainer, accountFields);
+
+    // Init map and overlays
+    this._initMap(mapContainer);
     this._initBaseMaps();
-    this._initOverlayMaps(geojsonData, profileModel, accountModel);
+    this._initOverlayMaps(allFeatures, profileModel, accountModel);
     this._addControls();
     this._addLocateButton();
     this._addFullScreenButton();
+
+    // Default render (all features)
+    accountModel.render(allFeatures);
+
     return this.map;
   }
 
@@ -28,6 +54,7 @@ class MapModel {
     this.map = L.map(containerId, {
       center: this.coordinates,
       zoom: 6,
+      maxZoom: 18,
       zoomControl: true,
       attributionControl: false,
     });
@@ -38,27 +65,26 @@ class MapModel {
   _initBaseMaps() {
     this.baseMaps = {
       Terrain: MapModel._createTileLayer(
-        "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
-        "© OpenTopoMap"
+        "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
       ),
       Satellite: MapModel._createTileLayer(
         "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-        "Tiles © Esri"
+        "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
       ),
       Topographic: MapModel._createTileLayer(
-        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-        "© OpenStreetMap"
+        "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+        'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
       ),
     };
 
     this.baseMaps["Terrain"].addTo(this.map);
   }
 
-  _initOverlayMaps(geojsonData, profileModel, accountModel) {
+  _initOverlayMaps(allFeatures, profileModel, accountModel) {
     const categoryLayers = {};
-    const allFeatures = geojsonData.features;
 
-    L.geoJSON(geojsonData, {
+    L.geoJSON(allFeatures, {
       onEachFeature: (feature, layer) => {
         const category = feature.properties.category || "Uncategorized";
 
@@ -69,7 +95,7 @@ class MapModel {
         this._bindFeaturePopup(layer, feature.properties);
         this._bindFeatureClick(
           layer,
-          feature.properties,
+          feature,
           profileModel,
           accountModel,
           allFeatures
@@ -89,19 +115,21 @@ class MapModel {
   _bindFeatureTooltip(layer, properties) {
     if (!properties.historical_name) return;
 
-    layer
-      .bindTooltip(properties.historical_name, {
-        permanent: true,
-        direction: "bottom",
-        className: "feature-tooltip",
-      })
-      .closeTooltip();
+    layer.bindTooltip(properties.historical_name, {
+      permanent: true,
+      direction: "bottom",
+      className: "feature-tooltip",
+    });
 
     this.map.on("zoomend", () => {
-      if (this.map.getZoom() >= 10) {
-        layer.openTooltip();
-      } else {
-        layer.closeTooltip();
+      const tooltips = document.getElementsByClassName("feature-tooltip");
+
+      for (const tooltip of tooltips) {
+        if (this.map.getZoom() >= 10) {
+          tooltip.classList.add("show");
+        } else {
+          tooltip.classList.remove("show");
+        }
       }
     });
   }
@@ -121,29 +149,46 @@ class MapModel {
       </section>
     `;
 
-      layer.bindPopup(popupContent);
+      layer.bindPopup(popupContent).openPopup();
     });
   }
 
-  _bindFeatureClick(
-    layer,
-    properties,
-    profileModel,
-    accountModel,
-    allFeatures
-  ) {
-    layer.on("click", () => {
-      profileModel.render(properties);
-      accountModel.render(properties);
+  _bindFeatureClick(layer, feature, profileModel, accountModel, allFeatures) {
+    layer.on("click", async () => {
+      const _extractAccountFields = (featureObj, profileFields) => {
+        const profileSet = new Set(profileFields);
+        const accountFields = [];
 
-      const closeBtn = document.getElementById("profile-close");
-      if (closeBtn) {
-        closeBtn.addEventListener("click", () => {
+        if (featureObj.properties) {
+          for (const property of Object.keys(featureObj.properties)) {
+            if (!profileSet.has(property)) {
+              accountFields.push(property);
+            }
+          }
+        }
+
+        return accountFields;
+      };
+
+      // Dynamically compute account fields
+      const accountFields = _extractAccountFields(
+        feature,
+        profileModel.properties
+      );
+      accountModel.properties = accountFields;
+
+      // Render both panels with only this feature
+      profileModel.render([feature]);
+      accountModel.render([feature]);
+
+      // Close button logic
+      document
+        .getElementById("profile-close")
+        .addEventListener("click", async () => {
           profileModel.clear();
-          accountModel.renderDefault(allFeatures);
+          accountModel.render(allFeatures);
           layer.closePopup();
         });
-      }
     });
   }
 
@@ -181,12 +226,12 @@ class MapModel {
         })
         .addTo(this.map);
 
-      // Optional: event listeners
+      const nav = document.getElementById("map-overlay");
       this.map.on("enterFullscreen", () => {
-        console.log("Entered fullscreen");
+        nav.classList.add("hide");
       });
       this.map.on("exitFullscreen", () => {
-        console.log("Exited fullscreen");
+        nav.classList.remove("hide");
       });
     } else {
       console.error("Leaflet Fullscreen plugin is not loaded.");
@@ -195,7 +240,7 @@ class MapModel {
 
   static _createTileLayer(urlTemplate, attribution) {
     return L.tileLayer(urlTemplate, {
-      maxZoom: 19,
+      maxZoom: 18,
       attribution: attribution,
     });
   }

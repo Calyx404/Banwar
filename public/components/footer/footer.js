@@ -48,8 +48,6 @@ function Footer() {
                     <h4>Attributions</h4>
                     <div class="separator"></div>
                     <ul>
-                        <li><a target="_blank" href="https://geojson.io/">GeoJSON &nearr;</a></li>
-                        <li><a target="_blank" href="https://www.openstreetmap.org">OpenStreetMaps &nearr;</a></li>
                         <li><a target="_blank" href="https://leafletjs.com">LeafletJS &nearr;</a></li>
                         <li><a target="_blank" href="https://www.openstreetmap.org">OpenStreetMap &nearr;</a></li>
                         <li><a target="_blank" href="https://opentopomap.org">OpenTopoMap &nearr;</a></li>
