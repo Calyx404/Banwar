@@ -612,10 +612,48 @@
           <!-- EDIT HERE -->
           Maps Page
         </section>
-      </div>
-    </main>
+    </div>
 
-    <!-- PAGE FOOTER -->
+
+    <!-- CONTEXT PAGE CONTENT-->
+    <div class="content-container">
+        <section id="context-content">
+            <!-- EDIT HERE -->
+            Context Page
+        </section>
+    </div>
+
+
+    <!-- ERROR PAGE CONTENT-->
+    <div class="content-container">
+        <section id="error-content">
+            <!-- EDIT HERE -->
+            Error Page
+        </section>
+    </div>
+
+
+    <!-- PAGE FOOTER-->
     <footer id="footer"></footer>
-  </body>
+
+
+    <!-- BACKGROUND SECTION (DON'T EDIT!) -->
+    <div class="overlay"></div>
+    <img class="background-img" src="assets/background.png" alt="Background Image">
+
+
+    <!-- FOR TESTING PURPOSES (DELETE IF NEEDED) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.querySelector(".theme-btn");
+
+            if (themeBtn) {
+                themeBtn.addEventListener("click", () => {
+                    themeBtn.classList.toggle("clicked");
+                    console.log("Theme button clicked!");
+                });
+            }
+        });
+    </script>
+</body>
 </html>
