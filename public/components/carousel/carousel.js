@@ -1,86 +1,26 @@
-"use strict";
+function Carousel(slides) {
+  return `
+    <input type="radio" class="car-radio" name="slides" id="slide-1" checked>
+    <input type="radio" class="car-radio" name="slides" id="slide-2">
 
-class Carousel {
-  constructor(containerId) {
-    this.container = document.getElementById(containerId);
-    this.currentIndex = 0;
-    this.slides = [];
-  }
-
-  /**
-   * Initialize carousel with categories from GeoJSON
-   * @param {Array} features - GeoJSON features
-   */
-  init(features) {
-    const categories = [
-      ...new Set(features.map((f) => f.properties.category || "Uncategorized")),
-    ];
-
-    this.slides = categories.map((category) => ({
-      title: category,
-      features: features.filter(
-        (f) => (f.properties.category || "Uncategorized") === category
-      ),
-    }));
-
-    this.render();
-  }
-
-  /**
-   * Render the carousel structure
-   */
-  render() {
-    if (!this.container) return;
-
-    this.container.innerHTML = `
-      <div class="carousel-wrapper">
-        <button class="carousel-btn prev" id="carousel-prev">&#10094;</button>
-        <div class="carousel-track">
-          ${this.slides
-            .map(
-              (slide) => `
-              <div class="carousel-slide">
-                <h3 class="carousel-title">${slide.title}</h3>
-                <p class="carousel-count">${slide.features.length} items</p>
-              </div>
-            `
-            )
-            .join("")}
-        </div>
-        <button class="carousel-btn next" id="carousel-next">&#10095;</button>
+    <div class="track">
+      <div class="slides">
+        ${slides}
       </div>
-    `;
+    </div>
 
-    this.track = this.container.querySelector(".carousel-track");
-    this._bindEvents();
-    this._updateView();
-  }
+    <div class="car-arrows">
+      <label for="slide-1" class="arrow prev for-2" title="Previous">
+        <img src="./assets/icons/left.svg" alt="<">
+      </label>
+      <label for="slide-1" class="arrow next for-2" title="Next">
+        <img src="./assets/icons/right.svg" alt=">">
+      </label>
+    </div>
 
-  /**
-   * Update visible slide
-   */
-  _updateView() {
-    if (!this.track) return;
-    const offset = -this.currentIndex * 100;
-    this.track.style.transform = `translateX(${offset}%)`;
-  }
-
-  /**
-   * Event bindings
-   */
-  _bindEvents() {
-    const prevBtn = this.container.querySelector("#carousel-prev");
-    const nextBtn = this.container.querySelector("#carousel-next");
-
-    prevBtn.addEventListener("click", () => {
-      this.currentIndex =
-        (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-      this._updateView();
-    });
-
-    nextBtn.addEventListener("click", () => {
-      this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-      this._updateView();
-    });
-  }
+    <div class="car-dots">
+      <label for="slide-1" class="dot dot-1"></label>
+      <label for="slide-2" class="dot dot-2"></label>
+    </div>
+  `;
 }

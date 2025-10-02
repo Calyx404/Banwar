@@ -28,10 +28,19 @@
     />
     <link
       rel="preload"
+      href="./components/splash/splash.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
       href="./styles/pages/map_page.css"
       as="style"
       onload="this.rel='stylesheet'"
     />
+
+    <!-- SPLASH -->
+    <script src="./components/splash/splash.js" defer></script>
 
     <!-- LEAFLET JS : MAP -->
     <link
@@ -67,6 +76,9 @@
       src="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.js"
     ></script>
 
+    <!-- COMPONENT : SEARCH -->
+    <script defer src="./components/search/search.js"></script>
+
     <!-- COMPONENT : HEADER -->
     <link rel="stylesheet" href="./components/header/header.css" />
     <script defer src="./components/header/header.js"></script>
@@ -75,16 +87,16 @@
     <link rel="stylesheet" href="./components/footer/footer.css" />
     <script defer src="./components/footer/footer.js"></script>
 
-    <!-- COMPONENT : MAP -->
-    <link rel="stylesheet" href="./components/map/map.css" />
-    <script defer src="./components/map/map.js"></script>
-    <script defer src="./components/map/map-model.js"></script>
-    <script defer src="./components/map/profile-model.js"></script>
-    <script defer src="./components/map/account-model.js"></script>
-
     <!-- COMPONENT : CAROUSEL -->
     <link rel="stylesheet" href="./components/carousel/carousel.css" />
     <script defer src="./components/carousel/carousel.js"></script>
+
+    <!-- COMPONENT : MAP -->
+    <link rel="stylesheet" href="./components/map/map.css" />
+    <script defer src="./components/map/profile-model.js"></script>
+    <script defer src="./components/map/account-model.js"></script>
+    <script defer src="./components/map/map-model.js"></script>
+    <script defer src="./components/map/map.js"></script>
   </head>
   <body>
     <!-- PAGE HEADER -->
@@ -94,7 +106,7 @@
     <main id="main">
       <section class="main-item" id="map-component">
         <div class="map-item" id="map">
-          <nav>
+          <nav id="map-overlay">
             <button
               title="View Context"
               onclick="document.location='#map-account'"
@@ -103,12 +115,9 @@
             </button>
           </nav>
         </div>
-        <div id="map-profile" class="map-item"></div>
+        <div class="map-item" id="map-profile"></div>
       </section>
-      <section class="main-item" id="map-account">
-        <nav class="account-item" id="account-header"></nav>
-        <div class="account-item" id="account-content"></div>
-      </section>
+      <section class="main-item" id="map-account"></section>
     </main>
 
     <!-- PAGE FOOTER -->
