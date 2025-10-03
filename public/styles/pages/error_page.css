@@ -24,6 +24,7 @@
 }
 
 #error-content {
+    position: relative;
     padding: var(--padding-md) var(--padding-lg);
     min-height: 100vh;
 }
@@ -40,10 +41,12 @@
 
     & .error-subtitle {
         font-size: var(--font-size-h2);
+        color: var(--color-text);
         margin-bottom: var(--padding-sm);
     }
 
     & .error-desc {
+        color: var(--color-text);
         font-size: var(--font-size-base);
 
         & a {
@@ -61,8 +64,7 @@
         transform: translateY(-40%);
 
         & .mountains {
-            width: 37.5rem;
-            margin-right: var(--padding-lg);
+            width: 38rem;
         }
     }
 }
