@@ -38,10 +38,6 @@ export class AppController {
       containers.account,
       this.profileFields
     );
-
-    document.addEventListener("header:ready", () => {
-      this.searchView.init();
-    });
   }
 
   async init() {
@@ -52,6 +48,11 @@ export class AppController {
       // Then initialize the UI components
       this.profileView.init();
       this.accountView.init(this.repo);
+
+      // Then search UI
+      document.addEventListener("header:ready", () => {
+        this.searchView.init();
+      });
 
       // Bus events for diagnostics / error handling
       this.bus.on("features:loaded", ({ count }) =>
