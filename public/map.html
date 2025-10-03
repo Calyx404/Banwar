@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- META DESCRIPTIONS -->
+    <!-- META -->
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <meta name="robots" content="index, follow" />
-
     <meta name="author" content="Banwar Project Team" />
     <meta
       name="description"
@@ -19,7 +18,7 @@
     <title>Banwar | Explore Map</title>
     <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
 
-    <!-- PRELOAD -->
+    <!-- PRELOAD STYLES -->
     <link
       rel="preload"
       href="./styles/root.css"
@@ -40,23 +39,21 @@
     />
 
     <!-- SPLASH -->
-    <script src="./components/splash/splash.js" defer></script>
+    <script defer src="./components/splash/splash.js"></script>
 
-    <!-- LEAFLET JS : MAP -->
+    <!-- LEAFLET -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
     <script
       defer
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
 
-    <!-- LEAFLET JS : LOCATE -->
+    <!-- LEAFLET PLUGINS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css"
@@ -66,7 +63,6 @@
       src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"
     ></script>
 
-    <!-- LEAFLET JS : FULLSCREEN -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.css"
@@ -76,12 +72,9 @@
       src="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.js"
     ></script>
 
-    <!-- COMPONENT : SEARCH -->
-    <script defer src="./components/search/search.js"></script>
-
     <!-- COMPONENT : HEADER -->
     <link rel="stylesheet" href="./components/header/header.css" />
-    <script defer src="./components/header/header.js"></script>
+    <script src="./components/header/header.js"></script>
 
     <!-- COMPONENT : FOOTER -->
     <link rel="stylesheet" href="./components/footer/footer.css" />
@@ -92,17 +85,14 @@
     <script defer src="./components/carousel/carousel.js"></script>
 
     <!-- COMPONENT : MAP -->
-    <link rel="stylesheet" href="./components/map/map.css" />
-    <script defer src="./components/map/profile-model.js"></script>
-    <script defer src="./components/map/account-model.js"></script>
-    <script defer src="./components/map/map-model.js"></script>
-    <script defer src="./components/map/map.js"></script>
-  </head>
-  <body>
-    <!-- PAGE HEADER -->
-    <header id="header"></header>
+    <link rel="stylesheet" href="./components/map-core/map.css" />
 
-    <!-- PAGE MAIN CONTENT -->
+    <!-- COMPONENT : SEARCH -->
+    <link rel="stylesheet" href="./components/search/search.css" />
+  </head>
+
+  <body>
+    <header id="header"></header>
     <main id="main">
       <section class="main-item" id="map-component">
         <div class="map-item" id="map">
@@ -119,8 +109,19 @@
       </section>
       <section class="main-item" id="map-account"></section>
     </main>
-
-    <!-- PAGE FOOTER -->
     <footer id="footer"></footer>
+
+    <!-- APP CONTROLLER -->
+    <script type="module">
+      import { AppController } from "./scripts/app-controller.js";
+
+      const app = new AppController({
+        map: "map",
+        profile: "map-profile",
+        account: "map-account",
+      });
+
+      app.init();
+    </script>
   </body>
 </html>
