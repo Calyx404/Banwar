@@ -36,10 +36,11 @@
 
   /* ROOT : Colors - Light Theme */
 
-  --color-primary: #effaf7;
-  --color-secondary: #f3fbf9;
+  --color-primary: #f8f8f9;
+  --color-secondary: #c8bdb9;
   --color-accent: #11362a;
-  --color-text: #11362a;
+  --color-text: #262c38;
+  --color-muted: #313131;
   --color-overlay: rgba(248, 248, 249, 0.6);
 
   /* ROOT : Sizes */
@@ -237,16 +238,8 @@ button {
   }
 }
 
-/* LOGOS */
-.logo {
-  user-select: none;
-  aspect-ratio: 1/1;
-  height: calc(var(--font-size-h1) + var(--font-size-h3));
-  width: calc(var(--font-size-h1) + var(--font-size-h3));
-}
-
-.logo-name {
-  user-select: none;
-  height: var(--font-size-h1);
-  width: auto;
+.content-container {
+  max-width: 1180px;
+  margin: calc(var(--padding-sm) * 2) auto;
+  padding: 0 var(--padding-sm);
 }
