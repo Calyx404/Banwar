@@ -7,7 +7,7 @@ function Footer() {
         <section class="footer-item" id="footer-content">
             <div class="content-item" id="content-details">
                 <div class="detail">
-                    <label for="home"><img src="./assets/logos/logo-icon.png" alt="Banwar Icon" class="logo"></label>
+                    <label for="home"><img src="./assets/logos/logo-icon-dark.png" alt="Banwar Icon" class="logo"></label>
                     <label for="home"><img src="./assets/logos/logo-name-dark.png" alt="Banwar" class="logo-name"></label>
                 </div>
                 <div class="detail">

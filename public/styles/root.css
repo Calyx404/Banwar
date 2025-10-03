@@ -40,6 +40,7 @@
   --color-secondary: #C8BDB9;
   --color-accent: #11362A;
   --color-text: #262C38;
+  --color-muted: #313131;
   --color-overlay: rgba(248, 248, 249, 0.6);
 
   /* #9e4821 desired */
@@ -222,4 +223,10 @@ button {
     &:active {
         transform: scale(0.9);
     }
+}
+
+.content-container {
+    max-width: 1180px;
+    margin: calc(var(--padding-sm)*2) auto;
+    padding: 0 var(--padding-sm);
 }
