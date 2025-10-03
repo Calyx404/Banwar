@@ -1,3 +1,4 @@
+// src/map/map-view.js
 export class MapView {
   constructor(containerId) {
     this.containerId = containerId;
@@ -47,6 +48,7 @@ export class MapView {
   }
 
   renderFeatures(geojson, { onClick } = {}) {
+    // Expect geojson to be either FeatureCollection or array of features
     try {
       const features = Array.isArray(geojson)
         ? geojson
@@ -216,15 +218,14 @@ export class MapView {
     try {
       const name = feature.properties?.historical_name;
       if (!name) return;
-
+      // bind tooltip but keep it closed by default; open only at higher zoom
       layer.bindTooltip(name, {
         permanent: true,
         direction: "bottom",
         className: "feature-tooltip",
       });
-
       this._tooltipLayers.push(layer);
-
+      // ensure closed initially (some renderers may show it)
       try {
         layer.closeTooltip();
       } catch (e) {
@@ -239,6 +240,7 @@ export class MapView {
     try {
       if (!this.map) return;
 
+      // only remove if a handler is already set
       if (this._tooltipZoomHandler) {
         this.map.off("zoomend", this._tooltipZoomHandler);
       }
