@@ -9,6 +9,8 @@ function Footer() {
                 <div class="detail">
                     <img src="./assets/logos/logo-icon.png" alt="Banwar Icon" class="logo" onclick="document.location='./index.html'">
                     <img src="./assets/logos/logo-name-dark.png" alt="Banwar" class="logo-name" onclick="document.location='./index.html'">
+                    <label for="home"><img src="./assets/logos/logo-icon-dark.png" alt="Banwar Icon" class="logo"></label>
+                    <label for="home"><img src="./assets/logos/logo-name-dark.png" alt="Banwar" class="logo-name"></label>
                 </div>
                 <div class="detail">
                     <p class="message">Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots.</p>
