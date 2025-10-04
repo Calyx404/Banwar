@@ -1,575 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
 
     <meta name="author" content="Banwar Project Team" />
-    <meta
-      name="description"
-      content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots."
-    />
+    <meta name="description" content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots."/>
 
     <!-- TITLE & FAVICON -->
     <title>Banwar | Cordillera Digital Mapping</title>
     <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
 
     <!-- PRELOAD STYLES -->
-    <link
-      rel="preload"
-      href="./styles/root.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <link
-      rel="preload"
-      href="./styles/pages/home_page.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
+    <link rel="preload" href="./styles/root.css" as="style" onload="this.rel='stylesheet'" />
+    <link rel="preload" href="./styles/pages/home_page.css" as="style" onload="this.rel='stylesheet'"/>
 
     <!-- COMPONENT : HEADER -->
     <link rel="stylesheet" href="./components/header/header.css" />
     <script defer src="./components/header/header.js"></script>
-
-    <script defer src="./components/carousel/carousel.js"></script>
-    <link rel="stylesheet" href="./components/carousel/carousel.css">
-
+        
     <!-- COMPONENT : FOOTER -->
     <link rel="stylesheet" href="./components/footer/footer.css" />
     <script defer src="./components/footer/footer.js"></script>
-
+        
     <!-- COMPONENT : SEARCH -->
     <link rel="stylesheet" href="./components/search/search.css" />
-
+        
     <!-- COMPONENT : CAROUSEL -->
+    <script defer src="./components/carousel/carousel.js"></script>
     <link rel="stylesheet" href="./components/carousel/carousel.css" />
 
     <!-- PAGE CONTROLLER -->
     <script type="module" src="./scripts/pages/home_page.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- PAGE HEADER -->
     <header id="header"></header>
 
     <!-- PAGE MAIN CONTENT -->
     <main id="main">
-      <!-- MAIN : HERO -->
-      <section class="main-item" id="hero">
-        <section id="home-content">
-          <div class="hero">
-            <div class="col-1">
-              <h1 class="home-title">Explore Cordillera Like Never Before</h1>
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
-              </p>
-            </div>
+        <!-- MAIN : HERO -->
+        <section class="main-item" id="hero">
+            <section id="home-content">
+                <div class="hero">
+                    <div class="col-1">
+                        <h1 class="home-title">Explore Cordillera Like Never Before</h1>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
+                    </div>
 
-            <div class="col-2">
-              <img src="./assets/images/map.png" alt="Map Image" />
-            </div>
-          </div>
-
-          <!-- CAROUSEL CONTAINER (CAUTION WHEN EDITING!)-->
-          <div class="carousel-container">
-            <h3>EXPLORE OUR WEBSITE</h3>
-
-            <div class="carousel">
-              <input
-                type="radio"
-                class="car-radio"
-                name="slides"
-                id="slide-1"
-                checked
-              />
-              <input
-                type="radio"
-                class="car-radio"
-                name="slides"
-                id="slide-2"
-              />
-
-              <div class="track">
-                <div class="slides">
-                  <!-- ADD SLIDE IF YOU WANT TO ADD MORE -->
-                  <div class="slide">
-                    <div class="card">
-                      <!-- FEEL FREE TO REPLACE THE IMAGE AND THE TEXT! -->
-                      <img
-                        src="https://images.unsplash.com/photo-1473186578172-c141e6798cf4?q=80&w=1400&auto=format&fit=crop"
-                        alt=" Book cover placeholder"
-                      />
-                      <div class="text">
-                        <div class="kicker">ABOUT THE BOOK</div>
-                        <h4>Notices of the Pagan Igorots</h4>
-                        <p>Explore the manuscript</p>
-                      </div>
-                      <div class="corner"><a href="#book">➜</a></div>
+                    <div class="col-2">
+                        <img src="./assets/images/map.png" alt="Map Image" />
                     </div>
                 </div>
 
+                <!-- CAROUSEL CONTAINER (CAUTION WHEN EDITING!)-->
                 <div id="carousel"></div>
             </section>
-        </div>
 
-    <!-- ABOUT-US PAGE CONTENT (FEEL FREE TO EDIT)-->
-    <div class="content-container">
-        <section id="about-content">
-             <h1>ABOUT US</h1>
-            <div class="ABheader">
-                <div class ="ABtitle">
-                    About Us Page
-                </div>
-
-                <div class="ABcontent">
-                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam iste, ut iusto et veniam totam perferendis in dignissimos repudiandae ab atque aliquid quibusdam unde laborum officiis! Provident deserunt rem dolores."</p>
-                </div>
+            <!-- MAPS PAGE CONTENT-->
+            <div class="content-container">
+                <section id="maps-content">
+                    <!-- EDIT HERE -->
+                    Maps Page
+                </section>
             </div>
-
-            <div class="ABheader">
-                <div class ="ABtitle">
-                    PURPOSE
-                </div>
-
-                <div class="ABcontent">
-                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam iste, ut iusto et veniam totam perferendis in dignissimos repudiandae ab atque aliquid quibusdam unde laborum officiis! Provident deserunt rem dolores."</p>
-                </div>
-            </div>
-
-            <div class="ABheader">
-                <div class ="ABtitle">
-                    REFERENCES
-                </div>
-
-                <div class="ABcontent">
-                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam iste, ut iusto et veniam totam perferendis in dignissimos repudiandae ab atque aliquid quibusdam unde laborum officiis! Provident deserunt rem dolores."</p>
-                </div>
-            </div>
-
-           <div class ="ABspace">
-                <h1>THE CREATORS</h1>
-           </div>
-                
-            <div class="ABboxes">
-                <div class="ABcreators">
-                    <div class ="ABtitle">
-                        &#x2654; Executive Committee
-                    </div>
-
-                    <div class= "ABcreatorscont">
-                        WHO YOU IRAQ? ????? <.<
-                    </div>
-                    <br>
-                    <h3>MEMBERS</h3>
-                    <hr>
-                    <p>
-                        <b>Arian Dave S. Abat</b><br>
-                        abat.arian13@gmail.com<br>
-                        <br>
-                        Jovic Kyle G. Acyapas &emsp; trials<br> 
-                        email@gmail.com<br>
-                        <br>
-                        Raymond Allen W. Agustin<br>
-                        email@gmail.com<br>
-                        <br>
-                        Kurt G. Dumepnas<br>
-                        email@gmail.com<br>
-                        <br>
-                        Allison Marie A. Kingkingan<br>
-                        allixonkk@gmail.com<br>
-                    </p>
-                </div> 
-
-                <div class="ABcreators">
-                    <div class ="ABtitle">
-                        &#x2702; Design Committee
-                    </div>
-
-                    <div class= "ABcreatorscont">
-                        Focuses on creating professional visual assets, layouts, and user-centered designs to enhance usability and overall user experience.
-                    </div>
-
-                    <div class="ABmembers">
-                        <br>
-                        <h3>Members</h3>
-                        <hr>
-
-                        <div class ="ABmemberslist">
-                            <div class ="ABmembersnames">
-                                <b>Allison Marie A. Kingkingan</b><br>
-                                allixonkk@gmail.com<br>
-                                <br>
-                            </div> 
-
-                            <div class ="ABmembersnames">
-                                Basiliza A. Binay-an<br> 
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-
-                            <div class ="ABmembersnames">
-                                MJ G. De Ocampo<br>
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-
-                            <div class ="ABmembersnames">
-                                Christa Grace B. Ebusca<br>
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-
-                            <div class ="ABmembersnames">
-                                Gemma W. Epad<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-
-                            <div class ="ABmembersnames">
-                               Mayumi P. Facsoy<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-
-                            <div class ="ABmembersnames">
-                                Ryan Kurt L. Laoyan<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-
-                            <div class ="ABmembersnames">
-                                Eathan John T. Na-oy<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>       
-                        </div>
-                    </div>
-                    </div>
-                
-
-                <div class="ABcreators">
-                    <div class ="ABtitle">
-                        &#x2752; Front-End Committee
-                    </div>
-
-                    <div class= "ABcreatorscont">
-                        Responsible for developing and maintaining the user interface, ensuring that the platform is accessible, responsive, and visually consistent.
-                    </div>
-
-                    <br>
-                    <h3>Members</h3>
-                    <hr>
-
-                    <p> 
-                        <b>Arian Dave S. Abat</b><br>
-                        abat.arian13@gmail.com<br>
-                        <br>
-                        Emerson L. Baliag<br> 
-                        email@gmail.com<br>
-                        <br>
-                        Raven Jesrael E. Garcia<br>
-                        email@gmail.com<br>
-                        <br>
-                        Jandervien B. Lastimozo<br>
-                        email@gmail.com<br>
-                        <br>
-                        Carl Andrei V. Valdez<br>
-                        allixonkk@gmail.com<br>
-                    </p>
-                </div> 
-
-                <div class="ABcreators">
-                    <div class ="ABtitle">
-                        &#x2601; Back-End Committee
-                    </div>
-
-                    <div class= "ABcreatorscont">
-                        Oversees server-side development, database management, and system integration to ensure secure, efficient, and reliable functionality.
-                    </div>
-
-                    <br>
-                    <h3>Members</h3>
-                    <hr>
-
-                    <p> 
-                        <b>Raymond Allen W. Agustin</b><br>
-                        email@gmail.com<br>
-                        <br>
-                        Sander T. Listana<br> 
-                        email@gmail.com<br>
-                        <br>
-                        Jared A. Peralta<br>
-                        email@gmail.com<br>
-                        <br>
-                        Raymond G. Torio<br>
-                        email@gmail.com<br>
-                        <br>
-                    </p>
-                </div>
-
-                <div class="ABcreators">
-                    <div class ="ABtitle">
-                        &#x1F50E;&#xFE0E; Research Committee
-                    </div>
-                    <div class= "ABcreatorscont">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae ea magni mollitia illo qui minus ipsam assumenda debitis! Nobis fugiat cumque unde vero ipsa ut enim veniam adipisci odio.
-                    </div>
-                    <br>
-                    <h3>Members</h3>
-                    <hr>
-                        <div class ="ABmemberslist">
-                            <div class ="ABmembersnames">
-                                <b>Jovic Kyle G. Acyapas</b><br>
-                                email@gmail.com<br>
-                                <br>
-                            </div> 
-                            <div class ="ABmembersnames">
-                                Grach Banganan<br> 
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-                            <div class ="ABmembersnames">
-                                Kochina A. Batan<br>
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-                            <div class ="ABmembersnames">
-                                Rheniel Bay-an<br>
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-                            <div class ="ABmembersnames">
-                                Frances Burgos<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Christopher S. Cadalig<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Harvey Cangsan<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Rhollie A. Domingo<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>
-                            <div class ="ABmembersnames">
-                                Wilmoore Dorencio<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Johanna Fay N. Estoque<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Justin D. Fama<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Dan Anilov Fontanos<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Jade Rhyss Francis<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Aijelle T. Gumatin<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Denise Mae Jose<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>   
-                            <div class ="ABmembersnames">
-                                Joshua Lag-ey<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Jarmaine Reisha A. Lomayna<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Macklien Luaña<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Rhamztyn Manadao<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Rolan Mangiwet<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Gwyneth Gail D. Nana<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Romel Necer<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Rjhay Pagtiilan<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Genesis Quintero<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Jeryl Anne A. Santos<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Patrick S. Tundagui Jr.<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Mekaiah Joyce C. Ulban<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Hans Dave P. Yamoto<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                        </div>
-                </div> 
-            </div>
-
-        </section>
-    </div>
     
 
-    <!-- MAPS PAGE CONTENT-->
-    <div class="content-container">
-        <section id="maps-content">
-            <!-- EDIT HERE -->
-            Maps Page
-        </section>
-    </div>
-    
-
-    <!-- CONTEXT PAGE CONTENT-->
-    <div class="content-container">
-        <section id="context-content">
-            <!-- EDIT HERE -->
-            Context Page
-        </section>
-    </div>
-
-
-    <!-- ERROR PAGE CONTENT-->
-    <div class="content-container">
-        <section id="error-content">
-            <!-- EDIT HERE -->
-            Error Page
-        </section>
-    </div>
-
+            <!-- CONTEXT PAGE CONTENT-->
+            <div class="content-container">
+                <section id="context-content">
+                    <!-- EDIT HERE -->
+                    Context Page
+                </section>
+            </div>
 
     <!-- FOOTER CONTENT (DON'T EDIT)-->
-    <footer>
-        <div class="content-container footgrid">
-            <div class="col">
-                <div class="logos">
-                    <img src="assets/logo-dark.png" alt="Logo 1">
-                    <img src="assets/logo-word-light.png" alt="Logo 2">
-                </div>
-                <p>From Antolín’s 18th-century writings to modern cartography, trace the ancestral domains of Northen Luzon's peaks, valleys, and rivers.</p>
-                <div class="btn">
-                    <img src="assets/arrow-top-icon.svg" alt="Icon">
-                    <span>Back to Top</span>
-                </div>
-            </div>
-
-            <div class="col ref-list">
-                <div class="col">
-                    <h3>Site Map</h3>
-                    <ul class="linklist">
-                        <li><label for="home">Homepage</label></li>
-                        <li><label for="maps">Map</label></li>
-                        <li><label for="about">About Us</label></li>
-                        <li><label for="">Contact Us</label></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3>Legal</h3>
-                    <ul class="linklist">
-                        <li>Privacy Policy</li>
-                        <li>Terms of Use</li>
-                    </ul>
-                </div>
-            </div>
-            
-
-            <div class="col">
-                <p class="disclaimer">Disclaimer: This site is an academic project. The information provided is for education purposes only and should not be considered authoritative for navigation or land-use decisions.</p>
-                <p class="subtle">Map data © OpenStreetMap contributors. Historical sources adapted from Antolín’s Notices of the Pagan Igorots (Scrott, 1974).</p>
-            </div>
-
-            <!-- BACKGROUND LOGO (DON'T EDIT!) -->
-            <img class="logo" src="assets/logo-dark.png" alt="Logo">
-        </div>
-
-        <div class="footnote">
-            <p>Copyright © 2025, Banwar, All Rights Reserved.</p>
-        </div>
-    </footer>
-
-
-    <!-- BACKGROUND SECTION (DON'T EDIT!) -->
-    <div class="overlay"></div>
-    <img class="background-img" src="assets/background.png" alt="Background Image">
-
-
-    <!-- FOR TESTING PURPOSES (DELETE IF NEEDED) -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const themeBtn = document.querySelector(".theme-btn");
-
-            if (themeBtn) {
-                themeBtn.addEventListener("click", () => {
-                    themeBtn.classList.toggle("clicked");
-                    console.log("Theme button clicked!");
-                });
-            }
-        });
-    </script>
+    <footer id="footer"></footer>
 </body>
 </html>
