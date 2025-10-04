@@ -14,19 +14,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/* CUSTOM FONTS */
-@font-face {
-  font-family: "IM Fell";
-  src: url("../assets/fonts/IM_Fell_DW_Pica.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Merriweather Sans";
-  src: url("../assets/fonts/Merriweather_Sans.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 @font-face {
   font-family: "SF Pro";
   src: url("../assets/fonts/SF_Pro.ttf") format("truetype");
@@ -34,7 +21,6 @@
   font-style: normal;
 }
 
-/* ROOT VARIABLES */
 /* ROOT VARIABLES */
 :root {
   /* ROOT : Font Faces */
@@ -50,14 +36,11 @@
 
   /* ROOT : Colors - Light Theme */
 
-  --color-primary: #f8f8f9;
-  --color-secondary: #c8bdb9;
+  --color-primary: #effaf7;
+  --color-secondary: #f3fbf9;
   --color-accent: #11362a;
-  --color-text: #262c38;
+  --color-text: #11362a;
   --color-overlay: rgba(248, 248, 249, 0.6);
-
-  /* #9e4821 desired */
-  /* #532522 output */
 
   /* ROOT : Sizes */
   --radius-sm: 8px;
@@ -70,23 +53,23 @@
   --padding-lg: 5rem;
 
   /* ROOT : Transitions */
-  --transition-fast: all 0.25s ease;
-  --transition-medium: all 0.5s ease;
-  --transition-slow: all 1s ease;
+  --transition-fast: all 0.25s ease-in;
+  --transition-medium: all 0.5s ease-in;
+  --transition-slow: all 1s ease-in;
 
   /* ROOT : Shadows */
-  --shadow-sm: 0 1px 20px var(--color-accent);
-  --shadow-md: 0 2px 6px var(--color-accent);
+  --shadow-sm: 0 1px 5px var(--color-accent);
+  --shadow-md: 0 5px 10px var(--color-accent);
   --shadow-lg: 0 10px 15px var(--color-accent);
 }
 
 /* DARK THEME */
-/* DARK THEME */
 :root[data-theme="dark"] {
   /* ROOT : Colors - Dark Theme */
-  --color-primary: #4a2129;
-  --color-accent: #262c38;
-  --color-text: #f8f8f9;
+  --color-primary: #3b1a21;
+  --color-secondary: #f7edef;
+  --color-accent: #5d2a34;
+  --color-text: #f7edef;
   --color-overlay: rgba(0, 0, 0, 0.7);
 }
 
@@ -117,6 +100,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: var(--transition-fast);
 }
 
 html {
@@ -125,7 +109,7 @@ html {
 
 body {
   width: 100svw;
-  height: 100svh;
+  min-height: 100svh;
   overflow-x: hidden;
   font-family: var(--font-text);
   font-size: var(--font-size-base);
@@ -174,7 +158,7 @@ a {
   position: relative;
   text-decoration: none;
   color: var(--color-text);
-  transition: var(--transition-medium);
+  transition: var(--transition-fast);
 
   &::after {
     content: "";
@@ -184,7 +168,7 @@ a {
     width: 0;
     height: 2px;
     background: var(--color-text);
-    transition: var(--transition-medium);
+    transition: var(--transition-fast);
   }
 
   &:hover::after,
@@ -223,7 +207,7 @@ button {
 
   & img {
     aspect-ratio: 1/1;
-    width: var(--font-size-h3);
+    width: auto;
     height: var(--font-size-h3);
     filter: brightness(0) invert(1);
     object-fit: contain;
@@ -251,4 +235,18 @@ button {
   &:active {
     transform: scale(0.9);
   }
+}
+
+/* LOGOS */
+.logo {
+  user-select: none;
+  aspect-ratio: 1/1;
+  height: calc(var(--font-size-h1) + var(--font-size-h3));
+  width: calc(var(--font-size-h1) + var(--font-size-h3));
+}
+
+.logo-name {
+  user-select: none;
+  height: var(--font-size-h1);
+  width: auto;
 }

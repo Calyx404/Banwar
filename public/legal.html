@@ -16,7 +16,7 @@
     <title>Banwar | Legal Information</title>
     <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
 
-    <!-- STYLESHEETS -->
+    <!-- PRELOAD STYLES -->
     <link
       rel="preload"
       href="./styles/root.css"
@@ -30,18 +30,22 @@
       onload="this.rel='stylesheet'"
     />
 
-    <!-- COMPONENTS -->
-    <script defer src="./components/header/header.js"></script>
+    <!-- COMPONENT : HEADER -->
     <link rel="stylesheet" href="./components/header/header.css" />
+    <script defer src="./components/header/header.js"></script>
 
-    <script defer src="./components/footer/footer.js"></script>
+    <!-- COMPONENT : FOOTER -->
     <link rel="stylesheet" href="./components/footer/footer.css" />
+    <script defer src="./components/footer/footer.js"></script>
+
+    <!-- COMPONENT : SEARCH -->
+    <link rel="stylesheet" href="./components/search/search.css" />
   </head>
   <body>
     <!-- PAGE HEADER -->
     <header id="header"></header>
 
-    <main>
+    <main id="main">
       <section class="main-content" id="privacy-policy">privacy-policy</section>
       <section class="main-content" id="terms-of-use">terms-of-use</section>
       <section class="main-content" id="licensing-notice">

@@ -26,8 +26,8 @@ export class Carousel {
           .map(
             (key, i) => `
           <div class="carousel-slide" data-index="${i}">
-            <img class="${data[key].className} || ''" src="./assets/${data[key].icon}" alt="${key}">
-            <h2>${key}</h2>
+            <img src="./assets/icons/${data[key].icon}" alt="${key}">
+            <h4>${key}</h4>
           </div>`
           )
           .join("")}
