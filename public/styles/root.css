@@ -17,8 +17,8 @@
 @font-face {
   font-family: "SF Pro";
   src: url("../assets/fonts/SF_Pro.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal; */
+  /* font-style: normal; */
 }
 
 /* ROOT VARIABLES */
@@ -249,4 +249,10 @@ button {
   user-select: none;
   height: var(--font-size-h1);
   width: auto;
+}
+
+.content-container {
+    max-width: 1180px;
+    margin: calc(var(--padding-sm)*2) auto;
+    padding: 0 var(--padding-sm);
 }
