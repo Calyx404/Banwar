@@ -87,21 +87,23 @@
 
     <!-- COMPONENT : HEADER -->
     <link rel="stylesheet" href="./components/header/header.css" />
-    <script src="./components/header/header.js"></script>
+    <script defer src="./components/header/header.js"></script>
 
     <!-- COMPONENT : FOOTER -->
     <link rel="stylesheet" href="./components/footer/footer.css" />
     <script defer src="./components/footer/footer.js"></script>
-
-    <!-- COMPONENT : CAROUSEL -->
-    <link rel="stylesheet" href="./components/carousel/carousel.css" />
-    <script defer src="./components/carousel/carousel.js"></script>
 
     <!-- COMPONENT : MAP -->
     <link rel="stylesheet" href="./components/map-core/map.css" />
 
     <!-- COMPONENT : SEARCH -->
     <link rel="stylesheet" href="./components/search/search.css" />
+
+    <!-- COMPONENT : CAROUSEL -->
+    <link rel="stylesheet" href="./components/carousel/carousel.css" />
+
+    <!-- PAGE CONTROLLER -->
+    <script type="module" src="./scripts/pages/map_page.js"></script>
   </head>
 
   <body>
@@ -123,18 +125,5 @@
       <section class="main-item" id="map-account"></section>
     </main>
     <footer id="footer"></footer>
-
-    <!-- APP CONTROLLER -->
-    <script type="module">
-      import { AppController } from "./scripts/app-controller.js";
-
-      const app = new AppController({
-        map: "map",
-        profile: "map-profile",
-        account: "map-account",
-      });
-
-      app.init();
-    </script>
   </body>
 </html>

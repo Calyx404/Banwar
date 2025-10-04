@@ -18,7 +18,6 @@
         position: absolute;
         top: 2rem;
         left: -1rem;
-        display: none;
         background: var(--color-primary);
         color: var(--color-text);
         font-family: var(--font-heading);
@@ -26,10 +25,6 @@
         color: var(--color-text);
         border: 2px solid var(--color-secondary);
         border-radius: var(--radius-sm);
-
-        &.show {
-          display: block;
-        }
       }
 
       & .feature-popup {
@@ -140,6 +135,7 @@
 
   & .account-item {
     width: 100%;
+    border: 1px solid red;
 
     &#account-header {
       position: sticky;

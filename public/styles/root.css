@@ -176,11 +176,7 @@ a {
   position: relative;
   text-decoration: none;
   color: var(--color-text);
-  transition: var(--transition-medium);
-  position: relative;
-  text-decoration: none;
-  color: var(--color-text);
-  transition: var(--transition-medium);
+  transition: var(--transition-fast);
 
   &::after {
     content: "";
@@ -190,23 +186,9 @@ a {
     width: 0;
     height: 2px;
     background: var(--color-text);
-    transition: var(--transition-medium);
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: var(--color-text);
-    transition: var(--transition-medium);
+    transition: var(--transition-fast);
   }
 
-  &:hover::after,
-  &:focus::after {
-    width: 100%;
-  }
   &:hover::after,
   &:focus::after {
     width: 100%;
