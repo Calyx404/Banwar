@@ -1,60 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- META DESCRIPTIONS -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
 
-    <meta name="author" content="Banwar Project Team">
-    <meta name="description" content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots.">
+    <meta name="author" content="Banwar Project Team" />
+    <meta
+      name="description"
+      content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots."
+    />
 
     <!-- TITLE & FAVICON -->
     <title>Banwar | Cordillera Digital Mapping</title>
-    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png">
+    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
 
-    <!-- STYLESHEETS -->
-    <link rel="preload" href="./styles/root.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="./styles/pages/home_page.css" as="style" onload="this.rel='stylesheet'">
+    <!-- PRELOAD STYLES -->
+    <link
+      rel="preload"
+      href="./styles/root.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./styles/pages/home_page.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
 
-    <!-- COMPONENTS -->
+    <!-- COMPONENT : HEADER -->
+    <link rel="stylesheet" href="./components/header/header.css" />
     <script defer src="./components/header/header.js"></script>
-    <link rel="stylesheet" href="./components/header/header.css">
 
+    <!-- COMPONENT : FOOTER -->
+    <link rel="stylesheet" href="./components/footer/footer.css" />
     <script defer src="./components/footer/footer.js"></script>
-    <link rel="stylesheet" href="./components/footer/footer.css">
 
-</head>
+    <!-- COMPONENT : SEARCH -->
+    <link rel="stylesheet" href="./components/search/search.css" />
 
-<body>
-    <!-- PAGE NAVIGATION [DO NOT TOUCH] -->
-    <input type="radio" name="selection" id="home" hidden checked>
-    <input type="radio" name="selection" id="about" hidden>
-    <input type="radio" name="selection" id="maps"  hidden>
-    <input type="radio" name="selection" id="context"  hidden>
+    <!-- COMPONENT : CAROUSEL -->
+    <link rel="stylesheet" href="./components/carousel/carousel.css" />
 
+    <!-- PAGE CONTROLLER -->
+    <script type="module" src="./scripts/pages/home_page.js"></script>
+  </head>
+
+  <body>
     <!-- PAGE HEADER -->
     <header id="header"></header>
 
-    <!-- TODO: PAGE MAIN CONTENT -->
-    <main>
+    <!-- PAGE MAIN CONTENT -->
+    <main id="main">
+      <!-- MAIN : HERO -->
+      <section class="main-item" id="hero">
+        <section id="home-content">
+          <div class="hero">
+            <div class="col-1">
+              <h1 class="home-title">Explore Cordillera Like Never Before</h1>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+            </div>
 
-        <!-- MAIN : HOME -->
-        <div class="content-container">
-            <section id="home-content">
-                <div class="hero">
-                    <div class="col-1">
-                        <h1 class="home-title">Explore Cordillera Like Never Before</h1>
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                        </p>
-                    </div>
+            <div class="col-2">
+              <img src="./assets/images/map.png" alt="Map Image" />
+            </div>
+          </div>
 
-                    <div class="col-2">
-                        <img src="./assets/images/map.png" alt="Map Image">
+          <!-- CAROUSEL CONTAINER (CAUTION WHEN EDITING!)-->
+          <div class="carousel-container">
+            <h3>EXPLORE OUR WEBSITE</h3>
+
+            <div class="carousel">
+              <input
+                type="radio"
+                class="car-radio"
+                name="slides"
+                id="slide-1"
+                checked
+              />
+              <input
+                type="radio"
+                class="car-radio"
+                name="slides"
+                id="slide-2"
+              />
+
+              <div class="track">
+                <div class="slides">
+                  <!-- ADD SLIDE IF YOU WANT TO ADD MORE -->
+                  <div class="slide">
+                    <div class="card">
+                      <!-- FEEL FREE TO REPLACE THE IMAGE AND THE TEXT! -->
+                      <img
+                        src="https://images.unsplash.com/photo-1473186578172-c141e6798cf4?q=80&w=1400&auto=format&fit=crop"
+                        alt=" Book cover placeholder"
+                      />
+                      <div class="text">
+                        <div class="kicker">ABOUT THE BOOK</div>
+                        <h4>Notices of the Pagan Igorots</h4>
+                        <p>Explore the manuscript</p>
+                      </div>
+                      <div class="corner"><a href="#book">➜</a></div>
                     </div>
                 </div>
 

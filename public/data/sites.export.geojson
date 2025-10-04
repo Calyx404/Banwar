@@ -1,0 +1,1010 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6544,
+          16.3472
+        ]
+      },
+      "properties": {
+        "id": "1",
+        "historical_name": "Acupan",
+        "modern_name": "Acupan",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "Itogon",
+        "thematic_value": "Mining & Economy:\"...,and that the one in Acupan was the most abundant and employed the most people working the gold\";  <br>\"Travelling light, it is easily possible to get from the mission to the mines of Acupan in the space of three days despite zigzag ups and downs.\" (Antolin, 1789, p.73, p.87).",
+        "primary_description": "\"This place is called Acupan, which in their language means \"get gold with both hands together,\" and similarly denotes the abundance with which they collect gold in the rainy season, which is when more pagans gather there.\" (Antolin, 1789, p. 85, para.4)\".",
+        "supporting_notes": "Known as one of the richest gold sources in Benguet. Antolín noted Igorots extracted gold from mines here, though often only seasonally, and used it for trade with Pangasinan and Ilocos.(Antolin, 1789/1970, pp. 13-14; Scott, 1974, p. 89). Later ethnographers also confirmed Acupan as a central Igorot mining zone. (MGB-CAR, 2017)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0352,
+          16.2961
+        ]
+      },
+      "properties": {
+        "id": "2",
+        "historical_name": "Ajanas",
+        "modern_name": "Aritao",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "Nueva Vizcaya",
+        "thematic_value": "Igorot stronghold;  \"...the very frontier of  the Igorots.\" (Antolin, 1988, p.xii, p.91).",
+        "primary_description": "\"From Ambayeg (with 38 houses) they passed to Bokod, which is on the other side of a little stream and has 38 houses. And with this they passed on the next day to another little town nearby called Bokod of 38 houses, and from there they continued on their journey.\" (Antolin, 1988, p.91).",
+        "supporting_notes": "Identified as an Igorot defense stronghold near Aritao. Later became a frontier where Spaniards attempted to establish forts and missions. Symbolizes the contested space between Igorot independence and Spanish intrusion. (Antolin, 1789/1970, p. 18; Scott, 1974, pp.61-62)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5402,
+          16.7669
+        ]
+      },
+      "properties": {
+        "id": "3",
+        "historical_name": "Amburayan",
+        "modern_name": "Amburayan River",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "Amburayan River",
+        "thematic_value": "\"...and they said that from there they entered through the Valley of Amburayan and came out through Tagudin, and they had spent thirty days on the journey.\" (Antolin, 1988, p.105).",
+        "primary_description": "\"through the Valley of Amburayan.\" (Antolin, 1988, p.105).",
+        "supporting_notes": "Antolín identifies the Amburayan as one of the rivers draining Igorot territory toward Ilocos; modern maps confirm Amburayan River flowing through Ilocos Sur and La Union. (Antolin, 1789/1970, p. 23; Scott, 1974, p. 80)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "4",
+        "historical_name": "Apayao",
+        "modern_name": "No present data can be found.",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "No present data can be found.",
+        "thematic_value": "Mining:\"and that they got the gold in three places called Apayao, Acupan, and Locjo\"; \"They encountered a stream which came from Pancutcutan (or mines) of Apayao.\" (Antolin, 1988, p.73, p.87).",
+        "primary_description": "Apayao is one of the most frequently mentioned pancutcutan (mines), where they certainly got gold. (Antolin, 1988, p. 85).",
+        "supporting_notes": "No present data can be found."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8511,
+          16.8163
+        ]
+      },
+      "properties": {
+        "id": "5",
+        "historical_name": "Bangao",
+        "modern_name": "Bangao",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "Buguias",
+        "thematic_value": "Settlements and Communities: \"Bangao, a mining settlement of about 25 houses.\" (Antolin, 1988, p.73, p.79).",
+        "primary_description": "Igorot Settlement. (Antolin, 1988, p.79).",
+        "supporting_notes": "Antolin lists Bangao among the igorot settlements. Modern Bangao remains a barangay of Buguias, retaining the same location and name in the Province of Cordillera. (PhilAtlas, n.d, Bangao)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1477,
+          16.48
+        ]
+      },
+      "properties": {
+        "id": "6",
+        "historical_name": "Bayombong",
+        "modern_name": "Bayombong",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "Bayombong, Nueva Vizcaya",
+        "thematic_value": "\"Bayombong, together with Bagabag and Solano, was part of the so-called Mission of Paniqui.\" (Antolin, 1988, p.xiii).",
+        "primary_description": "\"Bayombong, in the center of the Missions, is 84 kilometers from the Ilocos coast.\" (Antolin, 1988, p. 315).",
+        "supporting_notes": "Antolin mentions that Bayombong was part of the \"Mission of Paniqui\" Area in the Magat Valley. Today, Bayombong serves as the Provincial Capital of Nueva Vizcaya. (PhilAtlas, n.d, Bayombong)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.83,
+          16.4911
+        ]
+      },
+      "properties": {
+        "id": "7",
+        "historical_name": "Bokod",
+        "modern_name": "Bokod",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "Bokod, Benguet",
+        "thematic_value": "Settlements and Communities:\"From Ambayeg(with 38 houses) they passed to Bokod, which is on the other side of a little stream and has 38 houses and with this they passed on the next day to another little town nearby called Bokod of 38 houses.\" (Antolin, 1988, p.71, p.81).",
+        "primary_description": "\"From Ambayeg (with 38 houses) they passed to Bokod, which is on the other side of a little stream and has 38 houses. They are low houses and it's necessary to bend down to enter, and they are not placed in any order although quite crowded together. Inside they saw very few furnishings a pot or kettle and wooden plates for eating their taro-roots, camotes and some herbs, and even these they are accustomed to eating roasted in the coals. They have very little rice, so they didn't see any granaries for storing it nor mortars for pounding it. There was no more than a hearth or fireplace in each house. \"(Antolin, 1988, p. 71).",
+        "supporting_notes": "Antolin lists Bokod among the igorot settlements. The name survives until today, Now A Municipality of Benguet, confirming it as the same community mentioned in Antolin's book. (PhilAtlas, n.d, Bokod)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8266,
+          16.745
+        ]
+      },
+      "properties": {
+        "id": "8",
+        "historical_name": "Buguias",
+        "modern_name": "Buguias",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "Buguias, Benguet",
+        "thematic_value": "Igorot Settlement",
+        "primary_description": "\"According to Antolin, Buguias was One of The Other Neighboring Places Around there (Near The Gold Sites)\". Antolin, 1988,, p.79).",
+        "supporting_notes": "Antolin lists Buguias among the igorot settlements. Now a Municipality of Benguet, having strong ties to the culture of the 3 ethnolinguistic groups, kankanaey, ibaloi, and kalanguya(Kallahan). (Benguet.gov.ph/Buguias)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1938,
+          16.138
+        ]
+      },
+      "properties": {
+        "id": "9",
+        "historical_name": "Dupax",
+        "modern_name": "Dupax",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "Dupax Del Sur<br>Dupax Del Norte",
+        "thematic_value": "Settlements and Communities:\"On the route from Dupax to the mines they passed through Bangao, Ambayeg, Bokod, Colong, Dadda, Buguias, Apayao, Pancutcutan, Acopan, and Aua.\" (Antolín, 1988, p.71).",
+        "primary_description": "Dupax is described as neighboring Bambang and Aritao. (Antolín, 1988, p. xii).",
+        "supporting_notes": "Frontier settlement in Nueva Vizcaya, near the Magat River. Antolín described it as part of the Ituy mission area, where Igorot captives were sometimes sold as slaves. Dupax also served as a contact zone between lowland missions and highland miners. (Antolín, 1789/1970, p. 51; Scott, 1974, p. 64)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8391,
+          16.6233
+        ]
+      },
+      "properties": {
+        "id": "10",
+        "historical_name": "Kabayan",
+        "modern_name": "Kabayan",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "Kabayan, Benguet",
+        "thematic_value": "Community & Settlement:\"Then on the second day they reached the town of Kabayan after having passed nine or ten villages whose houses the Christians counted…; The traders who go down to Ilocos and Pangasinan with the most gold are from the town of Kabayan.\" (Antolin, 1988, p.73).",
+        "primary_description": "\"In Kabayan are about 37 houses,and it is a village somewhat larger than the others but of the same caliber, its houses low, very few fields, and the people as wretched and dirty as everywhere else. The traders who go down to Ilocos and Pangasinan with the most gold are from the town of Kabayan, so it is rather well known.\" Antolin, 1789/1974, p. 73).",
+        "supporting_notes": "Antolín lists Kabayan as one of the principal Igorot settlements; modern Kabayan in Benguet retains the same name and is identified with the mummy caves near Mt. Pulag. (Antolin, 1789/1970, p. 15)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0866,
+          16.7772
+        ]
+      },
+      "properties": {
+        "id": "11",
+        "historical_name": "Kiangan",
+        "modern_name": "Kiangan",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "Kiangan, Ifugao",
+        "thematic_value": "Community & Settlement:throughout the book,\"Igorots of Kiangan\" is constantly used, such as in pages 49, 95, and 97, implying there are Igorots settled in a place called Kiangan.",
+        "primary_description": "\"The Ifugaos have many towns, the principal one being Kiangan.\" (Antolín, 1988, p.103).",
+        "supporting_notes": "Mentioned by Antolín as a trade hub with Bagabag; today's Kiangan, Ifugao is still located in the same valley and remains historically identified as the site of early Igorot-lowland contact. (Antolin, 1789/1970, p. 17)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.7816,
+          16.1202
+        ]
+      },
+      "properties": {
+        "id": "12",
+        "historical_name": "Leabang",
+        "modern_name": "No present data can be found.",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "San Nicolas, Pangasinan(Possible)",
+        "thematic_value": "Mines and Settlement: Leabang was identified by Antolín as a gold-mining settlement, with families engaged in extracting ore from nearby mountains. (Antolin, 1988, p.99, Chapter 9).",
+        "primary_description": "\"I went to visit the Igorots of Leabang overlooking Asingan, but I didn't reach the town, though I talked with seven of them, among whom was a chief married in Pancutcutan, who told me he had his wife and four children there.\" (Antolin, 1988, p.99, Chapter 9).",
+        "supporting_notes": "Antolin describes Leabang as an Igorot mining settlement \"overlooking Asingan,\" accessible by following the Toboy River for several hours, with Tapayac mountain above it and the Agno River nearby. Today, this corresponds to the uplands of San Nicolas, Pangasinan, where Barangay Toboy and the Toboy River, a tributary of the Agno, still exist."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9694,
+          16.7141
+        ]
+      },
+      "properties": {
+        "id": "13",
+        "historical_name": "Tinok",
+        "modern_name": "Tinoc",
+        "category": "IGOROT SETTLEMENTS AND TERRITORIES",
+        "present_day_location": "Tinoc, Ifugao",
+        "thematic_value": "Community and Settlement:\"Let's go to your towns in Tinok and try to sell them there. ; …and towards the north are those of Tinok, whose towns are to be found below of Itbuyand Camandang.\" (Antolin, 1988, p.75, p.77).",
+        "primary_description": "Mentioned as one of the places of the Igorot Tribes. (Antolin, 1988, p. 79).",
+        "supporting_notes": "Igorot settlement mentioned by Antolín. Tinoc later became a Municipality of Ifugao, known to be a Kalanguya major Municipality. (Philippine ICCA Consortium, 2019, Tinoc)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3666,
+          16.3166
+        ]
+      },
+      "properties": {
+        "id": "1",
+        "historical_name": "Agoo",
+        "modern_name": "Agoo",
+        "category": "MINES AND NATURAL RESOURCES",
+        "present_day_location": "Agoo, La Union",
+        "thematic_value": "River",
+        "primary_description": "A river in the coastal lowlands where placer mining (pangot) for gold dust was practiced. (Antolin, 1989, p.61).",
+        "present_day_condition": "No present data can be found.",
+        "historical_exploitation": "Pangold",
+        "supporting_notes": "Agoo, a part of Ilocos near the Igorots, is where Antolin discovered the rock crystal, that is glossy and rather transparent, which easily turns to calcium and makes a white mortar if placed in the fire. (Antolin, 1988, p.13)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6591,
+          16.4019
+        ]
+      },
+      "properties": {
+        "id": "2",
+        "historical_name": "Boa",
+        "modern_name": "Antamok Mines",
+        "category": "MINES AND NATURAL RESOURCES",
+        "present_day_location": "Luneta, Loacan, Itogon, Benguet",
+        "thematic_value": "Mines",
+        "primary_description": "A mining area situated within the rich Baguio gold A gold-rich area located within the larger Baguio gold district, actively worked by indigenous miners. (Antolin, 1789, p.47).",
+        "present_day_condition": "Due to rampant uncontrolled small-scaled mining activities have permanently damaged the underground infrastructure finally forced upon the decision by the Benguet Corporation (2001) to give up Antamok and offer the DENR in 2017 the donation of the patented claims as Minahang Bayan.",
+        "historical_exploitation": "Was in between the Baguio gold deposits.",
+        "supporting_notes": "Antolin locates Boa near Acopan, rich in gold deposits. Modern Boa matches the site of Antamok mines, later confirmed in historical accounts as a major Benguet gold source. (Antolin, 1789/1988; Habana, 2012)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.063,
+          15.9608
+        ]
+      },
+      "properties": {
+        "id": "3",
+        "historical_name": "Caranglan",
+        "modern_name": "Caranglan",
+        "category": "MINES AND NATURAL RESOURCES",
+        "present_day_location": "Carranglan, Nueva Ecija",
+        "thematic_value": "Rock and mineral",
+        "primary_description": "The land around Caranglan and Pantabangan is marked by strange rocks and minerals, which inhabitants sometimes use for making tools and pigments. (Antolin, 1789, p.65).",
+        "present_day_condition": "No present data can be found.",
+        "historical_exploitation": "Eagle-stones",
+        "supporting_notes": "Caranglan was one of the routes the Dominicans were planning to clear to have a direct road from Pangasinan through San Jose and Caranglan. (Antolin, 1988, p. 59, para. 1). <br>A Dominican missionary, named Father Villar, accompanied a troop in which they traveled by the road to San Jose, Puncan and Caranglan (Antolin, 1988, p. 65, para. 3)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1443,
+          15.8113
+        ]
+      },
+      "properties": {
+        "id": "4",
+        "historical_name": "`Pantabangan",
+        "modern_name": "Pantabangan",
+        "category": "MINES AND NATURAL RESOURCES",
+        "present_day_location": "Pantabangan, Nueva Ecija",
+        "thematic_value": "Rock and mineral",
+        "primary_description": "The land around Caranglan and Pantabangan is marked by strange rocks and minerals, which inhabitants sometimes use for making tools and pigments. (Antolin, 1789, p.65).",
+        "present_day_condition": "No present data can be found.",
+        "historical_exploitation": "Eagle-stones",
+        "supporting_notes": "Under the translator's notes, Pantabangan was said to be approximately 160 kilometers from Manila. (Antolin, 1988, p.314-315). <br>Another note states where Father Fray Esteban Marin was killed by Italones (Ilongots) before he could read the town of Pantabangan (Antolin, 1988, p. 320, para. 2)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6666,
+          16.3625
+        ]
+      },
+      "properties": {
+        "id": "5",
+        "historical_name": "Pancutcutan of Acupan",
+        "modern_name": "Acupan Mines",
+        "category": "MINES AND NATURAL RESOURCES",
+        "present_day_location": "Dalicno, Itogon, Benguet",
+        "thematic_value": "Mines",
+        "primary_description": "One of the most abundant gold mining areas, where locals extracted gold to trade for vital goods like animals. (Antollin, 1789, p.47).",
+        "present_day_condition": "Due to various pocket mines in Acupan, mudslides and landslides have been prevalent killing miners in the process.",
+        "historical_exploitation": "Most abundant in gold resources, local igorots get gold here to trade for animals and other resources.",
+        "supporting_notes": "Known as one of the richest gold sources in Benguet. Antolín noted Igorots extracted gold from mines here, though often only seasonally, and used it for trade with Pangasinan and Ilocos (Antolín, 1789/1970, pp. 13-14; Scott, 1974, p. 89). <br>Later ethnographers also confirmed Acupan as a central Igorot mining zone."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "6",
+        "historical_name": "Pancutcutan of Apayao",
+        "modern_name": "No present data can be found.",
+        "category": "MINES AND NATURAL RESOURCES",
+        "present_day_location": "No present data can be found. <br>(But it was mentioned as King Solomons Area in one of the book).",
+        "thematic_value": "Mines",
+        "primary_description": "A region known to the Spanish as a source of gold, based on trade with the indigenous Isneg people. (Antolin, 1789, p. 52).",
+        "present_day_condition": "No present data can be found. <br>(near tublay / ambassador accdg to the ESSC,2000).",
+        "historical_exploitation": "Gold",
+        "supporting_notes": "Apayao mines was mentioned where they encountered a stream that came from the Pancutcutan of Apayao. (Antolin, 1988, p. 87, para. 2). <br>Under the translator's notes, Apayao was said to be the present King Solomon mining area (Antolin, 1988, p. 319, para. 3)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "7",
+        "historical_name": "Pancutcutan of Locjo",
+        "modern_name": "No present data can be found.",
+        "category": "MINES AND NATURAL RESOURCES",
+        "present_day_location": "(However, according to Antolin's map it is in the opposite of Lutab (currently known as Poblacion in Kabayan).",
+        "thematic_value": "Mines",
+        "primary_description": "A mining site opposite Lutab, known for yielding both gold and copper. (Antolin, 1789, p.54).",
+        "present_day_condition": "No present data can be found. <br>(Near Poblacion(central), Kabayan).",
+        "historical_exploitation": "Gold And Copper",
+        "supporting_notes": "Under the translator's notes, Locjo was said to be the Loo just oppisite Lutab below Kabayan but not the municipality of the same name in the Agno headwaters (Antolin, 1988, p. 319, para. 3)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.018,
+          16.3705
+        ]
+      },
+      "properties": {
+        "id": "8",
+        "historical_name": "Salinas (Salt spring)",
+        "modern_name": "Salinas Natural Monument",
+        "category": "MINES AND NATURAL RESOURCES",
+        "present_day_location": "Bambang, Nueva Vizcaya",
+        "thematic_value": "Spring",
+        "primary_description": "A vital salt spring highly valued by the Igorot people, who processed its brine into solid salt blocks for trade and consumption. (Antolin, 1789, p.45).",
+        "present_day_condition": "By 1990, the Salinas Salt Springs began to disappear. A 2000 study revealed that the 1990 Luzon Earthquake had altered the underground water system feeding the salt spring. The earthquake diverted water flows, disrupting the natural processes that had led to irreversible damage. The Salinas Salt Springs were gone for good. (Pilipinas, D.S., n.d.).",
+        "historical_exploitation": "Mined the mineral-rich salt and sold to lowlanders, as well as limestones found here are used to build churches in the missions (Limos, 2020).",
+        "supporting_notes": "A historic salt source described by Antolin, noted for white stone used as lime in churches. It was a major salt source for the igorots and nearby missions. (Antolin, 1789/1988, p.13) <br>It dried up after the 1990 Luzon Earthquake. <br>(Dito Sa Pilipinas, 2024, Salinas Salt Springs: What Happened to this Natural Wonder?)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8992,
+          16.5975
+        ]
+      },
+      "properties": {
+        "id": "1",
+        "historical_name": "Mount Polac/Pulog",
+        "modern_name": "Mount Pulag",
+        "category": "MOUNTAINS AND SACRED SITES",
+        "present_day_location": "Benguet-Ifugao-Nueva Vizcaya",
+        "thematic_category": "Benguet-Ifugao-Nueva Vizcaya",
+        "primary_description": "\"The highest is in the interior, visible from Dupax.\" (Antolin, 1789, p. 10, para. 2). <br>\"Mount Pulog bears north-northwest from Dupax, that is, more to the north than to the west. In it the three principal rivers of the Igorots take their origin.\" (Antolin, 1789, p.11, para. 2). <br>Site of a flood myth where one man and woman survived a deluge. (Antolin, 1789, p.10, para.2).",
+        "supporting_notes": "Scholars(Scott, 1974) identify Polac with Mount Pulag. Some missionary sources links Mount Polac to Mount Polis  due to Flood Myths. A blend of Pulag's Geography and Polis's mythology. <br>\"The Ibaloy people of Benguet, who consider this mountain sacred, call it Polak, but it appears on modern maps as Mount Pulog, and at 2900 meters above sea level is the highest peak in northern Luzon.\" (Antolin, 1789, p.315, sect. Notes, No.3)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8088,
+          16.1413
+        ]
+      },
+      "properties": {
+        "id": "2",
+        "historical_name": "Mount Tapayac",
+        "modern_name": "No present data can be found.",
+        "category": "MOUNTAINS AND SACRED SITES",
+        "present_day_location": "Possible.. Caraballo range, east of San Nicolas, Pangasinan; ridge system overlooking Agno basin",
+        "thematic_category": "Mountain range/ Frontier Landmark / Trade Corridor",
+        "primary_description": "\"Above the town of Leabang there's a very high place on the mountain called Tapayac, and they pass through there from Ilocos to the mine of Pancutcutan…\" (Antolin, 1789/1988, p.99, Chapter 9).",
+        "supporting_notes": "Tapayac served as a major passage point along trans-Cordillera routes, linking Ilocos with Pancutcutan. In modern context, there is no valid information about this Mountain. So the plotted point is nothing more than assumption basing from Antolin's description."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8025,
+          16.3194
+        ]
+      },
+      "properties": {
+        "id": "3",
+        "historical_name": "Mount Maliongliong",
+        "modern_name": "Probable Modern name: Mount Ugo. <br>(Mountain crest near Pancutcutan, possibly in today's Bokod-Itogon, Benguet area. Antolin, 1789/1988,p.99)",
+        "category": "MOUNTAINS AND SACRED SITES",
+        "present_day_location": "Likely a ridge in southern Benguet, near the headwaters of the Agno River",
+        "thematic_category": "Mountain Range. Geographic Stronghold / Trail Network",
+        "primary_description": "…passing through the crest of Maliongliong, which is below Pancutcutan. In between these two points… the Agno River comes down  near San Nicolas.\" (Antolin, 1789/1988, p.99, Chapter 9).",
+        "supporting_notes": "Maliongliong only mentioned once. Its mention as a crossing place shows the tactical and economic importance of such ridges in sustaining Igorot autonomy against Spanish expeditions. However, same as Mountain Tapayac, there is no present data that can justify its current location, only assumption."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.641,
+              18.3566
+            ],
+            [
+              121.7303,
+              17.6133
+            ],
+            [
+              121.033819,
+              16.297258
+            ],
+            [
+              121.5222,
+              16.5103
+            ],
+            [
+              121.3025,
+              15.7933
+            ],
+            [
+              122.43,
+              17.0589
+            ],
+            [
+              121.641,
+              18.3566
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "1",
+        "historical_name": "Cagayan Valley",
+        "modern_name": "Cagayan Valley",
+        "category": "PROVINCES AND TERRITORIES",
+        "present_day_location": "Cagayan Valley (Region II), Luzon",
+        "thematic_category": "Mountainous and valley terrain inhabited by various ethno-linguistic groups.",
+        "primary_description": "The Igorots once occupied slopes and savannahs near their mountains, charging Christian settlers land rent in rice and animals. When unpaid, they seized the land and launched ambuscades, raids, and burned towns, asserting control over frontier zones reaching toward the Cagayan coast. As Antolin noted, \"all the way to the seacoast of Cagayan are mountains populated by Tinguianes, Gaddanes, and other pagans of different tribes.\" (Antolin, 1789, pp. 48-50).",
+        "supporting_notes": "Cagayan Valley's northeastern frontier, marked by the Sierra Madre and Cordillera ranges, was mapped by Spanish authorities as a launch point for missions and mining. Yet, as Antolin observed, \"no vein or gold mine has been discovered due to the resistance of the natives and the asperity… of those ranges and mountains… it cannot be expected that the said Tinguianes will give obedience or settle down.\" (Antolin, 1789,pp. 167)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.7841,
+              18.5587
+            ],
+            [
+              120.386,
+              17.5747
+            ],
+            [
+              120.3167,
+              16.6167
+            ],
+            [
+              120.73,
+              16.98
+            ],
+            [
+              120.7,
+              17.95
+            ],
+            [
+              120.7841,
+              18.5587
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "2",
+        "historical_name": "Ilocos",
+        "modern_name": "Ilocos",
+        "category": "PROVINCES AND TERRITORIES",
+        "present_day_location": "Ilocos Region (Region I), Luzon",
+        "thematic_category": "Mountainous highlands and coastal plains.",
+        "primary_description": "Ilocos was described as \"the plains and towns along the coast bordered by the mountains where the pagan Igorots dwell.\" Spanish control focused on coastal lowlands with \"missions established near the foothills\" and efforts of missionaries and alcaldes to govern these Christian towns. The coastal settlements were centers for \"the spread of Christianity and control of trade.\" Clear geographical boundaries separated the Christian towns from the independent pagan mountains. (Antolin, 1789, pp. 190, 192-195).",
+        "supporting_notes": "Ilocos was described as \"the plains and towns along the coast bordered by the mountains where the pagan Igorots dwell.\" Spanish control focused on coastal lowlands with \"missions established near the foothills\" and efforts of missionaries and alcaldes to govern these Christian towns. The coastal settlements were centers for \"the spread of Christianity and control of trade.\" Clear geographical boundaries separated the Christian towns from the independent pagan mountains. (Antolin, 1789, pp. 190, 192-195)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.5411,
+              15.0723
+            ],
+            [
+              120.6928,
+              15.0292
+            ],
+            [
+              120.7696,
+              15.1515
+            ],
+            [
+              120.5734,
+              15.2251
+            ],
+            [
+              120.5918,
+              15.1563
+            ],
+            [
+              120.5411,
+              15.0723
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "3",
+        "historical_name": "Pampanga",
+        "modern_name": "Pampanga",
+        "category": "PROVINCES AND TERRITORIES",
+        "present_day_location": "Central Luzon (Region III), Luzon",
+        "thematic_category": "Central plain region with highland areas.",
+        "primary_description": "Pampanga was described as part of the lowland plains adjacent to the rugged mountainous Igorot territory. It was identified as a boundary region where the Spanish exerted colonial control over the lowlands, while the pagan tribes considered unconquered lands lay beyond in the mountains. (Antolin, 1789, pp. 198-200).",
+        "supporting_notes": "Although separated from the highland Igorots, Pampanga's proximity allowed it to serve as a base for expeditions. Its towns and missions were positioned near the frontier,providing troops and logistical support for campaigns into the mountains. (Antolin,1789,pp. 185-187, 192)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.8406,
+              15.9267
+            ],
+            [
+              120.7624714,
+              16.0703505
+            ],
+            [
+              120.6702443,
+              16.0037829
+            ],
+            [
+              120.23333,
+              16.01667
+            ],
+            [
+              120.8406,
+              15.9267
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "4",
+        "historical_name": "Pangasinan",
+        "modern_name": "Pangasinan",
+        "category": "PROVINCES AND TERRITORIES",
+        "present_day_location": "Ilocos Region (Region I), Luzon",
+        "thematic_category": "Mountainous highlands and coastal plains.",
+        "primary_description": "Pangasinan shared a border with the unconquered Igorot mountains and was situated on the outskirts of lowland settlements under Spanish rule. The Igorots opposed missionaries' and governors' frequent attempts to establish direct roads across Pangasinan to the highlands, designating the region as a colonial frontier zone. (Antolin, 1789, pp. 211-216).",
+        "supporting_notes": "The Igorots relied heavily on Pangasinan as a trading partner. The Igorots bought animals, rice, and other items from Pangasinan and traded gold. Pangasinan was an essential link between the lowland markets and the mountain mines since trade routes traveled via towns like Asingan and San Nicolas. (Antolin, 1789, pp. 194, 230)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.726,
+            16.7863
+          ],
+          [
+            120.556,
+            16.8685
+          ],
+          [
+            120.4199,
+            16.908
+          ]
+        ]
+      },
+      "properties": {
+        "id": "1",
+        "historical_name": "Ambayeg / Ambayawang",
+        "modern_name": "Amburayan River (Ambayeg / Ambayawang)",
+        "category": "RIVERS AND TRADE CORRIDORS",
+        "present_day_location": "Originates in the Cordillera (parts of Benguet, possibly Bakun), flows west to Tagudin in Ilocos Sur / La Union.",
+        "thematic_category": "Upland→coastal corridor / Local trade link",
+        "primary_description": "Trip narratives place Ambayeg/Ambayawang as an upland stream used by Leaban/Igorot groups. Antolín identifies the Amburayan mouth near Tagudin, making it a corridor from mountains to coast for animals, small goods and communications. (Antolin, 1789 pg. 63-66 pg. 78-81 pg. 315).",
+        "supporting_notes": "Useful for mapg.ing upland villages (Apsay, Ambayeg, Bokod, Bucut) to the Tagudin coast."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.6167,
+            16.3167
+          ],
+          [
+            120.5333,
+            16.1167
+          ],
+          [
+            120.4,
+            16.0667
+          ]
+        ]
+      },
+      "properties": {
+        "id": "2",
+        "historical_name": "Angalacán / Angalaca",
+        "modern_name": "Angalacan (tributary)",
+        "category": "RIVERS AND TRADE CORRIDORS",
+        "present_day_location": "Located in Pangasinan (Mangaldan, Pozorrubio etc.), mostly lowland; fewer sources confirm deeper headwaters in Igorot territory.",
+        "thematic_category": "Placer-gold tributary / Connector",
+        "primary_description": "Antolín lists Angalacan among streams that bring placer gold; it forms part of the routes toward the Pangasinan plain and the Agno mines. (Antolín, 1789 pg. 100 pg. 204).",
+        "supporting_notes": "Mark as a gold-bearing tributary and difficult troop route."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.8333,
+            16.5
+          ],
+          [
+            120.7044,
+            16.24004
+          ],
+          [
+            120.45,
+            15.8167
+          ],
+          [
+            120.1667,
+            16.0167
+          ]
+        ]
+      },
+      "properties": {
+        "id": "3",
+        "historical_name": "Rio Agno",
+        "modern_name": "Agno River",
+        "category": "RIVERS AND TRADE CORRIDORS",
+        "present_day_location": "Originates in the Cordillera (Kabayan, Bokod, Itogon in Benguet), flows through Pangasinan, empties into Lingayen Gulf.",
+        "thematic_category": "Gold corridor / Major trade route",
+        "primary_description": "Antolin describes Agno as the principal river carrying gold particles from interior mines; both upland miners and lowland towns pan and market gold there. He also records seasonal floods and narrow, steep mountain channels. (Antolin, 1789 pg.  275-278; pg.79-87).",
+        "supporting_notes": "Mark as placer + mine-sourced gold corridor; important mission & trade axis."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.7804,
+            16.1457
+          ],
+          [
+            120.6843,
+            15.9819
+          ],
+          [
+            120.4517,
+            15.7594
+          ],
+          [
+            120.1993,
+            16.0356
+          ]
+        ]
+      },
+      "properties": {
+        "id": "4",
+        "historical_name": "Río Toboy",
+        "modern_name": "Toboy (Lebang area)",
+        "category": "RIVERS AND TRADE CORRIDORS",
+        "present_day_location": "Possible match is in Asingan Pangasinan ,which also has a barangay named \"Toboy\", a small tributary to the agno river.",
+        "thematic_category": "Mountain Funnel / Access Route",
+        "primary_description": "Toboy is a narrow, stony mountain entrance used to reach Lebang, acts as a seasonal barrier for access to nearby mines. (Antolín, 1789 Pg. 99-101).",
+        "supporting_notes": "Used as an access checkpoint and also for seasonal flood hazards."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.034,
+          16.2968
+        ]
+      },
+      "properties": {
+        "id": "1",
+        "historical_name": "Ajanas",
+        "modern_name": "Aritao",
+        "category": "SPANISH MISSIONS AND OUTPOSTS",
+        "present_day_location": "Nueva Vizcaya",
+        "thematic_category": "Communities and settlements",
+        "primary_description": "A military garrison was built and Aritao became one of the Christian towns. <br>A church was established which was now named as Iglesia de San Jose (1776-1786). (Antolín, 1789 p.1 & p.60).",
+        "impacts_to_the_igorots": "The Panipuyes tribe were driven away by the military pressure forcing them to retreat farther into the mountains. <br>Restricted freedom of trading. (Antolín, 1789 p.40).",
+        "supporting_notes": "As the Kiangan have shown their ruthless practices and are fierce, a military garrison is required in places like Aritao. (Antolín, 1789 p. 177). <br>Aritao was one of the Cristian towns where hundreds of converted Igorots to Christians were resettled. (Antolín, 1789 p. 209)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2667,
+          16.6
+        ]
+      },
+      "properties": {
+        "id": "2",
+        "historical_name": "Bagbag",
+        "modern_name": "Bagbag",
+        "category": "SPANISH MISSIONS AND OUTPOSTS",
+        "present_day_location": "Nueva Viscaya",
+        "thematic_category": "Communities and settlements",
+        "primary_description": "Military garrisons were meant to confront the Igorots of Kiangan who have remained unconquered because they are many and in fertile land, and for causing injuries and deaths among the Christians. <br>Spaniards were unable to fully conquer the Kiangan tribe and were unable to establish a Christian town as they had strongly resisted. (Antolín, 1789 p.61).",
+        "impacts_to_the_igorots": "Kiangan have shown increased bravery, attacking soldiers and killing off Christians. They were able to hinder the progress of Christianization in the missions of Ituy and Paniqui. They impeded communication to other towns, and accept apostate Christians who flee their Christian towns. (Antolín, 1789 p.102).",
+        "supporting_notes": "Military garrison is required in Aritao and another in Bagabag to subdue/confront these independent, headtaking neighbors which are the Kiangan. (Antolín, 1789 p. 177)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1075,
+          16.3872
+        ]
+      },
+      "properties": {
+        "id": "3",
+        "historical_name": "Bambang",
+        "modern_name": "Bambang",
+        "category": "SPANISH MISSIONS AND OUTPOSTS",
+        "present_day_location": "Nueva Viscaya",
+        "thematic_category": "Communities and settlements",
+        "primary_description": "It was one of the Christian towns where some converted Igorots were resettled. The mission was successfully established in the area.",
+        "impacts_to_the_igorots": "The perseverance of Christians and missionaries  gradually won out, as evidenced by the hundreds of Christians who were converted and relocated to different Christian towns. (Antolín, 1789 p. 33).",
+        "supporting_notes": "Established Santa Catalina de Alexandria Parish Church as a part of an Ituy mission dedicated to Saint Catherine of Sienna, otherwise known as the Bambang Church. (Gala, 2015)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1047,
+          16.4817
+        ]
+      },
+      "properties": {
+        "id": "4",
+        "historical_name": "Bayombong",
+        "modern_name": "Bayombong",
+        "category": "SPANISH MISSIONS AND OUTPOSTS",
+        "present_day_location": "Nueva Viscaya",
+        "thematic_category": "Communities and settlements",
+        "primary_description": "Part of the Mission of Paniqui, which has a goal to convert and resettle Igorot villages as a Christian town (Antolín, 1789p.3).",
+        "impacts_to_the_igorots": "Christians and the pagan neighbors have conflicts and civil wars occurred. <br>The place also has become a trading ground where it was said that buying and selling of slaves occurs. Where the Moros (pagan tribe) are the ones who sell these slaves which are not their own fellow tribe. Igorots who refused to be resettled, retreated into the interior mountains. (Antolín, 1789 p. 34).",
+        "supporting_notes": "The church established in Bayombong, Iglesia de Santo Domingo de Guzman was founded as an ecclesiastical mission in 1741 under the advocacy of Santo Domingo de Guzman.  (Noche, 2004)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1939,
+          16.1382
+        ]
+      },
+      "properties": {
+        "id": "5",
+        "historical_name": "Dupaj/Dupax",
+        "modern_name": "Dupax del Sur<br>Dupax del Norte",
+        "category": "SPANISH MISSIONS AND OUTPOSTS",
+        "present_day_location": "Nueva Viscaya",
+        "thematic_category": "Communities and settlements",
+        "primary_description": "Part of the mission of Ituy to establish Christian communities in Dupax and to spread Christianity and convert the indigenous peoples. (Antolín, 1789 p.1).",
+        "impacts_to_the_igorots": "Antolin makes the premise that the Igorots are subdued and tranquil because of the soldiers and troops from the fortress. (Antolín, 1789 p. 45).",
+        "supporting_notes": "The mission was successful, but was later on abandoned due to territorial disputes with the Franciscans. (Dupax Del Sur - Wikiwand, n.d.)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.6833,
+            16.0
+          ],
+          [
+            120.9833,
+            15.7833
+          ],
+          [
+            121.05,
+            15.9667
+          ],
+          [
+            121.0,
+            16.15
+          ],
+          [
+            121.2833,
+            15.8833
+          ],
+          [
+            121.1,
+            15.3
+          ],
+          [
+            121.1236,
+            14.6982
+          ]
+        ]
+      },
+      "properties": {
+        "id": "1",
+        "historical_name": "Pampanga",
+        "modern_name": "Pampanga",
+        "category": "TRADE ROUTES",
+        "present_day_location": "Pampanga",
+        "thematic_category": "Transit Corridor and Secondary Supplier",
+        "primary_description": "\"when they [provisions for the missions] had to be carried almost all from Pangasinan through San José and Caranglán, towns of Pampanga, the detour was insufferable, with neither horses nor people able to endure this painful work.\" (Antolín, 1789 Page 82). (Chapter 7).",
+        "supporting_notes": "Igorot land begins... To the East they continue with a cordillera of mountains that passes through the Caraballo, Santor, Gapán and reaches to the town of San Mateo, near the city of Manila.\" (Antolín, 1789 Page 40). (Chapter 1). This situates Pampanga (via Gapan) as a geographic reference point, not a trade partner."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.25,
+            16.283
+          ],
+          [
+            120.231,
+            16.0215
+          ],
+          [
+            120.617,
+            16.33299
+          ],
+          [
+            120.4464,
+            16.9361
+          ],
+          [
+            120.231,
+            16.0215
+          ]
+        ]
+      },
+      "properties": {
+        "id": "2",
+        "historical_name": "San Carlos",
+        "modern_name": "San Carlos",
+        "category": "TRADE ROUTES",
+        "present_day_location": "San Carlos, Pangasinan",
+        "thematic_category": "Primary Lowland Trading Partner and Gateway for the Igorots.",
+        "primary_description": "\"Finally they reached the peak of the hills, where the Igorots have their main settlement, on account of the rich gold mines they enjoy there, and which they trade to the Ilocos and Pangasinán for things of sustenance, clothes and what else they need.\" (Antolín, 1789 Page 50). (Chapter 3). Antolín is quoting Father Francisco Colín's 17th-century history.",
+        "supporting_notes": "\"They sold their foodstuffs: two dried fish from Pangasinan for a half-real, two cakes of sugarcane sugar for a half-real, a ganta of cleaned rice for a real and a half...\" (Antolín, 1789 pg. 104). (Chapter 7). From a scout's report on the gold-washing site of Dapiag."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.4464,
+            16.9361
+          ],
+          [
+            120.423,
+            16.893
+          ],
+          [
+            120.2521,
+            16.0014
+          ],
+          [
+            121.083,
+            16.383
+          ]
+        ]
+      },
+      "properties": {
+        "id": "3",
+        "historical_name": "Tagudin",
+        "modern_name": "Tagudin",
+        "category": "TRADE ROUTES",
+        "present_day_location": "Tagudin, Ilocos Sur",
+        "thematic_category": "End Point of the Mt.polac to Ilocos Trade Route.",
+        "primary_description": "\"...to go to Ilocos through a gorge in the mountains, and come out at Bangar or Tagudín.\" (Antolín, 1789 Page 80). (Chapter 7). This is from a letter by Fr. Campo discussing a planned expedition.<br>\"to the west that of Tagudín in Ilocos, to the south the Agno in Pangasinan, and to the east the Matunu in the missions of Ituy.\" (Antolín, 1789 Page 33). (Chapter 1)",
+        "supporting_notes": "\"Finally they reached the peak of the hills, where the Igorots have their main settlement, on account of the rich gold mines they enjoy there, and which they trade to the Ilocos and Pangasinán for things of sustenance, clothes and what else they need.\" (Antolín, 1789 Page 50). (Chapter 3). Antolín is quoting Father Francisco Colín's 17th-century history, confirming this trade route was long-established."
+      }
+    }
+  ]
+}
