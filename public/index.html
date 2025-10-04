@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- META -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
+    <!-- META DESCRIPTIONS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
 
-    <meta name="author" content="Banwar Project Team" />
-    <meta name="description" content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots."/>
+    <meta name="author" content="Banwar Project Team">
+    <meta name="description" content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots.">
 
     <!-- TITLE & FAVICON -->
     <title>Banwar | Cordillera Digital Mapping</title>
-    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
+    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png">
 
-    <!-- PRELOAD STYLES -->
-    <link rel="preload" href="./styles/root.css" as="style" onload="this.rel='stylesheet'" />
-    <link rel="preload" href="./styles/pages/home_page.css" as="style" onload="this.rel='stylesheet'"/>
+    <!-- STYLESHEETS -->
+    <link rel="preload" href="./styles/root.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="./styles/pages/home_page.css" as="style" onload="this.rel='stylesheet'">
 
-    <!-- COMPONENT : HEADER -->
-    <link rel="stylesheet" href="./components/header/header.css" />
+    <!-- COMPONENT: HEADER -->
     <script defer src="./components/header/header.js"></script>
-        
-    <!-- COMPONENT : FOOTER -->
-    <link rel="stylesheet" href="./components/footer/footer.css" />
+    <link rel="stylesheet" href="./components/header/header.css">
+
+    <!-- COMPONENT: CAROUSEL -->
+    <script defer src="./components/carousel/carousel.js"></script>
+    <link rel="stylesheet" href="./components/carousel/carousel.css">
+
+    <!-- COMPONENT: FOOTER -->
     <script defer src="./components/footer/footer.js"></script>
-        
+    <link rel="stylesheet" href="./components/footer/footer.css">
+
     <!-- COMPONENT : SEARCH -->
     <link rel="stylesheet" href="./components/search/search.css" />
-        
-    <!-- COMPONENT : CAROUSEL -->
-    <script defer src="./components/carousel/carousel.js"></script>
-    <link rel="stylesheet" href="./components/carousel/carousel.css" />
 
     <!-- PAGE CONTROLLER -->
     <script type="module" src="./scripts/pages/home_page.js"></script>
@@ -40,52 +40,49 @@
     <!-- PAGE HEADER -->
     <header id="header"></header>
 
-    <!-- PAGE MAIN CONTENT -->
+    <!-- TODO: PAGE MAIN CONTENT -->
     <main id="main">
+
         <!-- MAIN : HERO -->
-        <section class="main-item" id="hero">
+        <div class="content-container">
             <section id="home-content">
                 <div class="hero">
                     <div class="col-1">
                         <h1 class="home-title">Explore Cordillera Like Never Before</h1>
                         <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                         </p>
                     </div>
 
                     <div class="col-2">
-                        <img src="./assets/images/map.png" alt="Map Image" />
+                        <img src="./assets/images/map.png" alt="Map Image">
                     </div>
                 </div>
 
-                <!-- CAROUSEL CONTAINER (CAUTION WHEN EDITING!)-->
                 <div id="carousel"></div>
             </section>
+        </div>
 
-            <!-- MAPS PAGE CONTENT-->
-            <div class="content-container">
-                <section id="maps-content">
-                    <!-- EDIT HERE -->
-                    Maps Page
-                </section>
-            </div>
-    
+        <!-- MAIN : MAP -->
+        <div class="content-container">
+            <section id="maps-content">
+                <!-- EDIT HERE -->
+                Maps Page
+            </section>
+        </div>  
 
-            <!-- CONTEXT PAGE CONTENT-->
-            <div class="content-container">
-                <section id="context-content">
-                    <!-- EDIT HERE -->
-                    Context Page
-                </section>
-            </div>
+        <!-- MAIN : CONTEXT PAGE -->
+         <div class="content-container">
+            <section id="context-content">
+                Content Page
+            </section>
+         </div>
+    </main>
 
-    <!-- FOOTER CONTENT (DON'T EDIT)-->
+    <!-- PAGE FOOTER -->
     <footer id="footer"></footer>
 </body>
 </html>
