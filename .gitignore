@@ -1,0 +1,4 @@
+# BACKEND
+backend/app/utils/venv/
+backend/app/utils/__pycache__/
+backend/logs/

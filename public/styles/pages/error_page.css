@@ -1,11 +1,24 @@
-.logo {
-    user-select: none;
-    aspect-ratio: 1/1;
-    height: calc(var(--font-size-h1) + var(--font-size-h1));
-    width: calc(var(--font-size-h1) + var(--font-size-h1));
-}
+#main {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-sm) var(--padding-lg);
+  gap: var(--padding-md);
 
-.logo-name {
-    user-select: none;
-    height: var(--font-size-h1);
+  & .main-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--padding-md);
+
+    & a {
+      font-weight: 800;
+    }
+
+    & #mask {
+      filter: drop-shadow(var(--shadow-lg));
+    }
+  }
 }
