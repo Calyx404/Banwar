@@ -2,7 +2,9 @@
 
 .carousel-container {
     max-width: 100vw;
+    width: min(100%, 75rem);
     padding: calc(var(--padding-sm) + 0.8rem);
+    margin-inline: auto;
     margin: 0 auto calc(var(--padding-lg) - 1rem);
     background: var(--color-primary);
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -96,9 +98,9 @@
             & .slides {
                 display: grid;
                 grid-auto-flow: column;
-                grid-template-columns: 100%;
+                grid-auto-columns: 100%;
                 transform: translateX(var(--tx, 0%));
-                transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
             }
 
             .slide {
@@ -193,6 +195,7 @@
 }
 
 .popout {
+    --card-height: clamp(26rem, 70vh, 34rem);
     margin-top: var(--padding-sm);
 
     & .panel {
@@ -207,6 +210,7 @@
 
     & .committee-card {
         overflow: hidden;
+        height: var(--card-height);
         border-radius: var(--radius-lg);
         border: 1px solid rgba(0, 0, 0, 0.8);
         background: rgba(255, 255, 255, 0.8);
@@ -215,73 +219,201 @@
         & .card-content {
             display: grid;
             grid-template-columns: 38% 62%;
+            height: 100%;
         }
 
         & .left {
             display: grid;
             grid-template-rows: 13rem auto auto;
+            min-height: 0;
+            height: 100%;
             border-right: 1px solid rgba(0, 0, 0, 0.2);
-        }
 
-        & .img-container {
-            position: relative;
-            overflow: hidden;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
-            & img {
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-
-        & .purpose-container {
-            padding: 1.2rem 1.2rem 0.6rem 1.4rem;
-
-            & .quote {
+            & .img-container {
                 position: relative;
-                padding: 1rem 2.6rem 1.4rem 2.6rem;
-                border-radius: var(--radius-md);
-                border: 1px solid rgba(0, 0, 0, 0.2);
-                background: #ffffffcc;
-                
-                & :is(::before, ::after) {
-                    position: absolute;
-                    font-family: Georgia, serif;
-                    font-weight: 700;
-                    font-size: var(--font-size-h3);
-                    line-height: 1;
-                    color: var(--color-muted);
-                    opacity: 0.9;
+                overflow: hidden;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    
+                & img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
-
-                &::before {
-                    content: "“";
-                    left: var(--padding-sm);
-                    top: var(--padding-xs);
+            }
+    
+            & .purpose-container {
+                padding: 1.2rem 1.2rem 0.6rem 1.4rem;
+    
+                & .quote {
+                    position: relative;
+                    padding: 1rem 2.6rem 1.4rem 2.6rem;
+                    border-radius: var(--radius-md);
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    background: #ffffffcc;
+                    
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        font-family: Georgia, serif;
+                        font-weight: 700;
+                        font-size: var(--font-size-h3);
+                        line-height: 1;
+                        color: var(--color-muted);
+                        opacity: 0.9;
+                    }
+    
+                    &::before {
+                        content: "“";
+                        left: var(--padding-sm);
+                        top: var(--padding-xs);
+                    }
+    
+                    &::after {
+                        content: "”";
+                        right: var(--padding-sm);
+                        bottom: var(--padding-xs);
+                    }
+    
+                    & p {
+                        margin: 0;
+                        font-size: 0.8rem;
+                        text-align: justify;
+                        color: var(--color-muted);
+                    }
                 }
+            }
+    
+            & .leader-container {
+                display: grid;
+                grid-template-columns: 4.2rem 1fr;
+                align-items: center;
+                gap: 0.8rem;
+                padding: 0.8rem 1.4rem 1.4rem;
+    
+                & .committee-logo {
+                    width: 4.2rem;
+                    height: 4.2rem;
+                    border-radius: var(--radius-md);
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    background: #fff;
+                    overflow: hidden;
 
-                &::after {
-                    content: "”";
-                    right: var(--padding-sm);
-                    bottom: var(--padding-xs);
+                    & img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
+    
+                & .details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.4rem;
 
-                & p {
-                    margin: 0;
-                    font-size: 0.8rem;
-                    color: var(--color-muted);
+                    & .label {
+                        font-size: 0.7rem;
+                        font-weight: 700;
+                        letter-spacing: 0.05rem;
+                        color: var(--color-muted);
+                    }
+
+                    & .name {
+                        font-weight: 700;
+                    }
+
+                    & .role {
+                        font-size: 0.8rem;
+                        color: var(--color-muted);
+                    }
                 }
             }
         }
 
-        & .leader-container {
+        & .right {
             display: grid;
-            grid-template-columns: 4.2rem 1fr;
-            align-items: center;
-            gap: 0.8rem;
-            padding: 0.8rem 1.4rem 1.4rem;
+            grid-template-rows: auto 1fr;
+            min-height: 0;
+            height: 100%;
+            padding: var(--padding-sm);
+
+            & .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0.6rem;
+                margin-bottom: 0.9rem;
+                padding-bottom: 0.9rem;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+                & .title {
+                    font-family: var(--font-text);
+                    letter-spacing: 0.05rem;
+                    font-size: 1.6rem;
+                    margin: 0;
+                }
+
+                & .badge {
+                    font-weight: 600;
+                    font-size: 0.8rem;
+                    padding: 0.4rem 0.6rem;
+                    border-radius: var(--radius-lg);
+                    border: 1px dashed rgba(0, 0, 0, 0.5);
+                    background: rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            & .members {
+                overflow-y: auto;
+                overscroll-behavior: contain;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                align-content: start;
+                justify-content: stretch;
+                grid-auto-rows: max-content;
+                min-height: 0;
+                padding-right: 0.4rem;
+                gap: 0.8rem;
+
+                & .member {
+                    display: grid;
+                    grid-template-columns: 3.5rem 1fr;
+                    align-items: center;
+                    gap: 0.8rem;
+                    padding: 0.7rem 0.8rem;
+                    border-radius: var(--radius-md);
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    background: #ffffffb3;
+
+                    & .avatar {
+                        overflow: hidden;
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        border-radius: var(--radius-md);
+                        border: 1px solid rgba(0, 0, 0, 0.2);
+                        background: #e8eeec;
+
+                        & img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    & .name {
+                        font-size: 0.9rem;
+                        font-weight: 700;
+                    }
+
+                    & .role {
+                        font-size: 0.8rem;
+                        margin-top: 2px;
+                        color: var(--color-muted);
+                    }
+                }
+            }
         }
     }
 }
@@ -291,8 +423,43 @@
 #com-design:checked ~ .popout .panel-design,
 #com-research:checked ~ .popout .panel-research {
     pointer-events: auto;
-    max-height: 100vh;
+    max-height: calc(var(--card-height) + 1rem);
     opacity: 1;
     transform: translateY(0);
     margin-top: 0.6rem;
+}
+
+
+/* TODO: FIX RESPONSIVE */
+@media (max-width: 980px) {
+    .popout {
+        --card-height: clamp(28rem, 75vh, 38rem);
+    }
+
+    .popout .committee-card .card-content {
+        grid-template-columns: 1fr;
+    }
+
+    .popout .committee-card .left {
+        grid-template-rows: 12rem auto auto;
+        border-right: none;
+    }
+
+    .popout .committee-card .right {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (max-width: 640px) {
+    .carousel .track .slide {
+        grid-template-columns: 1fr;
+    }
+
+    .popout .committee-card .right .members {
+        grid-template-columns: 1fr;
+    }
+
+    .popout .committee-card .header .title {
+        font-size: 1.4rem;
+    }
 }

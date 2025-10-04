@@ -61,14 +61,14 @@ function Carousel() {
                             </div>
                         </label>
                     </div>
+                </div>
 
-                    <div class="car-arrows">
-                        <label for="slide-2" class="arrow prev for-1" title="Previous">‹</label>
-                        <labe for="slide-2" class="arrow next for-1" title="Next">›</labe
-        
-                        <label for="slide-1" class="arrow prev for-2" title="Previous">‹</label>
-                        <label for="slide-1" class="arrow next for-2" title="Next">›</label>
-                    </div>
+                <div class="car-arrows">
+                    <label for="slide-2" class="arrow prev for-1" title="Previous">‹</label>
+                    <label for="slide-2" class="arrow next for-1" title="Next">›</label>
+    
+                    <label for="slide-1" class="arrow prev for-2" title="Previous">‹</label>
+                    <label for="slide-1" class="arrow next for-2" title="Next">›</label>
                 </div>
             </div>
                     
@@ -95,7 +95,7 @@ function Carousel() {
                                 <div class="committee-logo"><img src="https://placehold.co/120/red/white?text=Front+End&font=Poppins" alt="Front-End Logo"></div>
 
                                 <div class="details">
-                                    <span class="label">Committee Head</span>
+                                    <span class="label">COMMITTEE HEAD</span>
                                     <p class="name">Arian Dave Abat</p>
                                     <p class="role">Front-End Lead</p>
                                 </div>
@@ -112,29 +112,37 @@ function Carousel() {
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=1" alt="Avatar"></img></div>
-                                    <p class="name">Emerson L. Baliag</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Emerson Baliag</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=2" alt="Avatar"></img></div>
-                                    <p class="name">Raven Jesrael E. Garcia</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Raven Jesrael Garcia</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=3" alt="Avatar"></img></div>
-                                    <p class="name">Jandervien B. Lastimozo</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Jandervien Lastimozo</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=4" alt="Avatar"></img></div>
-                                    <p class="name">Carl Andrei V. Valdez</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Carl Andrei Valdez</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -155,10 +163,10 @@ function Carousel() {
 
                             <div class="leader-container">
                                 <!-- FEEL FREE TO REPLACE THE IMAGE! (COMMITTEE LOGO) -->
-                                <div class="committee-logo"><img src="https://placehold.co/120/red/white?text=Back+End&font=Poppins" alt="Back-End Logo"></div
+                                <div class="committee-logo"><img src="https://placehold.co/120/red/white?text=Back+End&font=Poppins" alt="Back-End Logo"></div>
 
                                 <div class="details">
-                                    <span class="label">Committee Head</span>
+                                    <span class="label">COMMITTEE HEAD</span>
                                     <p class="name">Raymond Allen Agustin</p>
                                     <p class="role">Back-End Lead</p>
                                 </div>
@@ -175,24 +183,26 @@ function Carousel() {
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=5" alt="Avatar"></div>
-                                    <p class="name">Sander T. Listana</p>
-                                    <p class="role">Member</p>
-                                </div>
-
-                                <div class="members">
-                                    <div class="member">
-                                        <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
-                                        <div class="avatar"><img src="https://i.pravatar.cc/120?img=6" alt="Avatar"></div>
-                                        <p class="name">Jared A. Peralta</p>
+                                    <div class="member-details">                                        
+                                        <p class="name">Sander Listana</p>
                                         <p class="role">Member</p>
                                     </div>
                                 </div>
 
-                                <div class="members">
-                                    <div class="member">
-                                        <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
-                                        <div class="avatar"><img src="https://i.pravatar.cc/120?img=7" alt="Avatar"></div>
-                                        <p class="name">Raymond G. Torio</p>
+                                <div class="member">
+                                    <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
+                                    <div class="avatar"><img src="https://i.pravatar.cc/120?img=6" alt="Avatar"></div>
+                                    <div class="member-details">
+                                        <p class="name">Jared Peralta</p>
+                                        <p class="role">Member</p>
+                                    </div>
+                                </div>
+
+                                <div class="member">
+                                    <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
+                                    <div class="avatar"><img src="https://i.pravatar.cc/120?img=7" alt="Avatar"></div>
+                                    <div class="member-details">
+                                        <p class="name">Raymond Torio</p>
                                         <p class="role">Member</p>
                                     </div>
                                 </div>
@@ -207,18 +217,18 @@ function Carousel() {
                             <!-- FEEL FREE TO REPLACE THE IMAGE! (GROUP PHOTO) -->
                             <div class="img-container"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="Design Group Photo"></div>
 
-                            <div class="purpose-content">
+                            <div class="purpose-container">
                                 <div class="purpose-text">
                                     <div class="quote"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tenetur dicta aliquam sequi modi aperiam maxime eos soluta nulla enim facilis neque</p></div>
                                 </div>
                             </div>
 
-                            <div class="leader-content">
+                            <div class="leader-container">
                                 <!-- FEEL FREE TO REPLACE THE IMAGE! (COMMITTEE LOGO) -->
                                 <div class="committee-logo"><img src="https://placehold.co/120/red/white?text=Design&font=Poppins" alt="Design Logo"></div>
 
                                 <div class="details">
-                                    <span class="label">Committee Head</span>
+                                    <span class="label">COMMITTEE HEAD</span>
                                     <p class="name">Allison Marie Kingkingan</p>
                                     <p class="role">Design Lead</p>
                                 </div>
@@ -235,49 +245,63 @@ function Carousel() {
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=8" alt="Avatar"></div>
-                                    <p class="name">Basiliza A. Binay-an</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Basiliza A. Binay-an</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=9" alt="Avatar"></div>
-                                    <p class="name">MJ G. De Ocampo</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">MJ G. De Ocampo</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=10" alt="Avatar"></div>
-                                    <p class="name">Christa Grace B. Ebusca</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Christa Grace B. Ebusca</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=11" alt="Avatar"></div>
-                                    <p class="name">Gemma W. Epad</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Gemma W. Epad</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=12" alt="Avatar"></div>
-                                    <p class="name">Mayumi P. Facsoy</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Mayumi P. Facsoy</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=13" alt="Avatar"></div>
-                                    <p class="name">Ryan Kurt L. Laoyan</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Ryan Kurt L. Laoyan</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=14" alt="Avatar"></div>
-                                    <p class="name">Eathan John T. Na-oy</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Eathan John T. Na-oy</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -301,7 +325,7 @@ function Carousel() {
                                 <div class="committee-logo"><img src="https://placehold.co/120/red/white?text=Research&font=Poppins" alt="Research Logo"></div>
                                             
                                 <div class="details">
-                                    <span class="label">Committee Head</span>
+                                    <span class="label">COMMITTEE HEAD</span>
                                     <p class="name">Jovic Kyle Acyapas</p>
                                     <p class="role">Research Lead</p>
                                 </div>
@@ -318,190 +342,244 @@ function Carousel() {
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=14" alt="Avatar"></div>
-                                    <p class="name">Grach B. Banganan</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Grach Banganan</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=15" alt="Avatar"></div>
-                                    <p class="name">Kochina A. Batan</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Kochina Batan</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=16" alt="Avatar"></div>
-                                    <p class="name">Rheniel Bay-an</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Rheniel Bay-an</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=17" alt="Avatar"></div>
-                                    <p class="name">Frances Burgos</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Frances Burgos</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=18" alt="Avatar"></div>
-                                    <p class="name">Christopher S. Cadalig</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Christopher Cadalig</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=19" alt="Avatar"></div>
-                                    <p class="name">Harvey Cangsan</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Harvey Cangsan</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=20" alt="Avatar"></div>
-                                    <p class="name">Rhollie A. Domingo</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Rhollie Domingo</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=21" alt="Avatar"></div>
-                                    <p class="name">Wilmoore Dorencio</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Wilmoore Dorencio</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=22" alt="Avatar"></div>
-                                    <p class="name">Johanna Fay N. Estoque</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Johanna Fay Estoque</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=23" alt="Avatar"></div>
-                                    <p class="name">Justin D. Fama</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Justin Fama</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=24" alt="Avatar"></div>
-                                    <p class="name">Dan Anilov Fontanos</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Dan Anilov Fontanos</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=25" alt="Avatar"></div>
-                                    <p class="name">Jade Rhyss Francis</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Jade Rhyss Francis</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=26" alt="Avatar"></div>
-                                    <p class="name">Aijelle T. Gumatin</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Aijelle Gumatin</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=27" alt="Avatar"></div>
-                                    <p class="name">Denise Mae Jose</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Denise Mae Jose</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=28" alt="Avatar"></div>
-                                    <p class="name">Joshua Lag-ey</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Joshua Lag-ey</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=29" alt="Avatar"></div>
-                                    <p class="name">Jarmaine Reisha A. Lomayna</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Jarmaine Reisha Lomayna</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=30" alt="Avatar"></div>
-                                    <p class="name">Macklien Luaña</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Macklien Luaña</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=31" alt="Avatar"></div>
-                                    <p class="name">Rhamztyn Manadao</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Rhamztyn Manadao</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=32" alt="Avatar"></div>
-                                    <p class="name">Rolan Mangiwet</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Rolan Mangiwet</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=33" alt="Avatar"></div>
-                                    <p class="name">Gwyneth Gail D. Nana</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Gwyneth Gail Nana</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=34" alt="Avatar"></div>
-                                    <p class="name">Romel Necer</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Romel Necer</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=35" alt="Avatar"></div>
-                                    <p class="name">Rjhay Pagtiilan</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Rjhay Pagtiilan</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=36" alt="Avatar"></div>
-                                    <p class="name">Genesis Quintero</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Genesis Quintero</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=37" alt="Avatar"></div>
-                                    <p class="name">Jeryl Anne A. Santos</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Jeryl Anne Santos</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=38" alt="Avatar"></div>
-                                    <p class="name">Patrick S. Tundagui Jr.</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Patrick Tundagui Jr.</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=39" alt="Avatar"></div>
-                                    <p class="name">Mekaiah Joyce C. Ulban</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Mekaiah Joyce Ulban</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
 
                                 <div class="member">
                                     <!-- FEEL FREE TO REPLACE THE IMAGE! (AVATAR) -->
                                     <div class="avatar"><img src="https://i.pravatar.cc/120?img=40" alt="Avatar"></div>
-                                    <p class="name">Hans Dave P. Yamoto</p>
-                                    <p class="role">Member</p>
+                                    <div class="member-details">
+                                        <p class="name">Hans Dave Yamoto</p>
+                                        <p class="role">Member</p>
+                                    </div>
                                 </div>
                             </div>
                         </section>
