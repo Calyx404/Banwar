@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("header").innerHTML = Header();
+  const headerEl = document.getElementById("header");
+  headerEl.innerHTML = Header();
 
   initTheme();
 
@@ -28,7 +29,7 @@ function Header() {
       </div>
       <div class="separator"></div>
       <form class="feature-item" id="header-search">
-        <input type="search" name="search" placeholder="Explore the Cordillera!" />
+        <input type="search" name="search" placeholder="Explore the Cordillera!" autocomplete="off"/>
         <div id="search-results"></div>
         <button type="submit" title="Explore Map">
           <img src="./assets/icons/search.svg" alt="Explore" />
