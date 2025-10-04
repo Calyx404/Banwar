@@ -1,3 +1,5 @@
+import { Carousel } from "../carousel/carousel.js";
+
 export class AccountView {
   constructor(bus, containerId, excludeFields = []) {
     this.bus = bus;
@@ -121,34 +123,78 @@ export class AccountView {
 
   _bindAccountContentDefault(contentID, featureCollection) {
     try {
-      // Categories summary with icons (replicates original prototype)
       const categories = {};
       for (const feature of featureCollection) {
         const category = feature.properties?.category || "Uncategorized";
-        if (!categories[category])
-          categories[category] = feature.properties?.icon || "map.svg";
-      }
-
-      // compile slides — fallback to simple grid if Carousel not present
-      let slides = "";
-      for (const [category, icon] of Object.entries(categories)) {
-        slides += AccountView._createSlide(icon, category);
+        if (!categories[category]) {
+          categories[category] = {
+            icon: feature.properties?.icon || "map.svg",
+            features: [],
+          };
+        }
+        categories[category].features.push(feature);
       }
 
       const content = `
-        <section class="content-item">
-          <div class="carousel">
-            ${Carousel(slides)}
-          </div>
-        </section>
-      `;
+      <section class="content-item">
+        <div id="account-carousel"></div>
+        <div id="account-carousel-context"></div>
+      </section>
+    `;
 
       const el = this.container.querySelector(contentID);
-      if (el) el.innerHTML = content;
+      if (el) {
+        el.innerHTML = content;
+        this._initAccountCarousel(categories);
+      }
     } catch (e) {
       console.error("AccountView._bindAccountContentDefault error:", e);
       const el = this.container.querySelector(contentID);
       if (el) el.innerHTML = "<p>Error rendering categories</p>";
+    }
+  }
+
+  _initAccountCarousel(categories) {
+    try {
+      const carouselContainerSelector = "#account-carousel";
+      const contextEl = document.getElementById("account-carousel-context");
+
+      if (!document.querySelector(carouselContainerSelector) || !contextEl) {
+        console.warn(
+          "AccountView._initAccountCarousel: container/context not found"
+        );
+        return;
+      }
+
+      // Import dynamically (lazy load) to avoid circular imports at module top
+      import("../carousel/carousel.js").then(({ Carousel }) => {
+        const carousel = new Carousel(carouselContainerSelector, {
+          autoplay: true,
+          interval: 4000,
+        });
+
+        carousel.init(categories, (activeKey) => {
+          const categoryData = categories[activeKey];
+          if (!categoryData) {
+            contextEl.innerHTML = "";
+            return;
+          }
+
+          const featureList = categoryData.features
+            .map(
+              (f) => `<li>${f.properties?.historical_name || "Unnamed"}</li>`
+            )
+            .join("");
+
+          contextEl.innerHTML = `
+          <h4>${activeKey}</h4>
+          <p>${categoryData.features.length} features</p>
+          <ul>${featureList}</ul>
+        `;
+        });
+      });
+    } catch (e) {
+      console.error("AccountView._initAccountCarousel error:", e);
     }
   }
 

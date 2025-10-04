@@ -12,4 +12,8 @@ export class SearchController {
       return [];
     }
   }
+
+  getById(id) {
+    return this.repo.getById(id);
+  }
 }
