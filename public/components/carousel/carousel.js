@@ -88,11 +88,13 @@ export class Carousel {
     if (this.timer) clearInterval(this.timer);
   }
 }
+
+// FIX: component carousel
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("carousel").innerHTML = Carousel();
+    document.getElementById("carousel").innerHTML = committeeCarousel();
 });
 
-function Carousel() {
+function committeeCarousel() {
     return `
     <div class="carousel-container">
         <h4 class="carousel-title">COMMITTEES</h4>
