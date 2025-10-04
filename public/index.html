@@ -37,16 +37,25 @@
     <!-- COMPONENT : FOOTER -->
     <link rel="stylesheet" href="./components/footer/footer.css" />
     <script defer src="./components/footer/footer.js"></script>
+
+    <!-- COMPONENT : SEARCH -->
+    <link rel="stylesheet" href="./components/search/search.css" />
+
+    <!-- COMPONENT : CAROUSEL -->
+    <link rel="stylesheet" href="./components/carousel/carousel.css" />
+
+    <!-- PAGE CONTROLLER -->
+    <script type="module" src="./scripts/pages/home_page.js"></script>
   </head>
 
   <body>
     <!-- PAGE HEADER -->
     <header id="header"></header>
 
-    <!-- TODO: PAGE MAIN CONTENT -->
+    <!-- PAGE MAIN CONTENT -->
     <main id="main">
-      <!-- MAIN : HOME -->
-      <div class="content-container">
+      <!-- MAIN : HERO -->
+      <section class="main-item" id="hero">
         <section id="home-content">
           <div class="hero">
             <div class="col-1">
@@ -67,10 +76,21 @@
             </div>
           </div>
         </section>
-      </div>
+      </section>
 
-      <!-- ABOUT-US PAGE CONTENT (FEEL FREE TO EDIT)-->
-      <div class="content-container">
+      <!-- MAIN : APP FEATURES -->
+      <section class="main-item" id="features">
+        <h2>Features</h2>
+      </section>
+
+      <!-- MAIN : MEET THE TEAM -->
+      <section class="main-item" id="team">
+        <h2>Meet the Team</h2>
+        <div id="team-carousel"></div>
+        <div id="team-context"></div>
+      </section>
+
+      <div class="main-item">
         <section id="about-content">
           <h1>ABOUT US</h1>
 
