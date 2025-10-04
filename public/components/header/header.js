@@ -46,8 +46,6 @@ function initTheme() {
   const root = document.documentElement;
   const toggleBtn = document.getElementById("header-theme");
   const logoNames = document.getElementsByClassName("logo-name");
-  const toggleBtn = document.getElementById("header-theme");
-  const logoNames = document.getElementsByClassName("logo-name");
 
   const lightLogoName = "./assets/logos/logo-name-light.png";
   const darkLogoName = "./assets/logos/logo-name-dark.png";

@@ -1,11 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("footer").innerHTML = Footer();
 });
-  document.getElementById("footer").innerHTML = Footer();
-});
 
 function Footer() {
-  return `
   return `
         <section class="footer-item" id="footer-content">
             <div class="content-item" id="content-details">
@@ -15,9 +12,7 @@ function Footer() {
                 </div>
                 <div class="detail">
                     <p class="message">Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots.</p>
-                    <p class="message">Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots.</p>
                 </div>
-                <button onclick="document.location='#main'">
                 <button onclick="document.location='#main'">
                     <img src="./assets/icons/top.svg" alt="Top">
                     <span>Back to Top</span>
@@ -29,8 +24,6 @@ function Footer() {
                     <h4>Site Map</h4>
                     <div class="separator"></div>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="./map.html">Map</a></li>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="./map.html">Map</a></li>
                     </ul>

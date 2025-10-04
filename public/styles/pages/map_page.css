@@ -1,4 +1,4 @@
-main {
+#main {
   width: 100%;
   min-height: 100svh;
   flex: 1;
@@ -6,6 +6,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: var(--padding-sm) var(--padding-lg);
+  gap: var(--padding-md);
+  scroll-margin-top: 100svh;
 
   & .main-item {
     width: 100%;
