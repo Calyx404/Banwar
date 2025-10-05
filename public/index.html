@@ -1,81 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- META DESCRIPTIONS -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
 
-    <meta name="author" content="Banwar Project Team">
-    <meta name="description" content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots.">
+    <meta name="author" content="Banwar Project Team" />
+    <meta
+      name="description"
+      content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots."
+    />
 
     <!-- TITLE & FAVICON -->
     <title>Banwar | Cordillera Digital Mapping</title>
-    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png">
+    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
 
-    <!-- STYLESHEETS -->
-    <link rel="preload" href="./styles/root.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="./styles/pages/home_page.css" as="style" onload="this.rel='stylesheet'">
+    <!-- PRELOAD STYLES -->
+    <link
+      rel="preload"
+      href="./styles/root.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./styles/pages/home_page.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
 
-    <!-- COMPONENTS -->
+    <!-- COMPONENT : HEADER -->
+    <link rel="stylesheet" href="./components/header/header.css" />
     <script defer src="./components/header/header.js"></script>
-    <link rel="stylesheet" href="./components/header/header.css">
 
-    <script defer src="./components/carousel/carousel.js"></script>
-    <link rel="stylesheet" href="./components/carousel/carousel.css">
-
+    <!-- COMPONENT : FOOTER -->
+    <link rel="stylesheet" href="./components/footer/footer.css" />
     <script defer src="./components/footer/footer.js"></script>
-    <link rel="stylesheet" href="./components/footer/footer.css">
 
-</head>
+    <!-- COMPONENT : SEARCH -->
+    <link rel="stylesheet" href="./components/search/search.css" />
 
-<body>
-    <!-- PAGE NAVIGATION [DO NOT TOUCH] -->
-    <input type="radio" name="selection" id="home" hidden checked>
-    <input type="radio" name="selection" id="about" hidden>
-    <input type="radio" name="selection" id="maps"  hidden>
-    <input type="radio" name="selection" id="context"  hidden>
+    <!-- COMPONENT : CAROUSEL -->
+    <link rel="stylesheet" href="./components/carousel/carousel.css" />
 
+    <!-- PAGE CONTROLLER -->
+    <script type="module" src="./scripts/pages/home_page.js"></script>
+  </head>
+
+  <body>
     <!-- PAGE HEADER -->
     <header id="header"></header>
 
-    <!-- TODO: PAGE MAIN CONTENT -->
-    <main>
+    <!-- PAGE MAIN CONTENT -->
+    <main id="main">
+      <!-- MAIN : HERO -->
+      <section class="main-item" id="hero">
+        <section id="home-content">
+          <div class="hero">
+            <div class="col-1">
+              <h1 class="home-title">Explore Cordillera Like Never Before</h1>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
 
-        <!-- MAIN : HOME -->
-        <div class="content-container">
-            <section id="home-content">
-                <div class="hero">
-                    <div class="col-1">
-                        <h1 class="home-title">Explore Cordillera Like Never Before</h1>
-                        <p>
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                        </p>
-                    </div>
-
-                    <div class="col-2">
-                        <img src="./assets/images/map.png" alt="Map Image">
-                    </div>
-                </div>
-
-                <div id="carousel"></div>
-            </section>
+      <!-- MAIN : FEATURES -->
+      <section class="main-item" id="features">
+        <div class="feature-item" id="hero">
+          <div class="description">
+            <h4 class="label">Project Banwar</h4>
+            <h1 class="title">Journey Into the Cordillera's Living History</h1>
+            <p class="detail">
+              What if the mountains could tell their stories?
+              <strong>Banwar</strong> maps places described in an
+              <strong>18th-century Spanish chronicle</strong> that documented
+              the <strong>Cordillera region</strong> in Northern
+              Philippines—home to resilient communities, thriving trade, and
+              untold encounters. We transformed these writings into digital
+              markers you can freely explore. Click, navigate, and let the past
+              unfold like never before.
+            </p>
+            <div class="actions">
+              <button class="action" onclick="document.location='#feature'">
+                <span>See App Features</span>
+              </button>
+            </div>
+          </div>
+          <div class="graphics"></div>
         </div>
 
-        <!-- MAIN : MAP -->
-        <div class="content-container">
-            <section id="maps-content">
-                <!-- EDIT HERE -->
-                Maps Page
-            </section>
+        <div class="separator"></div>
+
+        <div class="feature-item" id="feature">
+          <div class="description">
+            <h4 class="label">Explore Our Features</h4>
+            <h1 class="title">
+              Trace Centuries of Stories Through a Living Map
+            </h1>
+            <p class="detail">
+              Banwar turns historical research into an interactive journey.
+              <strong>Navigate</strong> through a digital map filled with places
+              mentioned in centuries-old texts. <strong>Search</strong> using
+              their original names and watch history appear right where it
+              happened. <strong>Export</strong> clean PNG or PDF maps for your
+              study, teaching, or personal exploration. It is history made easy
+              to explore.
+            </p>
+            <div class="actions">
+              <button
+                class="action unfill"
+                onclick="document.location='./map.html'"
+              >
+                <span>Export Data</span>
+              </button>
+              <button class="action" onclick="document.location='./map.html'">
+                <span>Explore Map</span>
+              </button>
+            </div>
+          </div>
+          <div class="graphics">
+            <div id="feature-carousel"></div>
+          </div>
         </div>
 
+        <div class="separator"></div>
+
+        <div class="feature-item" id="source">
+          <div class="description">
+            <h4 class="label">The Story Behind Banwar</h4>
+            <h1 class="title">
+              Born From an 18th-Century Chronicle of Igorot Life
+            </h1>
+            <p class="detail">
+              Banwar is rooted in the writings of
+              <strong>Francisco Antolin</strong>, a Spanish missionary who
+              explored the Cordillera in the mid-1700s. His accounts describe
+              Igorot communities, bustling gold and copper mines, and encounters
+              with colonial expeditions. Translated by historian
+              <strong>William Henry Scott</strong>, this rare chronicle offers
+              one of the earliest windows into Cordilleran life. We transformed
+              these historical descriptions into digital points, linking written
+              memory to living geography.
+            </p>
+            <div class="actions">
+              <button
+                class="action"
+                onclick="document.location='https://asianethnology.org/article/1773/download'"
+              >
+                <span>Read the Source</span>
+              </button>
+            </div>
+          </div>
+          <div class="graphics">
+            <div id="source-carousel"></div>
+          </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="feature-item">
+          <div class="description">
+            <h4 class="label">Who Made This Possible</h4>
+            <h1 class="title">
+              Proud Igorot Students Mapping Cultural Heritage
+            </h1>
+            <p class="detail">
+              Banwar was created by Information Technology students from the
+              College of Information Sciences, Benguet State University. Through
+              research, design, and code, we built a digital bridge between
+              history and technology. This project is more than coursework—it is
+              a collaborative effort to preserve and share the Cordillera's
+              heritage with the world.
+            </p>
+            <div class="actions">
+              <button class="action" onclick="document.location='#team'">
+                <span>Meet the Team</span>
+              </button>
+            </div>
+          </div>
+          <div class="graphics" id="team">
+            <div id="team-carousel"></div>
+            <div id="team-context"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- PAGE FOOTER -->
     <footer id="footer"></footer>
-</body>
+  </body>
 </html>

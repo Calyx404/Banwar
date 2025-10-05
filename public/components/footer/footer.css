@@ -1,89 +1,98 @@
-@import '../root.css';
-
 footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: var(--padding-xs) var(--padding-lg);
+  justify-content: space-between;
+  border-top: 2px solid var(--color-accent);
+  background: var(--color-primary);
+  min-height: 100svh;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+
+  & .footer-item {
+    display: grid;
     width: 100%;
-    display: flex;
-    align-items: center;
-    padding: var(--padding-xs) var(--padding-lg);
     justify-content: space-between;
-    border-top: 2px solid var(--color-accent);
-    background: var(--color-primary);
-    min-height: 100svh;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
+    padding: var(--padding-md) 0;
 
-    & .footer-item {
-        display: grid;
-        width: 100%;
-        justify-content: space-between;
-        padding: var(--padding-md) 0;
+    &#footer-content {
+      flex: 1;
+      padding: var(--padding-md) 0;
+      grid-template-columns: 1fr 2fr;
 
-        &#footer-content {
-            grid-template-columns: 1fr 2fr;
+      & .content-item {
+        align-items: start;
+        justify-content: start;
+        padding: var(--padding-lg) 0;
+        height: 100%;
 
-            & .content-item {
-                align-items: start;
-                justify-content: start;
-                padding: var(--padding-md);
-                height: 100%;
+        &#content-details {
+          display: flex;
+          flex-direction: column;
+          gap: var(--padding-md);
 
-                &#content-details {
-                    display: flex;
-                    flex-direction: column;
-                    gap: var(--padding-md);
+          & .detail {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: var(--padding-sm);
 
-                    & .detail {
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        gap: var(--padding-sm);
-                    }
-
-                }
-
-                &#content-lists {
-                    flex: 1;
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    gap: var(--padding-lg);
-                    position: relative;
-                    overflow: hidden;
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        inset: 0;
-                        background: url("../assets/logos/logo-icon.png") no-repeat center center;
-                        background-size: contain;
-                        opacity: 0.25;
-                        pointer-events: none;
-                        margin: var(--padding-sm);
-
-                    }
-
-                    & .list {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: flex-start;
-                        gap: var(--padding-xs);
-
-                        & ul {
-                            display: flex;
-                            flex-direction: column;
-                            gap: var(--padding-sm);
-
-                        }
-                    }
-                }
+            & .message {
+              width: 70%;
             }
+          }
         }
 
-        &#footer-copyright {
-            grid-template-columns: auto auto;
-            border-top: 1px solid var(--color-text);
+        &#content-lists {
+          flex: 1;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: var(--padding-lg);
+          position: relative;
+          overflow: hidden;
+
+          &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url("../../assets/logos/logo-icon.png") no-repeat center
+              center;
+            background-size: contain;
+            opacity: 0.25;
+            pointer-events: none;
+            margin: var(--padding-sm);
+          }
+
+          & .list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: var(--padding-xs);
+
+            & ul {
+              display: flex;
+              flex-direction: column;
+              gap: var(--padding-sm);
+            }
+
+            & .separator {
+              height: 2px;
+              width: 100%;
+              margin: var(--padding-xs) 0;
+              background: var(--color-text);
+            }
+          }
         }
+      }
     }
+
+    &#footer-copyright {
+      grid-template-columns: auto auto;
+      border-top: 1px solid var(--color-text);
+    }
+  }
 }
