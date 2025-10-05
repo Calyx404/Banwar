@@ -25,7 +25,7 @@ function Loading() {
       </header>
       <main id="splash-main">
         <div id="story">
-          <img id="character" src="./assets/images/dance.gif" alt="Igorot">
+          <img id="character" src="./assets/images/dancing.gif" alt="Igorot">
           <p id="storyline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, asperiores!</p>
         </div>
         <h4 class="status">Saglet...</h4>

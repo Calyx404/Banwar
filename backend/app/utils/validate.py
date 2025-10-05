@@ -5,15 +5,21 @@ from validator import Fields
 
 # Required fields schema
 REQUIRED_FIELDS = [
-    ("id", "int"),
-    ("historical_name", "text"),
-    ("modern_name", "text"),
     ("category", "category"),
+    ("icon", "text"),
     ("geometry_type", "geometry_type"),
     ("coordinates", "coordinates"),
+    ("historical_name", "text"),
+    ("modern_name", "text"),
     ("present_day_location", "text"),
     ("primary_description", "text"),
     ("supporting_notes", "text"),
+    ("introduction", "text"),
+    ("literature_review", "text"),
+    ("analysis", "text"),
+    ("discussion", "text"),
+    ("conclusion", "text"),
+    ("references", "text"),
 ]
 
 def validate(input_file: Path, output_file: Path, log_file: Path):
