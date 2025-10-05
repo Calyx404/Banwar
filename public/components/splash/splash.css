@@ -17,6 +17,7 @@
   z-index: 9999;
   animation: fadeOut 1s ease forwards;
   animation-delay: 5s;
+  cursor: wait;
 
   & #splash-header {
     width: 100%;
