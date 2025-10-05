@@ -58,11 +58,7 @@ footer {
         &#content-details {
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
-        &#content-details {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
+          gap: var(--padding-md);
 
           & .detail {
             width: 100%;

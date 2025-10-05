@@ -42,9 +42,9 @@
   --transition-slow: all 1s ease-in;
 
   /* ROOT : Shadows */
-  --shadow-sm: 0 1px 5px var(--color-accent);
-  --shadow-md: 0 5px 10px var(--color-accent);
-  --shadow-lg: 0 10px 15px var(--color-accent);
+  --shadow-sm: 0 1px 5px var(--color-secondary);
+  --shadow-md: 0 5px 10px var(--color-secondary);
+  --shadow-lg: 0 10px 15px var(--color-secondary);
 }
 
 :root[data-theme="dark"] {
@@ -54,19 +54,29 @@
   --color-accent: #5d2a34;
   --color-text: #f7edef;
   --color-overlay: rgba(0, 0, 0, 0.7);
+
+  & img.icon {
+    filter: brightness(0) invert(1);
+  }
 }
 
 /* SCROLLBAR */
-*::-webkit-scrollbar {
-  width: 0.5rem;
-  background-color: var(--color-accent);
+body::-webkit-scrollbar {
   width: 0.5rem;
   background-color: var(--color-accent);
 }
 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary);
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--color-secondary);
+}
+
 *::-webkit-scrollbar-thumb {
-  background-color: var(--color-secondary);
-  background-color: var(--color-secondary);
+  background-color: var(--color-accent);
 }
 
 /* ANIMATIONS */
@@ -205,9 +215,11 @@ img {
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: cover;
+
+  &.icon {
+    filter: none;
+    transition: var(--transition-fast);
+  }
 }
 
 label {
@@ -297,10 +309,12 @@ button {
   aspect-ratio: 1/1;
   height: calc(var(--font-size-h1) + var(--font-size-h3));
   width: calc(var(--font-size-h1) + var(--font-size-h3));
+  filter: drop-shadow(var(--shadow-sm));
 }
 
 .logo-name {
   user-select: none;
   height: var(--font-size-h1);
   width: auto;
+  filter: drop-shadow(var(--shadow-sm));
 }
