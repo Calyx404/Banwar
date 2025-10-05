@@ -74,31 +74,6 @@
 
           & .detail {
             width: 60%;
-
-            & strong {
-              position: relative;
-              display: inline-block;
-              z-index: 0;
-              cursor: default;
-
-              &::after {
-                content: "";
-                position: absolute;
-                inset: 0;
-                background: var(--color-accent);
-                transform: scaleX(0);
-                transform-origin: left;
-                z-index: -1;
-                transition: transform 0.3s ease;
-              }
-
-              &:hover {
-                color: var(--color-secondary);
-                &::after {
-                  transform: scaleX(1);
-                }
-              }
-            }
           }
 
           & .actions {
