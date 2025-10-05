@@ -169,17 +169,9 @@ h3 {
 h4 {
   font-size: var(--font-size-h4);
 }
-h1 {
-  font-size: var(--font-size-h1);
-}
-h2 {
-  font-size: var(--font-size-h2);
-}
-h3 {
-  font-size: var(--font-size-h3);
-}
-h4 {
-  font-size: var(--font-size-h4);
+
+p {
+  line-height: 1.5;
 }
 
 a {
@@ -298,8 +290,30 @@ button {
   &:active {
     transform: scale(0.9);
   }
-  &:active {
-    transform: scale(0.9);
+
+  &.unfill {
+    background: var(--color-secondary);
+
+    & img {
+      filter: brightness(1) invert(0);
+    }
+
+    & span {
+      color: var(--color-accent);
+    }
+
+    &:hover {
+      background: var(--color-accent);
+      color: var(--color-secondary);
+
+      & img {
+        filter: brightness(0) invert(1);
+      }
+
+      & span {
+        color: var(--color-secondary);
+      }
+    }
   }
 }
 
