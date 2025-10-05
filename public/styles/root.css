@@ -58,9 +58,9 @@
   --transition-slow: all 1s ease-in;
 
   /* ROOT : Shadows */
-  --shadow-sm: 0 1px 5px var(--color-secondary);
-  --shadow-md: 0 5px 10px var(--color-secondary);
-  --shadow-lg: 0 10px 15px var(--color-secondary);
+  --shadow-sm: 0 1px 5px var(--color-accent);
+  --shadow-md: 0 5px 10px var(--color-accent);
+  --shadow-lg: 0 10px 15px var(--color-accent);
 }
 
 /* DARK THEME */
@@ -191,6 +191,31 @@ a {
   &:hover::after,
   &:focus::after {
     width: 100%;
+  }
+}
+
+strong {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  cursor: default;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    color: var(--color-secondary);
+    &::after {
+      transform: scaleX(1);
+    }
   }
 }
 
