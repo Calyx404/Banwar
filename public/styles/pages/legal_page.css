@@ -1,3 +1,39 @@
+#nav {
+  position: sticky;
+  top: 4rem;
+  width: 100svw;
+  display: flex;
+  align-items: center;
+  padding: var(--padding-xs) var(--padding-lg);
+  justify-content: space-between;
+  background: var(--color-accent);
+  box-shadow: var(--shadow-sm);
+  z-index: 1100;
+
+  & .selection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--padding-sm);
+
+    & h4 a {
+      text-transform: capitalize;
+      color: var(--color-secondary);
+
+      &::after {
+        background: var(--color-secondary);
+      }
+    }
+
+    & .separator {
+      width: 2px;
+      height: var(--font-size-base);
+      background: var(--color-secondary);
+      opacity: 0.6;
+    }
+  }
+}
+
 #main {
   width: 100%;
   min-height: 100svh;
@@ -6,13 +42,53 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-lg) 0;
+  padding: var(--padding-md) var(--padding-lg);
   scroll-margin-top: 100svh;
+  gap: var(--padding-md);
 
-  .main-content {
-    padding: 2rem;
+  & .main-content {
     width: 100%;
-    min-height: 100svh;
-    border: 1px solid black;
+    scroll-margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+
+    & .card {
+      display: flex;
+      flex-direction: column;
+      gap: var(--padding-sm);
+      line-height: 1.5;
+      background: var(--color-primary);
+      padding: var(--padding-sm);
+      border-radius: var(--radius-sm);
+
+      & details {
+        display: flex;
+        flex-direction: column;
+        gap: var(--padding-sm);
+
+        & summary {
+          font-family: var(--font-heading);
+          font-size: var(--font-size-h3);
+          border-bottom: 2px solid var(--color-accent);
+        }
+
+        & ul {
+          display: flex;
+          flex-direction: column;
+          gap: var(--padding-sm);
+        }
+
+        & a {
+          font-weight: 700;
+        }
+      }
+    }
+
+    & > .separator {
+      width: 100%;
+      height: 4px;
+      background: var(--color-accent);
+      margin: var(--padding-sm) 0;
+    }
   }
 }

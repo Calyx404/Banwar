@@ -135,7 +135,6 @@
 
   & .account-item {
     width: 100%;
-    border: 1px solid red;
 
     &#account-header {
       position: sticky;
