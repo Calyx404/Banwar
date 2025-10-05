@@ -1,0 +1,18 @@
+#main {
+  width: 100%;
+  min-height: 100svh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-lg) 0;
+  scroll-margin-top: 100svh;
+
+  .main-content {
+    padding: 2rem;
+    width: 100%;
+    min-height: 100svh;
+    border: 1px solid black;
+  }
+}

@@ -1,0 +1,86 @@
+#header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100svw;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--color-accent);
+  padding: var(--padding-xs) var(--padding-lg);
+  justify-content: space-between;
+  background: transparent;
+
+  & .header-item {
+    display: flex;
+    align-items: center;
+
+    & button {
+      aspect-ratio: 1/1;
+    }
+
+    &#header-logo {
+      cursor: pointer;
+    }
+
+    &#header-feature {
+      flex: 1;
+      gap: var(--padding-sm);
+      justify-content: flex-end;
+
+      & .feature-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--padding-sm);
+
+        &#header-buttons {
+          & #header-theme {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            height: calc(var(--font-size-h3) + var(--padding-sm) + 3px);
+            width: 5.5rem;
+            border: 2px solid var(--color-accent);
+            border-radius: var(--radius-sm);
+            background: var(--color-secondary);
+            transition: var(--transition-medium);
+
+            & #header-icon {
+              height: 90%;
+              margin: 2px;
+              transform: translateX(0) rotate(0deg);
+              transition: var(--transition-fast);
+
+              &:hover {
+                background: var(--color-accent);
+
+                & img {
+                  filter: brightness(0) invert(1) !important;
+                }
+              }
+            }
+
+            &.switch #header-icon {
+              transform: translateX(2.85rem);
+            }
+          }
+        }
+
+        &#header-search {
+          width: 35.5%;
+          position: relative;
+        }
+      }
+
+      & .separator {
+        width: 2px;
+        height: var(--font-size-h3);
+        margin: 0 var(--padding-xs);
+        background: var(--color-text);
+      }
+    }
+  }
+}

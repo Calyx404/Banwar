@@ -1,0 +1,271 @@
+#map-component {
+  height: 87.5svh;
+  gap: var(--padding-sm);
+  justify-content: center;
+
+  & .map-item {
+    height: 100%;
+    border-radius: var(--radius-sm);
+
+    &#map {
+      flex: 1;
+      display: flex;
+      align-items: flex-end;
+      z-index: 900;
+      border: 4px solid var(--color-primary);
+
+      & .feature-tooltip {
+        position: absolute;
+        top: 2rem;
+        left: -1rem;
+        background: var(--color-primary);
+        color: var(--color-text);
+        font-family: var(--font-heading);
+        font-size: var(--font-size-base);
+        color: var(--color-text);
+        border: 2px solid var(--color-secondary);
+        border-radius: var(--radius-sm);
+      }
+
+      & .feature-popup {
+        & .popup-header {
+          background: var(--color-accent);
+          padding: var(--padding-xs) var(--padding-sm);
+          color: var(--color-secondary);
+          border-radius: var(--radius-sm);
+        }
+
+        & .popup-content {
+          font-family: var(--font-text);
+          font-size: var(--font-size-base);
+          color: var(--color-accent);
+        }
+      }
+
+      & #map-overlay {
+        position: relative;
+        width: 100%;
+        height: 10%;
+        z-index: 950;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-primary);
+        cursor: default;
+
+        &.hide {
+          display: none;
+        }
+
+        & button {
+          aspect-ratio: 1/1;
+          width: var(--padding-lg);
+          border-radius: 50%;
+          position: absolute;
+          top: -50%;
+          border: 4px solid var(--color-accent);
+          outline: 8px solid var(--color-primary);
+
+          & img {
+            width: var(--font-size-h2);
+            height: var(--font-size-h2);
+          }
+        }
+      }
+    }
+
+    &#map-profile {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      overflow-y: auto;
+      overflow-x: hidden;
+      width: 0%;
+      gap: var(--padding-sm);
+      background: var(--color-primary);
+      padding: var(--padding-sm);
+
+      &.active {
+        display: flex;
+        width: 30%;
+      }
+
+      & .profile-content {
+        display: flex;
+
+        &#profile-header {
+          width: 100%;
+          align-items: center;
+          padding: var(--padding-sm);
+          justify-content: space-between;
+          background: var(--color-accent);
+          border-radius: var(--radius-sm);
+          color: var(--color-secondary);
+        }
+
+        &#profile-fields {
+          flex: 1;
+          flex-direction: column;
+          gap: var(--padding-sm);
+
+          & .field-item {
+            display: flex;
+            flex-direction: column;
+            gap: var(--padding-xs);
+
+            & .field-name {
+              text-transform: capitalize;
+              border-bottom: 2px solid var(--color-text);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#map-account {
+  position: relative;
+  flex-direction: column;
+  gap: var(--padding-md);
+  padding-bottom: var(--padding-md);
+  height: 100svh;
+  scroll-margin-top: 4rem;
+
+  & .account-item {
+    width: 100%;
+    border: 1px solid red;
+
+    &#account-header {
+      position: sticky;
+      top: 4rem;
+      width: 100svw;
+      display: flex;
+      align-items: center;
+      padding: var(--padding-xs) var(--padding-lg);
+      justify-content: space-between;
+      background: var(--color-accent);
+      box-shadow: var(--shadow-sm);
+
+      & .account-title {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: var(--padding-sm);
+
+        & h4 a {
+          text-transform: capitalize;
+          color: var(--color-secondary);
+
+          &::after {
+            background: var(--color-secondary);
+          }
+        }
+
+        & .separator {
+          width: 2px;
+          height: var(--font-size-base);
+          background: var(--color-secondary);
+          transform: rotate(25deg);
+          opacity: 0.6;
+        }
+      }
+    }
+
+    &#account-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--padding-md);
+
+      & .content-item {
+        width: inherit;
+        border-radius: var(--radius-sm);
+        overflow: hidden;
+        border: 4px solid transparent;
+        transition: var(--transition-fast);
+        border: 4px solid var(--color-accent);
+
+        &:hover {
+          box-shadow: var(--shadow-md);
+        }
+
+        & .content-header {
+          text-transform: capitalize;
+          padding: var(--padding-xs) var(--padding-sm);
+          background: var(--color-accent);
+          border: 4px solid transparent;
+          color: var(--color-secondary);
+        }
+
+        & .content-content {
+          background-color: var(--color-secondary);
+          padding: var(--padding-xs) var(--padding-sm);
+          height: 100%;
+          color: var(--color-accent);
+        }
+      }
+    }
+  }
+}
+
+/* Search results panel: hide when not focused */
+.search-container {
+  position: relative;
+}
+#search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  max-height: 320px;
+  overflow: auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  z-index: 1200;
+  display: none;
+}
+.search-container:focus-within #search-results {
+  display: block;
+}
+
+/* result item */
+.search-result-item {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+.search-result-item:hover {
+  background: #f5f5f5;
+}
+
+/* highlight marker animation (subtle) */
+.leaflet-marker-icon.search-highlight {
+  transform-origin: center;
+  animation: search-bounce 1.6s ease-in-out;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25));
+}
+@keyframes search-bounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  30% {
+    transform: translateY(-8px) scale(1.05);
+  }
+  60% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* tooltip label style */
+.leaflet-tooltip.feature-tooltip {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+  padding: 2px 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  color: #111;
+  font-weight: 600;
+}

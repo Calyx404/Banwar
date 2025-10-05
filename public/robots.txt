@@ -1,0 +1,9 @@
+User-agent: *
+
+Allow: /index.html
+Allow: /docs/
+
+Disallow: /backend/
+Disallow: /public/data/
+
+Sitemap: https://calyx404.github.io/Banwar/sitemap.xml
