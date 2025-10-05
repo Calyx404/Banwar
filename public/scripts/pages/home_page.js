@@ -1,30 +1,35 @@
+import { features } from "../../data/features.js";
+import { sources } from "../../data/source.js";
 import { team } from "../../data/team.js";
 import { Carousel } from "../../components/carousel/carousel.js";
 
-const contextEl = document.getElementById("team-context");
-const carousel = new Carousel("#team-carousel", {
+const featureCarousel = new Carousel("#feature-carousel", {});
+const sourceCarousel = new Carousel("#source-carousel", {});
+const teamCarousel = new Carousel("#team-carousel", {
   autoplay: false,
-  interval: 4000,
 });
+const teamContext = document.getElementById("team-context");
 
-carousel.init(team, (activeKey) => {
+featureCarousel.init(features);
+sourceCarousel.init(sources);
+teamCarousel.init(team, (activeKey) => {
   const data = team[activeKey];
   if (!data) {
-    contextEl.innerHTML = "";
+    teamContext.innerHTML = "";
     return;
   }
 
   const headHTML = data.head
     ? `<div class="profile">
       <div class="committee">
-        <img class="committee-icon" src="./assets/icons/${data.icon}" alt="Committee">
+        <img class="committee-icon" src="./assets/${data.icon}" alt="Committee">
       </div>
       <div class="head">
         <q class="head-bio">${data.head.bio}</q>
         <div class="separator"></div>
         <div class="head-leader">
           <div class="leader-icon">
-            <img src="./assets/icons/${data.head.icon}" alt="Head">
+            <img src="./assets/${data.head.icon}" alt="Head">
           </div>
           <div class="leader-description">
             <h3><a href="mailto:${data.head.email}">${data.head.name}</a></h3>
@@ -45,7 +50,7 @@ carousel.init(team, (activeKey) => {
               (member) => `
             <div class="member">
               <div class="member-icon">
-                <img src="./assets/icons/${member.icon}" alt="Member">
+                <img src="./assets/${member.icon}" alt="Member">
               </div>
               <div class="member-description">
                 <h3><a href="mailto:${member.email}">${member.name}</a></h3>
@@ -59,5 +64,5 @@ carousel.init(team, (activeKey) => {
       </div>`
     : "";
 
-  contextEl.innerHTML = headHTML + membersHTML;
+  teamContext.innerHTML = headHTML + membersHTML;
 });
