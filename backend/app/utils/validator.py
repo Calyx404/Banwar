@@ -112,10 +112,6 @@ class Field:
         if val == "":
             return val, "warning", f"Empty text in '{self.name}'"
 
-        normalized = val[0].upper() + val[1:]
-        if normalized != val:
-            return normalized, "warning", f"Normalized text in '{self.name}'"
-
         return val, "ok", "Valid text"
 
     def _validate_int(self):
@@ -134,15 +130,15 @@ class Field:
             return None, "error", f"Value in '{self.name}' must be a float"
 
     def _validate_category(self):
-        val = str(self.value).strip().upper()
+        val = str(self.value).strip()
         allowed = [
-            "MOUNTAINS AND SACRED SITES",
-            "IGOROT SETTLEMENTS AND TERRITORIES",
-            "MINES AND NATURAL RESOURCES",
-            "RIVERS AND TRADE CORRIDORS",
-            "SPANISH MISSIONS AND OUTPOSTS",
-            "TRADE ROUTES",
-            "PROVINCES AND TERRITORIES",
+            "Mountains and Sacred Sites",
+            "Igorot Settlements and Territories",
+            "Mines and Natural Resources",
+            "Rivers and Trade Corridors",
+            "Spanish Missions and Outposts",
+            "Trade Routes",
+            "Provinces and Territories",
         ]
         if val not in allowed:
             return None, "error", f"Invalid category '{val}'"

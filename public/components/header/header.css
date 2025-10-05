@@ -21,14 +21,9 @@
       aspect-ratio: 1/1;
     }
 
-        &#header-logo {
-            cursor: pointer;
-
-            & .logo-name {
-                width: 10rem;
-                height: auto;
-            }
-        }
+    &#header-logo {
+      cursor: pointer;
+    }
 
     &#header-feature {
       flex: 1;
@@ -59,8 +54,8 @@
               transform: translateX(0) rotate(0deg);
               transition: var(--transition-fast);
 
-                            &:hover {
-                                background-color: var(--color-accent);
+              &:hover {
+                background: var(--color-accent);
 
                 & img {
                   filter: brightness(0) invert(1) !important;
@@ -68,11 +63,11 @@
               }
             }
 
-                        &.switch #header-icon {
-                            transform: translateX(2.8rem);
-                        }
-                    }
-                }
+            &.switch #header-icon {
+              transform: translateX(2.85rem);
+            }
+          }
+        }
 
         &#header-search {
           width: 35.5%;
