@@ -1,463 +1,77 @@
-.carousel-container {
-    max-width: 100vw;
-    width: min(100%, 75rem);
-    padding: calc(var(--padding-sm) + 0.8rem);
-    margin-inline: auto;
-    margin: 0 auto calc(var(--padding-lg) - 1rem);
-    background: var(--color-primary);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: var(--shadow-md);
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 
-    & .carousel-title {
-        margin: 0 0 var(--padding-sm);
-        letter-spacing: 0.4rem;
-        font-weight: bold;
-        font-family: var(--font-text);
-        color: var(--color-accent);
+  & .carousel-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 50svh;
+  }
+
+  & .carousel-slide {
+    flex: 0 0 33%;
+    opacity: 0;
+    transform: scale(0.75);
+    transition: var(--transition-medium);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 20%;
+    z-index: 0;
+    filter: drop-shadow(0 0 0 transparent);
+
+    & img {
+      aspect-ratio: 1/1;
+      width: 100%;
+      object-fit: contain;
+      margin: 0 auto;
+      display: block;
     }
 
-    & .carousel {
-        position: relative;
-
-        & :is(.car-radio, .com-radio) {
-            position: absolute;
-            inline-size: 1px;
-            block-size: 1px;
-            clip-path: inset(50%);
-            white-space: nowrap;
-            border: 0;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-        }
-
-        .car-arrows {
-            z-index: 5;
-            pointer-events: none;
-            position: absolute;
-            inset: 0;
-
-            & .arrow {
-                cursor: pointer;
-                pointer-events: none;
-                position: absolute;
-                display: grid;
-                place-items: center;
-                inset-block-start: 50%;
-                margin-block-start: -1.1rem;
-                inline-size: 2.2rem;
-                block-size: 2.2rem;
-                color: var(--color-accent);
-                font-size: var(--font-size-h3);
-                border-radius: var(--radius-sm);
-                border: 1px solid rgba(0, 0, 0, 0.2);
-                background: rgba(225, 225, 225, 0.8);
-                box-shadow: var(--shadow-md);
-                opacity: 0;
-                transition: all 0.3s ease;
-            }
-
-            & .prev {
-                inset-inline-start: 0.4rem;
-            }
-
-            & .next {
-                inset-inline-end: 0.4rem;
-            }
-        }
-
-        & .car-dots {
-            display: flex;
-            gap: 0.6rem;
-            justify-content: center;
-            align-items: center;
-            margin-top: 0.8rem;
-
-            & .dot {
-                cursor: pointer;
-                inline-size: 0.6rem;
-                block-size: 0.6rem;
-                border-radius: 10rem;
-                border: 1px solid rgba(0, 0, 0, 0.3);
-                background: rgba(0, 0, 0, 0.05);
-                transition: all 0.3s ease;
-
-                &:hover {
-                    transform: scale(1.15);
-                }
-            }
-        }
-
-        & .track {
-            position: relative;
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-
-            & .slides {
-                display: grid;
-                grid-auto-flow: column;
-                grid-auto-columns: 100%;
-                transform: translateX(var(--tx, 0%));
-                transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-            }
-
-            .slide {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: var(--padding-sm);
-                align-items: stretch;
-                padding: 4px;
-            }
-        }
-
-        & label.card {
-            cursor: pointer;
-            position: relative;
-            display: flex;
-            align-items: flex-end;
-            padding: var(--padding-sm);
-            color: #fff;
-            overflow: hidden;
-            border-radius: var(--radius-lg);
-            min-height: 20rem;
-
-            &::after {
-                content: "";
-                position: absolute;
-                inset: 0;
-                background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.6) 100%);
-            }
-
-            &:hover img {
-                transform: scale(1.08);
-            }
-
-            & img {
-                position: absolute;
-                inset: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                filter:saturate(90%) contrast(92%);
-                transform: scale(1.03);
-                transition: all 0.3s ease;
-            }
-
-            .text {
-                z-index: 2;
-                position: relative;
-                max-width: 80%;
-
-                & :is(h3, h4) {
-                    font-family: var(--font-text);
-                }
-
-                & h3 {
-                    font-size: var(--font-size-base);
-                    letter-spacing: 0.1rem;
-                    opacity: 0.85;
-                }
-
-                & h4 {
-                    font-size: var(--font-size-h3);
-                    margin: 0.4rem 0 0.2rem;
-                }
-
-                & p {
-                    font-weight: 600;
-                    margin: 0.2rem 0 0;
-                    opacity: 0.85;
-                }
-            }
-        }
-    }
-}
-
-#slide-1:checked ~ .track .slides {
-    --tx: 0%
-}
-
-#slide-2:checked ~ .track .slides {
-    --tx: -100%
-}
-
-#slide-1:checked ~ .track .car-arrows .for-1,
-#slide-2:checked ~ .track .car-arrows .for-2 {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-#slide-1:checked ~ .car-dots .dot-1,
-#slide-2:checked ~ .car-dots .dot-2 {
-    background: var(--color-accent);
-}
-
-.popout {
-    --card-height: clamp(26rem, 70vh, 34rem);
-    margin-top: var(--padding-sm);
-
-    & .panel {
-        pointer-events: none;
-        overflow: hidden;
-        max-height: 0;
-        opacity: 0;
-        margin: 0;
-        transform: translateY(8px);
-        transition: all 0.5s ease;
+    &.left {
+      transform: translate(calc(-50% - 120%), -50%) scale(0.75);
+      opacity: 0.6;
+      z-index: 1;
     }
 
-    & .committee-card {
-        overflow: hidden;
-        height: var(--card-height);
-        border-radius: var(--radius-lg);
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        background: rgba(255, 255, 255, 0.8);
-        box-shadow: var(--shadow-md);
+    &.center {
+      transform: translate(-50%, -50%) scale(1.1);
+      opacity: 1;
+      z-index: 3;
+      filter: drop-shadow(var(--shadow-sm));
+      transition: var(--transition-fast);
 
-        & .card-content {
-            display: grid;
-            grid-template-columns: 38% 62%;
-            height: 100%;
-        }
-
-        & .left {
-            display: grid;
-            grid-template-rows: 13rem auto auto;
-            min-height: 0;
-            height: 100%;
-            border-right: 1px solid rgba(0, 0, 0, 0.2);
-
-            & .img-container {
-                position: relative;
-                overflow: hidden;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    
-                & img {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-    
-            & .purpose-container {
-                padding: 1.2rem 1.2rem 0.6rem 1.4rem;
-    
-                & .quote {
-                    position: relative;
-                    padding: 1rem 2.6rem 1.4rem 2.6rem;
-                    border-radius: var(--radius-md);
-                    border: 1px solid rgba(0, 0, 0, 0.2);
-                    background: #ffffffcc;
-                    
-                    &::before,
-                    &::after {
-                        position: absolute;
-                        font-family: Georgia, serif;
-                        font-weight: 700;
-                        font-size: var(--font-size-h3);
-                        line-height: 1;
-                        color: var(--color-muted);
-                        opacity: 0.9;
-                    }
-    
-                    &::before {
-                        content: "“";
-                        left: var(--padding-sm);
-                        top: var(--padding-xs);
-                    }
-    
-                    &::after {
-                        content: "”";
-                        right: var(--padding-sm);
-                        bottom: var(--padding-xs);
-                    }
-    
-                    & p {
-                        margin: 0;
-                        font-size: 0.8rem;
-                        text-align: justify;
-                        color: var(--color-muted);
-                    }
-                }
-            }
-    
-            & .leader-container {
-                display: grid;
-                grid-template-columns: 4.2rem 1fr;
-                align-items: center;
-                gap: 0.8rem;
-                padding: 0.8rem 1.4rem 1.4rem;
-    
-                & .committee-logo {
-                    width: 4.2rem;
-                    height: 4.2rem;
-                    border-radius: var(--radius-md);
-                    border: 1px solid rgba(0, 0, 0, 0.2);
-                    background: #fff;
-                    overflow: hidden;
-
-                    & img {
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
-    
-                & .details {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 0.4rem;
-
-                    & .label {
-                        font-size: 0.7rem;
-                        font-weight: 700;
-                        letter-spacing: 0.05rem;
-                        color: var(--color-muted);
-                    }
-
-                    & .name {
-                        font-weight: 700;
-                    }
-
-                    & .role {
-                        font-size: 0.8rem;
-                        color: var(--color-muted);
-                    }
-                }
-            }
-        }
-
-        & .right {
-            display: grid;
-            grid-template-rows: auto 1fr;
-            min-height: 0;
-            height: 100%;
-            padding: var(--padding-sm);
-
-            & .header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 0.6rem;
-                margin-bottom: 0.9rem;
-                padding-bottom: 0.9rem;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
-                & .title {
-                    font-family: var(--font-text);
-                    letter-spacing: 0.05rem;
-                    font-size: 1.6rem;
-                    margin: 0;
-                }
-
-                & .badge {
-                    font-weight: 600;
-                    font-size: 0.8rem;
-                    padding: 0.4rem 0.6rem;
-                    border-radius: var(--radius-lg);
-                    border: 1px dashed rgba(0, 0, 0, 0.5);
-                    background: rgba(0, 0, 0, 0.1);
-                }
-            }
-
-            & .members {
-                overflow-y: auto;
-                overscroll-behavior: contain;
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                align-content: start;
-                justify-content: stretch;
-                grid-auto-rows: max-content;
-                min-height: 0;
-                padding-right: 0.4rem;
-                gap: 0.8rem;
-
-                & .member {
-                    display: grid;
-                    grid-template-columns: 3.5rem 1fr;
-                    align-items: center;
-                    gap: 0.8rem;
-                    padding: 0.7rem 0.8rem;
-                    border-radius: var(--radius-md);
-                    border: 1px solid rgba(0, 0, 0, 0.2);
-                    background: #ffffffb3;
-
-                    & .avatar {
-                        overflow: hidden;
-                        width: 3.5rem;
-                        height: 3.5rem;
-                        border-radius: var(--radius-md);
-                        border: 1px solid rgba(0, 0, 0, 0.2);
-                        background: #e8eeec;
-
-                        & img {
-                            display: block;
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                        }
-                    }
-
-                    & .name {
-                        font-size: 0.9rem;
-                        font-weight: 700;
-                    }
-
-                    & .role {
-                        font-size: 0.8rem;
-                        margin-top: 2px;
-                        color: var(--color-muted);
-                    }
-                }
-            }
-        }
-    }
-}
-
-#com-frontend:checked ~ .popout .panel-frontend,
-#com-backend:checked ~ .popout .panel-backend,
-#com-design:checked ~ .popout .panel-design,
-#com-research:checked ~ .popout .panel-research {
-    pointer-events: auto;
-    max-height: calc(var(--card-height) + 1rem);
-    opacity: 1;
-    transform: translateY(0);
-    margin-top: 0.6rem;
-}
-
-
-/* TODO: FIX RESPONSIVE */
-@media (max-width: 980px) {
-    .popout {
-        --card-height: clamp(28rem, 75vh, 38rem);
+      &:hover {
+        filter: drop-shadow(var(--shadow-md));
+      }
     }
 
-    .popout .committee-card .card-content {
-        grid-template-columns: 1fr;
+    &.right {
+      transform: translate(calc(-50% + 120%), -50%) scale(0.75);
+      opacity: 0.6;
+      z-index: 1;
     }
 
-    .popout .committee-card .left {
-        grid-template-rows: 12rem auto auto;
-        border-right: none;
+    &.hidden {
+      display: none;
     }
+  }
 
-    .popout .committee-card .right {
-        border-top: 1px solid rgba(0, 0, 0, 0.2);
-    }
-}
-
-@media (max-width: 640px) {
-    .carousel .track .slide {
-        grid-template-columns: 1fr;
-    }
-
-    .popout .committee-card .right .members {
-        grid-template-columns: 1fr;
-    }
-
-    .popout .committee-card .header .title {
-        font-size: 1.4rem;
-    }
+  & .carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

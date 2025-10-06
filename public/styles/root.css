@@ -40,7 +40,6 @@
   --color-secondary: #f3fbf9;
   --color-accent: #11362a;
   --color-text: #11362a;
-  --color-muted: #313131;
   --color-overlay: rgba(248, 248, 249, 0.6);
 
   /* ROOT : Sizes */
@@ -72,27 +71,38 @@
   --color-accent: #5d2a34;
   --color-text: #f7edef;
   --color-overlay: rgba(0, 0, 0, 0.7);
+
+  & img.icon {
+    filter: brightness(0) invert(1);
+  }
 }
 
 /* SCROLLBAR */
-*::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 0.5rem;
   background-color: var(--color-accent);
 }
 
-*::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background-color: var(--color-secondary);
 }
 
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--color-secondary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+}
+
 /* ANIMATIONS */
-@keyframes slide-in-top {
+@keyframes rotate {
   from {
-    transform: translateY(-6px);
-    opacity: 0;
+    transform: rotate(0deg);
   }
   to {
-    transform: translateY(0);
-    opacity: 1;
+    transform: rotate(-360deg);
   }
 }
 
@@ -155,6 +165,10 @@ h4 {
   font-size: var(--font-size-h4);
 }
 
+p {
+  line-height: 1.5;
+}
+
 a {
   position: relative;
   text-decoration: none;
@@ -178,6 +192,31 @@ a {
   }
 }
 
+strong {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  cursor: default;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    color: var(--color-secondary);
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}
+
 ul {
   list-style: none;
 }
@@ -186,6 +225,11 @@ img {
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
+
+  &.icon {
+    filter: none;
+    transition: var(--transition-fast);
+  }
 }
 
 label {
@@ -236,6 +280,31 @@ button {
   &:active {
     transform: scale(0.9);
   }
+
+  &.unfill {
+    background: var(--color-secondary);
+
+    & img {
+      filter: brightness(1) invert(0);
+    }
+
+    & span {
+      color: var(--color-accent);
+    }
+
+    &:hover {
+      background: var(--color-accent);
+      color: var(--color-secondary);
+
+      & img {
+        filter: brightness(0) invert(1);
+      }
+
+      & span {
+        color: var(--color-secondary);
+      }
+    }
+  }
 }
 
 /* LOGOS */
@@ -244,16 +313,12 @@ button {
   aspect-ratio: 1/1;
   height: calc(var(--font-size-h1) + var(--font-size-h3));
   width: calc(var(--font-size-h1) + var(--font-size-h3));
+  filter: drop-shadow(var(--shadow-sm));
 }
 
 .logo-name {
   user-select: none;
   height: var(--font-size-h1);
   width: auto;
-}
-
-.content-container {
-    max-width: 1180px;
-    margin: calc(var(--padding-sm)*2) auto;
-    padding: 0 var(--padding-sm);
+  filter: drop-shadow(var(--shadow-sm));
 }

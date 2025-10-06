@@ -25,10 +25,10 @@ function Loading() {
       </header>
       <main id="splash-main">
         <div id="story">
-          <img id="character" src="./assets/images/dance.gif" alt="Igorot">
-          <p id="storyline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, asperiores!</p>
+          <img id="character" src="./assets/images/dancing.gif" alt="Igorot">
+          <p id="storyline">"<em>Igorotak latta!</em>" - I remain an Igorot!</p>
         </div>
-        <h4 class="status">Saglet...</h4>
+        <h4 class="status">Just a moment...</h4>
       </main>
     </div>
   `;
