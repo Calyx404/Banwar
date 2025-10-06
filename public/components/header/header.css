@@ -9,7 +9,7 @@
   justify-content: space-between;
   backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--color-accent);
-  padding: var(--padding-xs) var(--padding-lg);
+  padding: var(--padding-xs) var(--padding-sm);
   justify-content: space-between;
   background: transparent;
 
@@ -29,6 +29,7 @@
       flex: 1;
       gap: var(--padding-sm);
       justify-content: flex-end;
+      flex-wrap: wrap;
 
       & .feature-item {
         display: flex;
@@ -41,15 +42,15 @@
             cursor: pointer;
             display: flex;
             align-items: center;
-            height: calc(var(--font-size-h3) + var(--padding-sm) + 3px);
-            width: 5.5rem;
+            height: clamp(2rem, 7vw, calc(var(--font-size-h3) + var(--padding-sm) + 3px));
+            width: clamp(4rem, 15vw, 5.5rem);
             border: 2px solid var(--color-accent);
             border-radius: var(--radius-sm);
             background: var(--color-secondary);
             transition: var(--transition-medium);
 
             & #header-icon {
-              height: 90%;
+              height: 80%;
               margin: 2px;
               transform: translateX(0) rotate(0deg);
               transition: var(--transition-fast);
@@ -64,22 +65,51 @@
             }
 
             &.switch #header-icon {
-              transform: translateX(2.85rem);
+              transform: translateX(clamp(1.8rem, 8vw, 3rem));
             }
           }
         }
 
         &#header-search {
-          width: 35.5%;
+          width: clamp(15rem, 50vw, 35.5%);
           position: relative;
         }
       }
 
       & .separator {
         width: 2px;
-        height: var(--font-size-h3);
+        height: var(--font-size-h4);
         margin: 0 var(--padding-xs);
         background: var(--color-text);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--padding-sm);
+
+    & #header-logo {
+      width: 100%;
+      justify-content: center;
+    }
+
+    & #header-feature {
+      width: 100%;
+      justify-content: space-between !important;
+      flex-wrap: wrap;
+      gap: var(--padding-xs);
+
+      & .feature-item {
+        &#header-buttons {
+          justify-content: flex-start;
+        }
+        &#header-search {
+          width: 100%;
+        }
       }
     }
   }

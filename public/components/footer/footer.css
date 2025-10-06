@@ -2,7 +2,7 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: var(--padding-xs) var(--padding-lg);
+  padding: var(--padding-sm) var(--padding-sm);
   justify-content: space-between;
   border-top: 2px solid var(--color-accent);
   background: var(--color-primary);
@@ -20,19 +20,19 @@ footer {
 
     &#footer-content {
       flex: 1;
-      padding: var(--padding-md) 0;
-      grid-template-columns: 1fr 2fr;
+      padding: var(--padding-sm) 0;
+      grid-template-columns: 1fr;
 
       & .content-item {
         align-items: start;
         justify-content: start;
-        padding: var(--padding-lg) 0;
+        padding: var(--padding-sm) 0;
         height: 100%;
 
         &#content-details {
           display: flex;
           flex-direction: column;
-          gap: var(--padding-md);
+          gap: var(--padding-xs);
 
           & .detail {
             width: 100%;
@@ -49,8 +49,8 @@ footer {
         &#content-lists {
           flex: 1;
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: var(--padding-lg);
+          grid-template-columns: 1fr;
+          gap: var(--padding-sm);
           position: relative;
           overflow: hidden;
 
@@ -63,7 +63,7 @@ footer {
             background-size: contain;
             opacity: 0.25;
             pointer-events: none;
-            margin: var(--padding-sm);
+            margin: var(--padding-xs);
           }
 
           & .list {
@@ -76,7 +76,7 @@ footer {
             & ul {
               display: flex;
               flex-direction: column;
-              gap: var(--padding-sm);
+              gap: var(--padding-xs);
             }
 
             & .separator {
@@ -91,8 +91,42 @@ footer {
     }
 
     &#footer-copyright {
-      grid-template-columns: auto auto;
+      text-align: center;
+      grid-template-columns: 1fr;
+      gap: var(--padding-xs);
       border-top: 1px solid var(--color-text);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: var(--padding-md) var(--padding-lg);
+
+    & .footer-item {
+      &#footer-content {
+        grid-template-columns: 1fr 2fr;
+      }
+      
+      & #content-lists {
+        grid-template-columns: repeat(3, 1fr) !important;
+      }
+
+      &#footer-copyright {
+        grid-template-columns: auto auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    & .footer-item {
+      &#footer-content {
+        &#content-lists {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
     }
   }
 }

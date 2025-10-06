@@ -311,40 +311,4 @@
       }
     }
   }
-
-  /* !FIX : RESPONSIVE SECTION */
-  @media screen and (min-width: 720px) {
-    .footgrid {
-      grid-template-columns: 1.4fr 1fr 1fr;
-    }
-  }
-  @media screen and (max-width: 820px) {
-    .hero {
-      grid-template-columns: 1fr;
-    }
-
-    :is(.book-details-container, .author-details-container) .card {
-      grid-template-columns: 1fr;
-    }
-
-    .track .slides .slide {
-      grid-template-columns: 1fr;
-    }
-
-    .footgrid {
-      padding: 2rem;
-
-      & .logo {
-        transform: translate(-50%, -50%);
-      }
-    }
-
-    .member {
-      flex: 1 1 100%;
-    }
-
-    .ABcreators {
-      flex: 1 1 99%;
-    }
-  }
 }
