@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # ensures full commit history is available
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
