@@ -133,7 +133,7 @@
   position: relative;
   flex-direction: column;
   gap: var(--padding-md);
-  padding-bottom: var(--padding-sm); 
+  padding-bottom: var(--padding-sm);
   height: auto;
   scroll-margin-top: 4rem;
 
@@ -279,7 +279,7 @@
     flex-direction: row;
     height: 87.5svh;
     gap: var(--padding-sm);
-    
+
     & .map-item {
       &#map-profile {
         position: relative;

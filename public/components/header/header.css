@@ -9,7 +9,7 @@
   justify-content: space-between;
   backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--color-accent);
-  padding: var(--padding-xs) var(--padding-sm);
+  padding: var(--padding-xs) var(--padding-lg);
   justify-content: space-between;
   background: transparent;
 
@@ -42,7 +42,11 @@
             cursor: pointer;
             display: flex;
             align-items: center;
-            height: clamp(2rem, 7vw, calc(var(--font-size-h3) + var(--padding-sm) + 3px));
+            height: clamp(
+              2rem,
+              7vw,
+              calc(var(--font-size-h3) + var(--padding-sm) + 3px)
+            );
             width: clamp(4rem, 15vw, 5.5rem);
             border: 2px solid var(--color-accent);
             border-radius: var(--radius-sm);
@@ -108,7 +112,7 @@
           flex: 1;
           justify-content: flex-start;
         }
-        
+
         &#header-search {
           width: 100%;
         }
