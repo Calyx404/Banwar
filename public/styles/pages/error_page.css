@@ -81,7 +81,7 @@
     gap: var(--padding-md);
 
     & .main-item {
-      text-align: left;
+      text-align: center;
 
       & #mask {
         max-width: 100%;

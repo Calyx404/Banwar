@@ -237,7 +237,7 @@
 
             & .members {
               width: 100%;
-              height: auto;
+              height: 80svh;
               overflow-x: hidden;
               overflow-y: auto;
               display: grid;
@@ -317,6 +317,20 @@
   }
 }
 
+@media screen and (min-width: 380px) {
+  & .main-item {
+    &#features {
+      & .graphics {
+        & #team-context {
+          & .members {
+            height: 30svh !important;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   & .main-item {
     &#hero {
@@ -342,16 +356,16 @@
 
       & .graphics {
         & #team-context {
-          flex-direction: row;
+          flex-direction: row !important;
           gap: var(--padding-md);
 
           & .profile {
-            width: 40%;
-          }
+            width: 40% !important;
+          } 
 
           & .account {
             & .members {
-              grid-template-columns: repeat(2, 1fr);
+              grid-template-columns: repeat(2, 1fr) !important;
             }
           }
         }

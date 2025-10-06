@@ -123,8 +123,10 @@ footer {
   footer {
     & .footer-item {
       &#footer-content {
-        &#content-lists {
-          grid-template-columns: repeat(3, 1fr);
+        & .content-item{
+          &#content-lists {
+            grid-template-columns: repeat(3, 1fr);
+          }
         }
       }
     }
