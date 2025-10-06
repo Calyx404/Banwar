@@ -1,3 +1,37 @@
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  max-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--padding-md);
+  background: url("../../assets/images/mountains.png") no-repeat center center;
+  background-size: cover;
+  background-color: var(--color-primary);
+  overflow: hidden;
+  border-bottom: 2px solid var(--color-accent);
+
+  & .hero-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &#animation {
+      flex-direction: column;
+
+      & .character {
+        height: 15rem;
+      }
+
+      & .earth {
+        animation: rotate 5s linear infinite;
+      }
+    }
+  }
+}
+
 #main {
   width: 100%;
   min-height: 100svh;
@@ -14,9 +48,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    &#hero {
-    }
 
     &#features {
     }
