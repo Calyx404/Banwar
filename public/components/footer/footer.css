@@ -11,6 +11,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   position: relative;
+  margin-top: var(--padding-md);
 
   & .footer-item {
     display: grid;
