@@ -1,19 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/root.css">
-    <link rel="icon" type="image" href="assets/logo.png">
-    <title>Prototype</title>
-</head>
-<body>
-    <!-- RADIO BUTTONS (FOR SWITCHING SECTIONS, DON'T EDIT) -->
-    <input type="radio" id="home" name="selection" hidden checked>
-    <input type="radio" id="about" name="selection" hidden>
-    <input type="radio" id="maps" name="selection"  hidden>
-    <input type="radio" id="context" name="selection"  hidden>
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="robots" content="index, follow" />
+
+    <meta name="author" content="Banwar Project Team" />
+    <meta
+      name="description"
+      content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots."
+    />
+
+    <!-- TITLE & FAVICON -->
+    <title>Banwar | Cordillera Digital Mapping</title>
+    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
+
+    <!-- PRELOAD STYLES -->
+    <link
+      rel="preload"
+      href="./styles/root.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./styles/pages/home_page.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+
+    <!-- COMPONENT : HEADER -->
+    <link rel="stylesheet" href="./components/header/header.css" />
+    <script defer src="./components/header/header.js"></script>
+
+    <!-- COMPONENT : FOOTER -->
+    <link rel="stylesheet" href="./components/footer/footer.css" />
+    <script defer src="./components/footer/footer.js"></script>
+
+    <!-- COMPONENT : SEARCH -->
+    <link rel="stylesheet" href="./components/search/search.css" />
+
+    <!-- COMPONENT : CAROUSEL -->
+    <link rel="stylesheet" href="./components/carousel/carousel.css" />
+
+    <!-- PAGE CONTROLLER -->
+    <script type="module" src="./scripts/pages/home_page.js"></script>
+  </head>
+
+  <body>
+    <!-- PAGE HERO -->
+    <article id="hero">
+      <img
+        src="./assets/logos/logo-name-dark.png"
+        alt="Banwar"
+        title="Banwar"
+        class="logo-name hero-item"
+        onclick="document.location='./index.html'"
+      />
+      <form class="hero-item" id="hero-search">
+        <input
+          type="search"
+          name="search"
+          placeholder="Explore the Cordillera!"
+          autocomplete="off"
+        />
+        <div id="search-results"></div>
+        <button type="submit" title="Explore Map">
+          <img src="./assets/icons/search.svg" alt="Explore" />
+        </button>
+      </form>
+      <div class="hero-item" #hero-actions>
+        <button class="action" onclick="document.location='#main'">
+          <span>Know More About Us</span>
+        </button>
+      </div>
+      <div class="hero-item" id="animation">
+        <img
+          class="character"
+          src="./assets/images/walking.gif"
+          alt="Igorot walking"
+        />
+        <img
+          class="earth"
+          src="./assets/images/earth.png"
+          alt="Rotating Earth"
+        />
+      </div>
+    </article>
 
     <!-- PAGE HEADER -->
     <header id="header"></header>
