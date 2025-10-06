@@ -80,14 +80,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* ANIMATIONS */
-@keyframes slide-in-top {
+@keyframes rotate {
   from {
-    transform: translateY(-6px);
-    opacity: 0;
+    transform: rotate(0deg);
   }
   to {
-    transform: translateY(0);
-    opacity: 1;
+    transform: rotate(-360deg);
   }
 @keyframes slide-in-top {
   from {
