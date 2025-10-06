@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 40svh;
+    height: 30svh;
   }
 
   & .carousel-slide {
@@ -26,12 +26,15 @@
     top: 50%;
     transform: translate(-50%, -50%) scale(0.8);
     width: 60%;
+    max-width: 80%;
     z-index: 0;
     filter: drop-shadow(0 0 0 transparent);
 
     & img {
       aspect-ratio: 1/1;
       width: 100%;
+      height: auto;
+      max-height: 25svh;
       object-fit: contain;
       margin: 0 auto;
       display: block;
@@ -79,12 +82,18 @@
 @media screen and (min-width: 768px) {
   .carousel {
     & .carousel-track {
-      height: 50svh;
+      height: 50svh; 
     }
 
     & .carousel-slide {
       flex: 0 0 33%;
       width: 20%;
+      max-width: none; 
+
+      & img {
+        max-height: none; 
+        height: auto;
+      }
 
       &.left {
         transform: translate(calc(-50% - 120%), -50%) scale(0.75);

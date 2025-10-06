@@ -124,10 +124,7 @@ footer {
     & .footer-item {
       &#footer-content {
         &#content-lists {
-          grid-template-columns: repeat(
-            3,
-            1fr
-          ); /* Three columns for large screens */
+          grid-template-columns: repeat(3, 1fr);
         }
       }
     }
