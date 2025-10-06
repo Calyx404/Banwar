@@ -1,22 +1,38 @@
 /* IMPORTS */
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+/* CUSTOM FONTS */
 @font-face {
-  font-family: SF Pro;
-  src: url(../assets/SF-Pro.ttf);
+  font-family: "IM Fell";
+  src: url("../assets/fonts/IM_Fell_DW_Pica.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Merriweather Sans";
+  src: url("../assets/fonts/Merriweather_Sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../assets/fonts/SF_Pro.ttf") format("truetype");
+  /* font-weight: normal; */
+  /* font-style: normal; */
 }
 
+/* ROOT VARIABLES */
 :root {
   /* ROOT : Font Faces */
   --font-heading: "IM Fell", serif;
   --font-text: "SF Pro", "Merriweather Sans", system-ui, sans-serif;
 
   /* ROOT : Font Sizes */
-  --font-size-h1: 3rem;
-  --font-size-h2: 2rem;
-  --font-size-h3: 1.5rem;
-  --font-size-h4: 1.25rem;
-  --font-size-base: 1rem;
+  --font-size-h1: clamp(2rem, 5vw, 3rem); /* Modified */
+  --font-size-h2: clamp(1.5rem, 4vw, 2rem); /* Modified */
+  --font-size-h3: clamp(1.2rem, 3.5vw, 1.5rem); /* Modified */
+  --font-size-h4: clamp(1rem, 3vw, 1.25rem); /* Modified */
+  --font-size-base: clamp(0.875rem, 2.5vw, 1rem); /* Modified */
 
   /* ROOT : Colors - Light Theme */
 
@@ -31,10 +47,10 @@
   --radius-md: 15px;
   --radius-lg: 24px;
 
-  --padding-xs: 0.5rem;
-  --padding-sm: 1rem;
-  --padding-md: 3rem;
-  --padding-lg: 5rem;
+  --padding-xs: clamp(0.25rem, 1vw, 0.5rem); /* Modified */
+  --padding-sm: clamp(0.5rem, 2vw, 1rem); /* Modified */
+  --padding-md: clamp(1.5rem, 5vw, 3rem); /* Modified */
+  --padding-lg: clamp(2.5rem, 8vw, 5rem); /* Modified */
 
   /* ROOT : Transitions */
   --transition-fast: all 0.25s ease-in;
@@ -47,6 +63,7 @@
   --shadow-lg: 0 10px 15px var(--color-accent);
 }
 
+/* DARK THEME */
 :root[data-theme="dark"] {
   /* ROOT : Colors - Dark Theme */
   --color-primary: #3b1a21;
@@ -87,15 +104,6 @@ body::-webkit-scrollbar-thumb {
   to {
     transform: rotate(-360deg);
   }
-@keyframes slide-in-top {
-  from {
-    transform: translateY(-6px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 /* DEFAULT STYLES */
@@ -108,7 +116,6 @@ body::-webkit-scrollbar-thumb {
 
 html {
   scroll-behavior: smooth;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -120,14 +127,11 @@ body {
   color: var(--color-text);
   background: url("../assets/images/background.png") no-repeat center center
     fixed;
-  background: url("../assets/images/background.png") no-repeat center center
-    fixed;
   background-size: cover;
   transition: var(--transition-slow);
   position: relative;
 
   &::before {
-    content: "";
     content: "";
     inset: 0;
     position: fixed;
@@ -139,13 +143,6 @@ body {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "IM Fell";
 h1,
 h2,
 h3,
@@ -222,8 +219,6 @@ strong {
 
 ul {
   list-style: none;
-ul {
-  list-style: none;
 }
 
 img {
@@ -239,22 +234,9 @@ img {
 
 label {
   cursor: pointer;
-  cursor: pointer;
 }
 
 button {
-  user-select: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--padding-xs);
-  padding: var(--padding-xs);
-  border-radius: var(--radius-sm);
-  border: 2px solid var(--color-accent);
-  background: var(--color-accent);
-  transform: scale(1);
-  transition: var(--transition-fast);
   user-select: none;
   cursor: pointer;
   display: flex;
@@ -281,15 +263,7 @@ button {
     font-size: var(--font-size-h4);
     color: var(--color-secondary);
   }
-  & span {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-h4);
-    color: var(--color-secondary);
-  }
 
-  &:hover {
-    background: var(--color-secondary);
-    color: var(--color-accent);
   &:hover {
     background: var(--color-secondary);
     color: var(--color-accent);
@@ -297,14 +271,7 @@ button {
     & img {
       filter: brightness(1) invert(0);
     }
-    & img {
-      filter: brightness(1) invert(0);
-    }
 
-    & span {
-      color: var(--color-accent);
-    }
-  }
     & span {
       color: var(--color-accent);
     }
