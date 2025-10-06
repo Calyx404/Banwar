@@ -66,19 +66,3 @@ teamCarousel.init(team, (activeKey) => {
 
   teamContext.innerHTML = headHTML + membersHTML;
 });
-
-// FOR PARALLAX SCROLLING
-AOS.init({
-  duration: 800,
-  easing: 'ease-out-cubic',
-  once: false,
-  offset: 100,
-  disable: () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
-});
-
-document.querySelectorAll('.parallax-element').forEach(el => {
-  el.setAttribute('data-aos', 'fade-up');
-  el.setAttribute('data-aos-delay', '0');
-  el.setAttribute('data-aos-duration', '1000');
-  el.setAttribute('data-aos-parallax', 'true');
-});

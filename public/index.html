@@ -3,10 +3,7 @@
   <head>
     <!-- META -->
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
 
     <meta name="author" content="Banwar Project Team" />
@@ -49,11 +46,6 @@
 
     <!-- PAGE CONTROLLER -->
     <script type="module" src="./scripts/pages/home_page.js"></script>
-
-    <!-- PARALLAX SCROLLING FRAMEWORK -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
   </head>
 
   <body>
@@ -104,7 +96,6 @@
       <!-- MAIN : FEATURES -->
       <section class="main-item" id="features">
         <div class="feature-item" id="purpose">
-        <div data-aos="fade-up" class="feature-item" id="purpose">
           <div class="description">
             <h4 class="label">Project Banwar</h4>
             <h1 class="title">Journey Into the Cordillera's Living History</h1>
@@ -124,12 +115,12 @@
               </button>
             </div>
           </div>
-          <div data-aos="fade-up" class="graphics"></div>
+          <div class="graphics"></div>
         </div>
 
         <div class="separator"></div>
 
-        <div data-aos="fade-up" class="feature-item" id="feature">
+        <div class="feature-item" id="feature">
           <div class="description">
             <h4 class="label">Explore Our Features</h4>
             <h1 class="title">
@@ -146,7 +137,7 @@
             </p>
             <div class="actions">
               <button
-                class="action unfill export"
+                class="action unfill"
                 onclick="document.location='./map.html'"
               >
                 <span>Export Data</span>
@@ -156,14 +147,14 @@
               </button>
             </div>
           </div>
-          <div data-aos="fade-up" class="graphics">
+          <div class="graphics">
             <div id="feature-carousel"></div>
           </div>
         </div>
 
         <div class="separator"></div>
 
-        <div data-aos="fade-up" class="feature-item" id="source">
+        <div class="feature-item" id="source">
           <div class="description">
             <h4 class="label">The Story Behind Banwar</h4>
             <h1 class="title">
@@ -189,14 +180,14 @@
               </button>
             </div>
           </div>
-          <div data-aos="fade-up" class="graphics">
+          <div class="graphics">
             <div id="source-carousel"></div>
           </div>
         </div>
 
         <div class="separator"></div>
 
-        <div data-aos="fade-up" class="feature-item">
+        <div class="feature-item">
           <div class="description">
             <h4 class="label">Who Made This Possible</h4>
             <h1 class="title">
@@ -211,18 +202,12 @@
               heritage with the world.
             </p>
             <div class="actions">
-              <button
-                class="action unfill"
-                onclick="document.location='./legal.html'"
-              >
-                <span>Legal Information</span>
-              </button>
               <button class="action" onclick="document.location='#team'">
                 <span>Meet the Team</span>
               </button>
             </div>
           </div>
-          <div data-aos="fade-up" class="graphics" id="team">
+          <div class="graphics" id="team">
             <div id="team-carousel"></div>
             <div id="team-context"></div>
           </div>
