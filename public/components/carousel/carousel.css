@@ -8,11 +8,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 50svh;
+    height: 40svh;
   }
 
   & .carousel-slide {
-    flex: 0 0 33%;
+    flex: 0 0 80%;
     opacity: 0;
     transform: scale(0.75);
     transition: var(--transition-medium);
@@ -25,7 +25,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0.8);
-    width: 20%;
+    width: 60%;
     z-index: 0;
     filter: drop-shadow(0 0 0 transparent);
 
@@ -38,7 +38,7 @@
     }
 
     &.left {
-      transform: translate(calc(-50% - 120%), -50%) scale(0.75);
+      transform: translate(calc(-50% - 80%), -50%) scale(0.75);
       opacity: 0.6;
       z-index: 1;
     }
@@ -56,7 +56,7 @@
     }
 
     &.right {
-      transform: translate(calc(-50% + 120%), -50%) scale(0.75);
+      transform: translate(calc(-50% + 80%), -50%) scale(0.75);
       opacity: 0.6;
       z-index: 1;
     }
@@ -73,5 +73,23 @@
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    & .carousel-track {
+      height: 50svh; /* Revert to original for larger screens */
+    }
+    & .carousel-slide {
+      flex: 0 0 33%; /* Revert to original for larger screens */
+      width: 20%; /* Revert to original for larger screens */
+      &.left {
+        transform: translate(calc(-50% - 120%), -50%) scale(0.75); /* Revert to original */
+      }
+      &.right {
+        transform: translate(calc(-50% + 120%), -50%) scale(0.75); /* Revert to original */
+      }
+    }
   }
 }

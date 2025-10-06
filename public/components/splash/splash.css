@@ -16,12 +16,12 @@
   background: var(--color-primary);
   z-index: 9999;
   animation: fadeOut 1s ease forwards;
-  animation-delay: 5s;
+  animation-delay: 3s;
   cursor: wait;
 
   & #splash-header {
     width: 100%;
-    padding: var(--padding-sm) var(--padding-lg);
+    padding: var(--padding-xs) var(--padding-sm);
   }
 
   & #splash-main {
@@ -30,22 +30,24 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: var(--padding-md);
+    gap: var(--padding-sm);
+
     & #story {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      gap: var(--padding-sm);
+      gap: var(--padding-xs);
 
       & #character {
         aspect-ratio: 1/1;
-        height: 25svh;
+        height: clamp(15svh, 20vw, 25svh);
         overflow: hidden;
       }
 
       & #storyline {
         font-style: italic;
+        font-size: var(--font-size-base);
       }
     }
   }
