@@ -53,9 +53,9 @@
   justify-content: center;
   padding: var(--padding-sm) var(--padding-sm);
   scroll-margin-top: 100svh;
-  gap: var(--padding-md);
 
-  & .main-content {
+  .main-content {
+    padding: 2rem;
     width: 100%;
     scroll-margin-top: 5rem;
     display: flex;

@@ -3,10 +3,7 @@
   <head>
     <!-- META -->
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="robots" content="index, follow" />
 
     <meta name="author" content="Banwar Project Team" />
@@ -62,31 +59,32 @@
       <img
         src="./assets/logos/logo-name-dark.png"
         alt="Banwar"
+        title="Banwar"
         class="logo-name hero-item"
-        id="hero-logo"
+        onclick="document.location='./index.html'"
       />
-      <form class="hero-item search-feature" id="hero-search">
+      <form class="hero-item" id="hero-search">
         <input
           type="search"
           name="search"
           placeholder="Explore the Cordillera!"
           autocomplete="off"
         />
-        <div id="hero-search-results"></div>
+        <div id="search-results"></div>
         <button type="submit" title="Explore Map">
           <img src="./assets/icons/search.svg" alt="Explore" />
         </button>
       </form>
-      <div class="hero-item" id="hero-actions">
+      <div class="hero-item" #hero-actions>
         <button class="action" onclick="document.location='#main'">
           <span>Know More About Us</span>
         </button>
       </div>
-      <div class="hero-item" id="hero-animation">
+      <div class="hero-item" id="animation">
         <img
           class="character"
           src="./assets/images/walking.gif"
-          alt="Walking Igorot"
+          alt="Igorot walking"
         />
         <img
           class="earth"
@@ -99,7 +97,7 @@
     <!-- PAGE HEADER -->
     <header id="header"></header>
 
-    <!-- PAGE MAIN CONTENT -->
+    <!-- TODO: PAGE MAIN CONTENT -->
     <main id="main">
       <!-- MAIN : FEATURES -->
       <section class="main-item" id="features">
@@ -146,6 +144,7 @@
             </p>
             <div class="actions">
               <button
+                class="action unfill export"
                 class="action unfill export"
                 onclick="document.location='./map.html'"
               >
@@ -217,6 +216,12 @@
               >
                 <span>Legal Information</span>
               </button>
+              <button
+                class="action unfill"
+                onclick="document.location='./legal.html'"
+              >
+                <span>Legal Information</span>
+              </button>
               <button class="action" onclick="document.location='#team'">
                 <span>Meet the Team</span>
               </button>
@@ -226,8 +231,8 @@
             <div id="team-carousel"></div>
             <div id="team-context"></div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <!-- PAGE FOOTER -->
