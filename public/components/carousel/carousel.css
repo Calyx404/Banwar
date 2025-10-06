@@ -8,11 +8,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 30svh;
+    height: 50svh;
   }
 
   & .carousel-slide {
-    flex: 0 0 80%;
+    flex: 0 0 33%;
     opacity: 0;
     transform: scale(0.75);
     transition: var(--transition-medium);
@@ -25,23 +25,20 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0.8);
-    width: 60%;
-    max-width: 80%;
+    width: 20%;
     z-index: 0;
     filter: drop-shadow(0 0 0 transparent);
 
     & img {
       aspect-ratio: 1/1;
       width: 100%;
-      height: auto;
-      max-height: 25svh;
       object-fit: contain;
       margin: 0 auto;
       display: block;
     }
 
     &.left {
-      transform: translate(calc(-50% - 80%), -50%) scale(0.75);
+      transform: translate(calc(-50% - 120%), -50%) scale(0.75);
       opacity: 0.6;
       z-index: 1;
     }
@@ -59,7 +56,7 @@
     }
 
     &.right {
-      transform: translate(calc(-50% + 80%), -50%) scale(0.75);
+      transform: translate(calc(-50% + 120%), -50%) scale(0.75);
       opacity: 0.6;
       z-index: 1;
     }
@@ -76,32 +73,5 @@
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .carousel {
-    & .carousel-track {
-      height: 50svh; 
-    }
-
-    & .carousel-slide {
-      flex: 0 0 33%;
-      width: 20%;
-      max-width: none; 
-
-      & img {
-        max-height: none; 
-        height: auto;
-      }
-
-      &.left {
-        transform: translate(calc(-50% - 120%), -50%) scale(0.75);
-      }
-
-      &.right {
-        transform: translate(calc(-50% + 120%), -50%) scale(0.75);
-      }
-    }
   }
 }

@@ -3,25 +3,21 @@
   min-height: 100svh;
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: space-between;
-  padding: var(--padding-sm) var(--padding-sm);
-  gap: var(--padding-sm);
+  padding: var(--padding-sm) var(--padding-lg);
+  gap: var(--padding-md);
 
   & .main-item {
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-    gap: var(--padding-xs);
+    gap: var(--padding-md);
 
     & a {
       font-weight: 800;
     }
 
     & #mask {
-      max-width: 80%;
-      height: auto;
       filter: drop-shadow(var(--shadow-lg));
     }
   }
@@ -70,22 +66,6 @@
 
     & .mountains {
       width: 38rem;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #main {
-    flex-direction: row;
-    padding: var(--padding-md) var(--padding-lg);
-    gap: var(--padding-md);
-
-    & .main-item {
-      text-align: left;
-
-      & #mask {
-        max-width: 100%;
-      }
     }
   }
 }
