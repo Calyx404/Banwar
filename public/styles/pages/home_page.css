@@ -323,7 +323,7 @@
       & .graphics {
         & #team-context {
           & .members {
-            height: 30svh !important;
+            height: 30svh;
           }
         }
       }
@@ -392,5 +392,21 @@
         }
       }
     }
+  }
+}
+
+
+/***** FOR PARALLAX SCROLLING *****/
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; /* Also disable smooth scroll if needed */
+  }
+  .parallax-bg,
+  .parallax-element {
+    background-attachment: scroll !important;
+    transform: none !important;
   }
 }
