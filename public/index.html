@@ -57,32 +57,31 @@
       <img
         src="./assets/logos/logo-name-dark.png"
         alt="Banwar"
-        title="Banwar"
         class="logo-name hero-item"
-        onclick="document.location='./index.html'"
+        id="hero-logo"
       />
-      <form class="hero-item" id="hero-search">
+      <form class="hero-item search-feature" id="hero-search">
         <input
           type="search"
           name="search"
           placeholder="Explore the Cordillera!"
           autocomplete="off"
         />
-        <div id="search-results"></div>
+        <div id="hero-search-results"></div>
         <button type="submit" title="Explore Map">
           <img src="./assets/icons/search.svg" alt="Explore" />
         </button>
       </form>
-      <div class="hero-item" #hero-actions>
+      <div class="hero-item" id="hero-actions">
         <button class="action" onclick="document.location='#main'">
           <span>Know More About Us</span>
         </button>
       </div>
-      <div class="hero-item" id="animation">
+      <div class="hero-item" id="hero-animation">
         <img
           class="character"
           src="./assets/images/walking.gif"
-          alt="Igorot walking"
+          alt="Walking Igorot"
         />
         <img
           class="earth"
@@ -99,6 +98,7 @@
     <main id="main">
       <!-- MAIN : FEATURES -->
       <section class="main-item" id="features">
+        <div class="feature-item" id="purpose">
         <div class="feature-item" id="purpose">
           <div class="description">
             <h4 class="label">Project Banwar</h4>

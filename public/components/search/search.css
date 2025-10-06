@@ -1,4 +1,5 @@
-#header-search {
+#header-search,
+.search-feature {
   & #search-results {
     position: absolute;
     top: 100%;
