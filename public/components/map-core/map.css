@@ -275,15 +275,17 @@
 
 @media screen and (min-width: 768px) {
   #map-component {
-    flex-direction: row; /* Revert to row for larger screens */
-    height: 87.5svh; /* Revert to original */
+    flex-direction: row;
+    height: 87.5svh;
     gap: var(--padding-sm);
+    
     & .map-item {
       &#map-profile {
-        position: relative; /* Not an overlay anymore */
+        position: relative;
         height: 100%;
+
         &.active {
-          width: 30%; /* Revert to original */
+          width: 30%;
         }
       }
     }
@@ -291,7 +293,7 @@
   #map-account {
     & .account-item {
       &#account-content {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
@@ -301,7 +303,7 @@
   #map-account {
     & .account-item {
       &#account-content {
-        grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }

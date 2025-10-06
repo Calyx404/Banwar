@@ -333,6 +333,7 @@
           & .detail {
             width: 80%;
           }
+
           & .actions {
             flex-direction: row;
           }
@@ -343,9 +344,11 @@
         & #team-context {
           flex-direction: row;
           gap: var(--padding-md);
+
           & .profile {
             width: 40%;
           }
+          
           & .account {
             & .members {
               grid-template-columns: repeat(2, 1fr);

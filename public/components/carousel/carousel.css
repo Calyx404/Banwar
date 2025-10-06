@@ -79,16 +79,19 @@
 @media screen and (min-width: 768px) {
   .carousel {
     & .carousel-track {
-      height: 50svh; /* Revert to original for larger screens */
+      height: 50svh;
     }
+
     & .carousel-slide {
-      flex: 0 0 33%; /* Revert to original for larger screens */
-      width: 20%; /* Revert to original for larger screens */
+      flex: 0 0 33%;
+      width: 20%;
+
       &.left {
-        transform: translate(calc(-50% - 120%), -50%) scale(0.75); /* Revert to original */
+        transform: translate(calc(-50% - 120%), -50%) scale(0.75);
       }
+
       &.right {
-        transform: translate(calc(-50% + 120%), -50%) scale(0.75); /* Revert to original */
+        transform: translate(calc(-50% + 120%), -50%) scale(0.75);
       }
     }
   }

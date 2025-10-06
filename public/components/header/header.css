@@ -91,20 +91,24 @@
     flex-direction: column;
     align-items: flex-start;
     gap: var(--padding-xs);
+
     &#header-logo {
       width: 100%;
       justify-content: center;
     }
+
     &#header-feature {
       width: 100%;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: var(--padding-xs);
+
       & .feature-item {
         &#header-buttons {
           flex: 1;
           justify-content: flex-start;
         }
+        
         &#header-search {
           width: 100%;
         }

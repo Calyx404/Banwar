@@ -102,13 +102,16 @@ footer {
 @media screen and (min-width: 768px) {
   footer {
     padding: var(--padding-md) var(--padding-lg);
+
     & .footer-item {
       &#footer-content {
-        grid-template-columns: 1fr 2fr; /* Revert to original for larger screens */
+        grid-template-columns: 1fr 2fr;
+
         &#content-lists {
-          grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+          grid-template-columns: repeat(2, 1fr);
         }
       }
+      
       &#footer-copyright {
         grid-template-columns: auto auto;
       }
