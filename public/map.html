@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Banwar Project Team" />
+    <meta
+      name="description"
+      content="Banwar : Interactive map of historic Cordillera sites from Francisco Antolín's Notices of the Pagan Igorots."
+    />
+
+    <!-- TITLE & FAVICON -->
+    <title>Banwar | Explore Map</title>
+    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
+    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
+
+    <!-- PRELOAD STYLES -->
+    <link
+      rel="preload"
+      href="./styles/root.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./components/splash/splash.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./styles/pages/map_page.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./styles/root.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./styles/pages/map_page.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+
+    <!-- SPLASH -->
+    <script defer src="./components/splash/splash.js"></script>
+
+    <!-- LEAFLET -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+
+    <!-- LEAFLET PLUGINS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css"
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.css"
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet.fullscreen@1.6.0/Control.FullScreen.js"
+    ></script>
+
+    <!-- COMPONENT : HEADER -->
+    <link rel="stylesheet" href="./components/header/header.css" />
+    <script defer src="./components/header/header.js"></script>
+
+    <!-- COMPONENT : FOOTER -->
+    <link rel="stylesheet" href="./components/footer/footer.css" />
+    <script defer src="./components/footer/footer.js"></script>
+
+    <!-- COMPONENT : MAP -->
+    <link rel="stylesheet" href="./components/map-core/map.css" />
+
+    <!-- COMPONENT : SEARCH -->
+    <link rel="stylesheet" href="./components/search/search.css" />
+
+    <!-- COMPONENT : CAROUSEL -->
+    <link rel="stylesheet" href="./components/carousel/carousel.css" />
+
+    <!-- PAGE CONTROLLER -->
+    <script type="module" src="./scripts/pages/map_page.js"></script>
+  </head>
+
+  <body>
+    <header id="header"></header>
+    <main id="main">
+      <section class="main-item" id="map-component">
+        <div class="map-item" id="map">
+          <nav id="map-overlay">
+            <button
+              title="View Context"
+              onclick="document.location='#map-account'"
+            >
+              <img src="./assets/icons/down.svg" alt="View Context" />
+            </button>
+          </nav>
+        </div>
+        <div class="map-item" id="map-profile"></div>
+      </section>
+      <section class="main-item" id="map-account"></section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

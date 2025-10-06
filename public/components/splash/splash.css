@@ -1,0 +1,54 @@
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.splash-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background: var(--color-primary);
+  z-index: 9999;
+  animation: fadeOut 1s ease forwards;
+  animation-delay: 3s;
+  cursor: wait;
+
+  & #splash-header {
+    width: 100%;
+    padding: var(--padding-xs) var(--padding-sm);
+  }
+
+  & #splash-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--padding-sm);
+
+    & #story {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: var(--padding-xs);
+
+      & #character {
+        aspect-ratio: 1/1;
+        height: clamp(15svh, 20vw, 25svh);
+        overflow: hidden;
+      }
+
+      & #storyline {
+        font-style: italic;
+        font-size: var(--font-size-base);
+      }
+    }
+  }
+}

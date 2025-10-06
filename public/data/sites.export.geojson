@@ -1,0 +1,1243 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.654444,
+          16.347222
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Acupan",
+        "modern_name": "Acupan",
+        "present_day_location": "Itogon",
+        "primary_description": "\"This place is called Acupan, which in their language means \"get gold with both hands together,\" and similarly denotes the abundance with which they collect gold in the rainy season, which is when more pagans gather there\" (Antolín, 1789, p. 85, para.4).",
+        "thematic_value": "Mining & Economy: \"...,and that the one in Acupan was the most abundant and employed the most people working the gold\"; \"Travelling light, it is easily possible to get from the mission to the mines of Acupan in the space of three days despite zigzag ups and downs\" (Antolin, 1789, p.73, p.87)\"",
+        "introduction": "Acupan, located in Itogon, Benguet, was one of the most prominent gold mining centers of the Igorots. Historically, it symbolized the economic strength and independence of the mountain communities.",
+        "supporting_notes": "\"Known as one of the richest gold sources in Benguet. Antolín noted Igorots extracted gold from mines here, though often only seasonally, and used it for trade with Pangasinan and Ilocos\" (Antolín, 1789/1970, pp. 13-14; Scott, 1974, p. 89).<br>Later ethnographers also confirmed Acupan as a central Igorot mining zone (MGB-CAR, 2017).",
+        "literature_review": "According to Fr. Antolín (1789), Acupan was described as one of the richest sources of gold in the Cordillera. The site was widely known for its abundance, with its very name translated as \"to get gold with both hands\" Later accounts confirmed that Igorots extracted and traded gold with lowland communities, especially in Pangasinan and Ilocos (Scott, 1975).",
+        "analysis": "The significance of Acupan lies in its role as a central mining hub. It contributed to the Igorots' self-sufficiency, allowed them to participate in wider trade networks, and reinforced their resistance against colonial control. The economic wealth from Acupan ensured that Igorots were not easily subdued by the Spanish.",
+        "discussion": "Acupan represents not just a mining site but a cornerstone of Igorot livelihood and identity. When placed alongside other settlements like Kabayan and Buguias, Acupan highlights how mining and trade were essential for community survival and interregional exchange. Its presence demonstrates how Igorots strategically used natural resources to sustain autonomy while engaging with surrounding lowland groups.",
+        "conclusion": "In summary, Acupan exemplifies the Igorots' mastery of mining and their integration into regional trade networks. Its economic contributions shaped both the community's independence and its interactions with colonial and neighboring societies.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.035278,
+          16.296111
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Ajanas",
+        "modern_name": "Aritao",
+        "present_day_location": "Nueva Vizcaya",
+        "primary_description": "\"From Ambayeg (with 38 houses) they passed to Bokod, which is on the other side of a little stream and has 38 houses. And with this they passed on the next day to another little town nearby called Bokod of 38 houses, and from there they continued on their journey\" (Antolín, 1988, p.91).",
+        "thematic_value": "Igorot stronghold;  \"...the very frontier of  the Igorots\" (Antolin, 1988, p.xii, p.91);",
+        "introduction": "Ajanas, identified with modern-day Aritao in Nueva Vizcaya, served as a key Igorot stronghold and later as a Spanish frontier outpost. Its location made it a strategic site in the control of movement between lowland and highland communities.",
+        "supporting_notes": "Identified as an Igorot defense stronghold near Aritao. Later became a frontier where Spaniards attempted to establish forts and missions. Symbolizes the contested space between Igorot independence and Spanish intrusion (Antolín, 1789/1970, p. 18; Scott, 1974, pp. 61-62).",
+        "literature_review": "Fr. Antolín (1789) mentioned Ajanas as a defense stronghold of the Igorots, and Spanish missionaries later established it as part of their Ituy mission frontier. Historical accounts show that it was a contested borderland where resistance against Spanish advances was particularly strong.",
+        "analysis": "Ajanas' value lies in its dual role as both a settlement and a frontier. For the Igorots, it was a defensive stronghold that secured trade and territorial boundaries. For the Spaniards, it was a strategic outpost for controlling upland populations and protecting their missions from Igorot incursions.",
+        "discussion": "Ajanas illustrates how geography shaped conflict and interaction between the Igorots and Spaniards. It reflects the transformation of indigenous settlements into colonial frontier zones, emphasizing how resistance and adaptation coexisted in the same space. Its comparison with Dupax shows how frontier settlements functioned as points of negotiation and struggle.",
+        "conclusion": "Ajanas highlights the Igorots' strategic use of territory to defend their autonomy. Later converted into a Spanish frontier, it stands as a symbol of cultural resistance, adaptation, and the complexities of colonization in upland-lowland borderlands.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.540278,
+          16.766944
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Amburayan",
+        "modern_name": "Amburayan River",
+        "present_day_location": "Amburayan River",
+        "primary_description": "\"…through the Valley of Amburayan…\" (Antolín, 1988, p.105).",
+        "thematic_value": "...and they said that from there they entered through the Valley of Amburayan and came out through Tagudin, and they had spent thirty days on the journey\" (Antolín, 1988, p.105)",
+        "introduction": "The Amburayan Valley and River, spanning Ilocos Sur and La Union, served as a major route linking the Igorot highlands to the Ilocos lowlands.",
+        "supporting_notes": "Antolín identifies the Amburayan as one of the rivers draining Igorot territory toward Ilocos; modern maps confirm Amburayan River flowing through Ilocos Sur and La Union (Antolín, 1789/1970, p. 23; Scott, 1974, p. 80).",
+        "literature_review": "Historical sources note the Amburayan as a corridor that connected Tagudin in Ilocos with Igorot territories, allowing the transport of gold, rice, and other trade goods (Scott, 1975).",
+        "analysis": "The Amburayan corridor functioned as both a cultural and economic link between highland and lowland communities, making it essential for trade and mobility.",
+        "discussion": "Compared to frontier settlements like Dupax and Ajanas, the Amburayan highlights another form of contact zone—one centered on commerce rather than conflict. It was integral to sustaining Igorot trade networks with Ilocano communities.",
+        "conclusion": "The Amburayan River demonstrates the importance of natural corridors in Igorot trade and interregional exchange, underlining the role of geography in cultural contact.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Apayao",
+        "modern_name": "No Present Data Can be Found",
+        "present_day_location": "No Present Data Can be Found",
+        "primary_description": "\"Apayao is one of the most frequently mentioned pancutcutan (mines), where they certainly got gold\" (Antolin, 1988, p. 85).",
+        "thematic_value": "Mining: \"...,and that they got the gold in three places called Apayao, Acupan, and Locjo,..\"; \"They encountered a stream which came from Pancutcutan (or mines) of Apayao\" (Antolin, 1988, p.73, p.87).",
+        "introduction": "Apayao was mentioned in colonial accounts as a frequent mining site of the Igorots, though its exact location was uncertain.",
+        "supporting_notes": "No Present Data Can Be Found",
+        "literature_review": "Fr. Antolín (1789) referred to Apayao as a pancutcutan, or gold mine, visited by the Igorots. However, he did not provide coordinates or detailed mapping.",
+        "analysis": "Apayao's role as a gold site emphasizes the widespread mining practices of the Igorots and their knowledge of regional resources.",
+        "discussion": "Though its location remains vague, Apayao adds to the pattern of Igorot reliance on mining across multiple provinces, showing resource-based resilience and autonomy.",
+        "conclusion": "Apayao reflects the expansion of Igorot mining activities, reinforcing their reputation as skilled miners and traders in Northern Luzon.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.851111,
+          16.816389
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Bangao",
+        "modern_name": "Bangao",
+        "present_day_location": "Buguias",
+        "primary_description": "\"Igorot Settlement\" (Antolin, 1988, p.79).",
+        "thematic_value": "Settlements and Communities: \"Bangao, a mining settlement of about 25 houses\" (Antolín, 1988, p.73, p.79).",
+        "introduction": "Bangao, located in Buguias, Benguet, was an Igorot settlement closely tied to mining activities.",
+        "supporting_notes": "Antolin lists Bangao among the igorot settlements. Modern Bangao remains a barangay of Buguias, retaining the same location and name in the Province of Cordillera.(PhilAtlas, n.d, Bangao)",
+        "literature_review": "Colonial records describe Bangao as a small community, with around 25 houses, sustaining itself through subsistence farming and mining activities.",
+        "analysis": "Though small in scale, Bangao illustrates the dispersed settlement patterns of Igorot mining villages.",
+        "discussion": "Compared to larger towns like Kabayan and Kiangan, Bangao shows how smaller communities also played a role in maintaining Igorot trade and livelihood systems.",
+        "conclusion": "Bangao exemplifies the micro-scale organization of Igorot settlements, balancing mining and subsistence farming.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.147778,
+          16.48
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Bayombong",
+        "modern_name": "Bayombong",
+        "present_day_location": "Bayombong, Nueva Vizcaya",
+        "primary_description": "\"Bayombong, in the center of the Missions, is 84 kilometers from the Ilocos coast\" (Antolín, 1988, p. 315).",
+        "thematic_value": "\"Bayombong, together with Bagabag and Solano, was part of the so-called Mission of Paniqui\" (Antolín, 1988, p.xiii).",
+        "introduction": "Bayombong, now the capital of Nueva Vizcaya, was a mission town organized during Spanish colonization.",
+        "supporting_notes": "Antolin mentions that Bayombong was part of the \"Mission of Paniqui\" Area in the Magat Valley. Today, Bayombong serves as the Provincial Capital of Nueva Vizcaya. (PhilAtlas, n.d, Bayombong)",
+        "literature_review": "Historical accounts describe Bayombong as part of the 'Mission of Paniqui,' intended as a buffer zone between Igorots and Ilongots.",
+        "analysis": "Bayombong's purpose was colonial rather than indigenous, serving as a mission center to extend Spanish influence into the frontier.",
+        "discussion": "Bayombong illustrates the creation of colonial buffer towns, designed to manage interactions between upland and lowland groups while consolidating Spanish presence.",
+        "conclusion": "Bayombong stands as an example of how colonial administration reshaped indigenous frontiers into controlled mission zones.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.83,
+          16.491111
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Bokod",
+        "modern_name": "Bokod",
+        "present_day_location": "Bokod, Benguet",
+        "primary_description": "\"From Ambayeg (with 38 houses) they passed to Bokod, which is on the other side of a little stream and has 38 houses. They are low houses and it's necessary to bend down to enter, and they are not placed in any order although quite crowded together. Inside they saw very few furnishings —a pot or kettle and wooden plates for eating their taro-roots, camotes and some herbs, and even these they are accustomed to eating roasted in the coals. They have very little rice, so they didn't see any granaries for storing it nor mortars for pounding it. There was no more than a hearth or fireplace in each house\" (Antolín, 1988, p. 71).",
+        "thematic_value": "Settlements and Communities: \"From Ambayeg(with 38 houses) they passed to Bokod, which is on the other side of a little stream and has 38 houses\"; \"...,and with this they passed on the next day to another little town nearby called Bokod of 38 houses\" (Antolin, 1988, p.71, p.81).",
+        "introduction": "Bokod, a community in Benguet, is one of the Igorot settlements that continue to exist today as a municipality.",
+        "supporting_notes": "Antolin lists Bokod among the igorot settlements. The name survives until today, Now A Municipality of Benguet, confirming it as the same community mentioned in Antolin's book.(PhilAtlas, n.d, Bokod)",
+        "literature_review": "Fr. Antolín recorded Bokod as a settlement of around 38 houses, reflecting a modest but stable community structure.",
+        "analysis": "Bokod highlights the resilience of Igorot settlement patterns, many of which developed into enduring municipalities.",
+        "discussion": "When compared with Bangao and Buguias, Bokod shows the range of Igorot settlements, from small clusters to more stable communities.",
+        "conclusion": "Bokod demonstrates continuity from historical Igorot settlements to modern municipal structures.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.826667,
+          16.745
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Buguias",
+        "modern_name": "Buguias",
+        "present_day_location": "Buguias, Benguet",
+        "primary_description": "Buguias was One of The Other Neighboring Places Around there (Near The Gold Sites) (Antolin, 1988, p.79).",
+        "thematic_value": "Igorot Settlement",
+        "introduction": "Buguias, located in Benguet, was a principal Igorot settlement tied to gold mining and agriculture.",
+        "supporting_notes": "Antolin lists Buguias among the igorot settlements. Now a Municipality of Benguet, having strong ties to the culture of the 3 ethnolinguistic groups, kankanaey, ibaloi, and kalanguya(Kallahan). (Benguet.gov.ph/Buguias)",
+        "literature_review": "Colonial records describe Buguias as an important community and later ethnographic accounts associate it with the Kankanaey, Ibaloi, and Kalanguya peoples.",
+        "analysis": "Buguias illustrates the multi-ethnic and economic role of settlements in Benguet, connecting mining, farming, and cultural exchange.",
+        "discussion": "In relation to Kabayan and Bokod, Buguias demonstrates the interconnected nature of Igorot settlements across Benguet.",
+        "conclusion": "Buguias highlights how Igorot settlements balanced mining, agriculture, and cultural diversity.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.099722,
+          16.3
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Dupax",
+        "modern_name": "Dupax",
+        "present_day_location": "Dupax Del Sur<br>Dupax Del Norte",
+        "primary_description": "Dupax is described as neighboring Bambang and Aritao(Antolín, 1988, p. xii).",
+        "thematic_value": "Settlements and Communities: \"On the route from Dupax to the mines they passed through Bangao, Ambayeg, Bokod, Colong, Dadda, Buguias, Apayao, Pancutcutan, Acopan, and Aua\" (Antolín, 1988, p.71)",
+        "introduction": "Dupax, in Nueva Vizcaya, was a settlement and later a Spanish mission town that served as a frontier contact zone.",
+        "supporting_notes": "Frontier settlement in Nueva Vizcaya, near the Magat River. Antolín described it as part of the Ituy mission area, where Igorot captives were sometimes sold as slaves.<br>  (Antolín, 1789/1970, p. 51; Scott, 1974, p. 64)., Under The Provision Of the PRESIDENTIAL DECREE No. 586, Dupax, became Dupax Del Sur and Dupax Del Norte (lawphil, P.D No.586, 1974).",
+        "literature_review": "Antolín and later accounts describe Dupax as part of the Ituy frontier, where Igorot miners and Spanish missionaries intersected.",
+        "analysis": "Dupax exemplifies the contested nature of frontier towns, simultaneously spaces of negotiation, exchange, and resistance.",
+        "discussion": "When paired with Ajanas, Dupax highlights the different ways frontiers were managed—one as a defense stronghold, the other as a mission base.",
+        "conclusion": "Dupax reflects the dual role of frontier settlements in shaping both Igorot independence and colonial expansion.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.839167,
+          16.623333
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Kabayan",
+        "modern_name": "Kabayan",
+        "present_day_location": "Kabayan, Benguet",
+        "primary_description": "\"In Kabayan are about 37 houses,and it is a village somewhat larger than the others but of the same caliber, its houses low, very few fields, and the people as wretched and dirty as everywhere else. The traders who go down to Ilocos and Pangasinan with the most gold are from the town of Kabayan, so it is rather well known. \"Antolín, 1789/1974, p. 73).",
+        "thematic_value": "Community & Settlement:  \"Then on the second day they reached the town of Kabayan after having passed nine or ten villages whose houses the Christians counted…; The traders who go down to Ilocos and Pangasinan with the most gold are from the town of Kabayan,\" (Antolin, 1988, p.73)",
+        "introduction": "Kabayan, in Benguet, was a major Igorot settlement and trade hub, known also for its cultural practice of mummification.",
+        "supporting_notes": "Antolín lists Kabayan as one of the principal Igorot settlements; modern Kabayan in Benguet retains the same name and is identified with the mummy caves near Mt. Pulag (Antolín, 1789/1970, p. 15).",
+        "literature_review": "Antolín and later researchers noted Kabayan as a gold-rich community and one of the Igorot centers of ritual practices.",
+        "analysis": "Kabayan illustrates how Igorot settlements integrated economic activity (gold mining) with cultural identity (rituals and mummification).",
+        "discussion": "Compared to Buguias and Bokod, Kabayan represents a settlement that gained prominence for both its trade role and its cultural heritage.",
+        "conclusion": "Kabayan remains a vital Igorot settlement, known historically for trade and culturally for preserving indigenous rituals.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.086667,
+          16.777222
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Kiangan",
+        "modern_name": "Kiangan",
+        "present_day_location": "Kiangan, Ifugao",
+        "primary_description": "\"The Ifugaos have many towns, the principal one being Kiangan\" (Antolín, 1988, p.103).",
+        "thematic_value": "Community & Settlement: Throughout the book,\"Igorots of Kiangan\" is constantly used, such as in pages 49, 95, and 97, implying there are Igorots settled in a place called Kiangan.",
+        "introduction": "Kiangan, in Ifugao, was one of the principal towns of the Ifugao people, notable for its trade connections with Bagabag.",
+        "supporting_notes": "Mentioned by Antolín as a trade hub with Bagabag; today's Kiangan, Ifugao is still located in the same valley and remains historically identified as the site of early Igorot-lowland contact (Antolín, 1789/1970, p. 17).",
+        "literature_review": "Historical sources mention Kiangan as an unconquered town where trade with lowland areas flourished.",
+        "analysis": "Kiangan's importance lies in its role as a trade hub while maintaining independence from colonial control.",
+        "discussion": "Kiangan represents the Ifugao capacity to maintain autonomy while engaging in exchange networks, setting it apart from frontier towns like Dupax.",
+        "conclusion": "Kiangan symbolizes Ifugao independence and their role as active participants in trade systems.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.781667,
+          16.120278
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Leabang",
+        "modern_name": "No Present Data Can be found.",
+        "present_day_location": "San Nicolas, Pangasinan",
+        "primary_description": "\"I went to visit the Igorots of Leabang overlooking Asingan, but I didn't reach the town, though I talked with seven of them, among whom was a chief married in Pancutcutan, who told me he had his wife and four children there\" (Antolin, 1988, p.99, Chapter 9).",
+        "thematic_value": "Mines and Settlement: Leabang was identified by Antolín as a gold-mining settlement, with families engaged in extracting ore from nearby mountains.(Antolin, 1988, p.99, Chapter 9)",
+        "introduction": "Leabang, identified with the uplands of San Nicolas, Pangasinan, was a gold settlement of the Igorots.",
+        "supporting_notes": "Antolín describes Leabang as an Igorot mining settlement \"overlooking Asingan,\" accessible by following the Toboy River for several hours, with Tapayac mountain above it and the Agno River nearby. Today, this corresponds to the uplands of San Nicolas, Pangasinan, where Barangay Toboy and the Toboy River, a tributary of the Agno, still exist. However, the existence of the said town is still unknown, as it lacks evidence of such a place.",
+        "literature_review": "Colonial accounts describe Leabang as overlooking Asingan, situated near Toboy River and Tapayac Mountain, known for mining activities.",
+        "analysis": "Leabang's location highlights Igorot expansion of mining activities beyond Benguet and into Pangasinan uplands.",
+        "discussion": "Alongside Acupan and Pancutcutan, Leabang reflects the widespread Igorot use of gold resources across multiple territories.",
+        "conclusion": "Leabang illustrates the geographic spread of Igorot mining and their strategic settlement placement near resource-rich landscapes.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.969444,
+          16.714167
+        ]
+      },
+      "properties": {
+        "category": "Igorot Settlements and Territories",
+        "icon": "icons/house.svg",
+        "historical_name": "Tinok",
+        "modern_name": "Tinoc",
+        "present_day_location": "Tinoc, Ifugao",
+        "primary_description": "Mentioned as one of the places of the Igorot Tribes (Antolín, 1988, p. 79).",
+        "thematic_value": "Community and Settlement: \"Let's go to your towns in Tinok and try to sell them there. ; …and towards the north are those of Tinok, whose towns are to be found below of Itbuyand Camandang,-\" (Antolin, 1988, p.75, p.77)",
+        "introduction": "Tinok, in present-day Ifugao, was an Igorot settlement associated with the Kalanguya people.",
+        "supporting_notes": "Igorot settlement mentioned by Antolín. Tinoc later became a Municipality of Ifugao, known to be a Kalanguya major Municipality.(Philippine ICCA Consortium, 2019, Tinoc)",
+        "literature_review": "Antolín and ethnographic sources describe Tinok as a settlement that later grew into a municipality, sustaining mixed farming and mining practices.",
+        "analysis": "Tinok represents the adaptability of Igorot communities in integrating different subsistence strategies.",
+        "discussion": "Tinok complements settlements like Bangao and Bokod, showing the spectrum of Igorot community organization.",
+        "conclusion": "Tinok highlights Igorot resilience and adaptability, surviving both historical pressures and modern transformations.",
+        "references": "Antolín, F. (1789). Noticias de los infieles igorrotes y operaciones militares. Manila: Archivo Franciscano., Scott, W. H. (1975).<br>The Discovery of the Igorots: Spanish contacts with the pagans of Northern Luzon. Quezon City: New Day Publishers."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.659167,
+          16.401944
+        ]
+      },
+      "properties": {
+        "category": "Mines and Natural Resources",
+        "icon": "icons/diamond.svg",
+        "historical_name": "Boa",
+        "modern_name": "Antamok Mines",
+        "present_day_location": "Luneta, Loacan, Itogon, Benguet,",
+        "primary_description": "A mining area situated within the rich Baguio gold A gold-rich area located within the larger Baguio gold district, actively worked by indigenous miners (Antolin, 1789, p.47).",
+        "thematic_category": "Mines",
+        "introduction": "Antolín refers to Boa as the location of Fort Trinidad and part of the Baguio gold belt, closely associated with Antamok mines today.",
+        "supporting_notes": "Antolin locates Boa near Acopan, rich in gold deposits. Modern Boa matches the site of Antamok mines, later confirmed in historical accounts as a major Benguet gold source (Antolin, 1789/1988; Habana, 2012).",
+        "literature_review": "Both Antolín and Habana describe Boa as rich in gold. Antamok mines are geographically located near Acupan and Bua (Boa), supporting the identification.",
+        "analysis": "Descriptions of travel routes and gold mining activity point to the current Antamok site as the historic Boa mining zone.",
+        "discussion": "The consistent location of Bua and references to Antamok in both colonial and modern accounts confirm the identity of these mines.",
+        "conclusion": "Antamok mines can confidently be identified as the historic mines in Boa referenced by Antolín.",
+        "references": "Habana, O. (2012)., Antolín, F., & Scott, W. H. (1970).<br>Benguet Corporation. (2001, February)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.0347,
+          15.5739
+        ]
+      },
+      "properties": {
+        "category": "Mines and Natural Resources",
+        "icon": "icons/diamond.svg",
+        "historical_name": "Caranglan",
+        "modern_name": "Carranglan",
+        "present_day_location": "Carranglan, Nueva Ecija",
+        "primary_description": "The land around Caranglan and Pantabangan is marked by strange rocks and minerals, which inhabitants sometimes use for making tools and pigments (Antolin, 1789, p.65).",
+        "thematic_category": "Rock and mineral",
+        "introduction": "Antolín documented the finding of eagle-stones in the mountains of Caranglan and Pantabangan.",
+        "supporting_notes": "Caranglan was one of the routes the Dominicans were planning to clear to have a direct road from Pangasinan through San Jose and Caranglan (Antolin, 1988, p. 59, para. 1).<br>A Dominican missionary, named Father Villar, accompanied a troop in which they traveled by the road to San Jose, Puncan and Caranglan (Antolin, 1988, p. 65, para. 3).",
+        "literature_review": "Described as ferrous-colored stones that make a noise when shaken, these stones fascinated locals for their supposed powers.",
+        "analysis": "The location corresponds to present-day Carranglan and Pantabangan in Nueva Ecija. The stones described match the geode-like eagle-stone.",
+        "discussion": "Despite vivid descriptions, no specific collection site has been identified. These findings represent the intersection of local belief and natural phenomena.",
+        "conclusion": "Further geological investigation is needed to confirm the exact site and type of the eagle-stones noted by Antolín.",
+        "references": "Antolín, F., & Scott, W. H. (1970)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.099388,
+          15.803918
+        ]
+      },
+      "properties": {
+        "category": "Mines and Natural Resources",
+        "icon": "icons/diamond.svg",
+        "historical_name": "Pantabangan",
+        "modern_name": "Pantabangan",
+        "present_day_location": "Pantabangan, Nueva Ecija",
+        "primary_description": "The land around Caranglan and Pantabangan is marked by strange rocks and minerals, which inhabitants sometimes use for making tools and pigments (Antolin, 1789, p.65).",
+        "thematic_category": "Rock and mineral",
+        "introduction": "Antolín documented the finding of eagle-stones in the mountains of Caranglan and Pantabangan.",
+        "supporting_notes": "Under the translator's notes, Pantabangan was said to be approximately 160 kilometers from Manila (Antolin, 1988, p.314-315).<br>Another note states where Father Fray Esteban Marin was killed by Italones (Ilongots) before he could read the town of Pantabangan (Antolin, 1988, p. 320, para. 2).",
+        "literature_review": "Described as ferrous-colored stones that make a noise when shaken, these stones fascinated locals for their supposed powers.",
+        "analysis": "The location corresponds to present-day Carranglan and Pantabangan in Nueva Ecija. The stones described match the geode-like eagle-stone.",
+        "discussion": "Despite vivid descriptions, no specific collection site has been identified. These findings represent the intersection of local belief and natural phenomena.",
+        "conclusion": "Further geological investigation is needed to confirm the exact site and type of the eagle-stones noted by Antolín.",
+        "references": "Antolín, F., & Scott, W. H. (1970)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.666667,
+          16.3625
+        ]
+      },
+      "properties": {
+        "category": "Mines and Natural Resources",
+        "icon": "icons/diamond.svg",
+        "historical_name": "Pancutcutan of Acupan",
+        "modern_name": "Acupan Mines",
+        "present_day_location": "Dalicno, Itogon, Benguet,",
+        "primary_description": "One of the most abundant gold mining areas, where locals extracted gold to trade for vital goods like animals (Antollin, 1789, p.47).",
+        "thematic_category": "Mines",
+        "introduction": "Acupan mines are closely linked to Antolín's Pancutcutan description and are located in Itogon, Benguet, near Mount Pulog.",
+        "supporting_notes": "Known as one of the richest gold sources in Benguet. Antolín noted Igorots extracted gold from mines here, though often only seasonally, and used it for trade with Pangasinan and Ilocos.(Antolín, 1789/1970, pp. 13-14; Scott, 1974, p. 89).<br>Later ethnographers also confirmed Acupan as a central Igorot mining zone.",
+        "literature_review": "Olivia Habana (2012) confirms Acupan as a major pre-Hispanic mining site, aligning with Antolín's travel descriptions through Ambayeg, Bokod, and Kabayan.",
+        "analysis": "Antolín's records and Habana's research both support Acupan's identity as a significant mining hub used by Igorots for generations, combining placer and tunnel mining.",
+        "discussion": "By comparing geographic cues from Antolín and modern sources, Acupan emerges as one of the most traceable and well-documented Igorot mining areas.",
+        "conclusion": "Acupan can be confidently identified as one of the historical gold mines referred to by Antolín as Pancutcutan due to overlapping descriptions and routes.",
+        "references": "Habana, O. (2012). Gold Mining in Benguet to 1898. Philippine Studies: Historical and Ethnographic Viewpoints, 48.<br>Antolín, F., & Scott, W. H. (1970).<br>Antolín, F. (1988)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "category": "Mines and Natural Resources",
+        "icon": "icons/diamond.svg",
+        "historical_name": "Pancutcutan of Apayao",
+        "modern_name": "No present data can be found",
+        "present_day_location": "No present data can be found",
+        "primary_description": "A region known to the Spanish as a source of gold, based on trade with the indigenous Isneg people (Antolin, 1789, p. 52).",
+        "thematic_category": "Mines",
+        "introduction": "Apayao mines are frequently mentioned by Antolín but without specific geographical detail, only being",
+        "supporting_notes": "Apayao mines was mentioned where they encountered a stream that came from the Pancutcutan of Apayao (Antolin, 1988, p. 87, para. 2).<br>Under the translator's notes, Apayao was said to be the present King Solomon mining area (Antolin, 1988, p. 319, para. 3).",
+        "literature_review": "Antolín's descriptions place Apayao near the Agno River and possibly higher elevations. A map by the Environmental Science for Social Change (2000) references a \"King Solomon Group of Claims\" possibly linked to Apayao.",
+        "analysis": "The Apayao mines may be located near Ambuklao or the Tablay area, where gold and silver deposits are known today, but evidence is not conclusive.",
+        "discussion": "While Antolín provides indirect clues, the identification of Apayao with modern claims like King Solomon remains speculative due to a lack of concrete data.",
+        "conclusion": "The Apayao mines remain partially unverified; further research is needed, especially around Tablay and Ambuklao areas.",
+        "references": "Environmental Science for Social Change. (2000). Geological & mineral resources distribution of Benguet [Map].<br>Antolín, F., & Scott, W. H. (1970).<br>Antolín, F. (1988)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "category": "Mines and Natural Resources",
+        "icon": "icons/diamond.svg",
+        "historical_name": "Pancutcutan of Locjo",
+        "modern_name": "No present data can be found",
+        "present_day_location": "(However, according to Antolin's map it is in the opposite of Lutab (currently known as Poblacion in Kabayan)",
+        "primary_description": "A mining site opposite Lutab, known for yielding both gold and copper (Antolin, 1789, p.54).",
+        "thematic_category": "Mines",
+        "introduction": "Locjo is identified as one of the Pancutcutan mines in Antolín's book, located near Kabayan, Benguet.",
+        "supporting_notes": "Under the translator's notes, Locjo was said to be the Loo just oppisite Lutab below Kabayan but not the municipality of the same name in the Agno headwaters (Antolin, 1988, p. 319, para. 3).",
+        "literature_review": "Antolín's maps and texts position Locjo further north than Acupan, suggesting proximity to Poblacion (formerly Lutab) in Kabayan. Traders from this area carried the most gold.",
+        "analysis": "Locjo is interpreted as the mine closest to Mount Pulag, supporting Antolín's reference to Pancutcutan being at the base of the mountain.",
+        "discussion": "Though the exact location remains uncertain, modern Poblacion in Kabayan matches historical references and warrants oral history research for confirmation.",
+        "conclusion": "Locjo is likely in present-day Poblacion, Kabayan, but more local data is needed for exact verification.",
+        "references": "Antolín, F., & Scott, W. H. (1970).<br>Antolín, F. (1988).<br>Wikipedia contributors. (2025, August 22).<br>OpenStreetMap contributors. (n.d.)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.021828,
+          16.385747
+        ]
+      },
+      "properties": {
+        "category": "Mines and Natural Resources",
+        "icon": "icons/diamond.svg",
+        "historical_name": "Salinas (Salt spring)",
+        "modern_name": "Salinas Natural Monument",
+        "present_day_location": "Bambang, Nueva Vizcaya",
+        "primary_description": "A vital salt spring highly valued by the Igorot people, who processed its brine into solid salt blocks for trade and consumption. (Antolin, 1789, p.45)",
+        "thematic_category": "Spring",
+        "introduction": "Salinas Salt Spring in Nueva Vizcaya was a notable salt-producing site described in detail by Antolín\"",
+        "supporting_notes": "A historic salt source described by Antolin, noted for white stone used as lime in churches. It was a major salt source for the igorots and nearby missions (Antolin, 1789/1988, p.13). It dried up after the 1990 Luzon Earthquake (Dito Sa Pilipinas, 2024, Salinas Salt Springs: What Happened to this Natural Wonder?).",
+        "literature_review": "Antolín described the spring's geological features, including travertine rocks used to make lime. Modern reports confirm the site's historical and industrial use.",
+        "analysis": "Antolín's description matches the current travertine formation in Salinas. The 1990 earthquake disrupted its water source, changing the site's role today.",
+        "discussion": "Salinas connects geological and economic history; its decLINE and partial re-emergence highlight its potential for cultural preservation.",
+        "conclusion": "The Salinas Salt Spring has strong historical and geological continuity from Antolín's time to today, despite changes in activity.",
+        "references": "Antolín, F., & Scott, W. H. (1970).<br>Limos, M. A. (2020).<br>Pilipinas, D. S. (n.d.)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8992,
+          16.5975
+        ]
+      },
+      "properties": {
+        "category": "Mountains and Sacred Sites",
+        "icon": "icons/mountain.svg",
+        "historical_name": "Mount Polac/Pulog",
+        "modern_name": "Mount Pulag",
+        "present_day_location": "Benguet-Ifugao-Nueva Vizcaya",
+        "primary_description": "\"The highest is in the interior, visible from Dupax\" (Antolín, 1789, p. 10, para. 2).<br>\"Mount Pulog bears north-northwest from Dupax, that is, more to the north than to the west. In it the three principal rivers of the Igorots take their origin\" (Antolin, 1789, p.11, para. 2).<br>\"Site of a flood myth where one man and woman survived a deluge\" (Antolin, 1789, p.10, para.2).",
+        "thematic_category": "Sacred Mountain / Cosmology",
+        "introduction": "Fray Francisco Antolín (1789) described \"Mount Polac\" as the highest mountain visible from Dupax, a sacred site with myths of survival from a great flood. Identifying Polac is significant, since it links geography with Igorot cultural traditions. Scholars debate whether Antolín meant modern Mount Pulag (highest in northern Luzon) or Mount Polis (linked to deluge myths).",
+        "supporting_notes": "Scholars(Scott, 1974)identify Polac with Mount Pulag. Some missionary sources links Mount Polac to Mount Polis  due to Flood Myths. A blend of Pulag's Geography and Polis's mythology.<br>\"The Ibaloy people of Benguet, who consider this mountain sacred, call it Polak, but it appears on modern maps as Mount Pulog, and at 2900 meters above sea level is the highest peak in northern Luzon\" (Antolin, 1789, p.315, sect. Notes, No.3)",
+        "literature_review": "William Henry Scott (1974) and subsequent historians identify Polac with Mount Pulag, citing its elevation, watershed role, and visibility. However, Antolín's deluge myth aligns more with oral traditions tied to Mount Polis in Ifugao and Bontoc. Missionary spellings varied—Polac, Pola, Pulog—reflecting Spanish phonetic transcription. State recognition later standardized the spelling as Pulag (Proclamation No. 75, 1987; RA 11685, 2022).",
+        "analysis": "Antolín's geographic markers—its height, rivers, and Dupax visibility—correspond to Pulag's topography. Yet, the mythic narrative of a surviving man and woman fits Polis traditions. This duality suggests Antolín merged different Igorot accounts.",
+        "discussion": "Polac thus represents a hybrid description: Pulag's physical geography and Polis's mythology. This reflects how colonial chroniclers often compiled fragmented indigenous traditions into a single narrative. The blending also illustrates Igorot cultural exchange across different mountain communities.",
+        "conclusion": "Mount Polac can be best understood as Pulag geographically but carrying mythological elements of Polis. Antolín's account preserves both landscapes, showing how mountains functioned as cultural and spiritual anchors in Igorot cosmology.",
+        "references": "Antolín, Francisco. Notices of the Pagan Igorots in the Interior of the Island. Translated by William Henry Scott. Manila: Ateneo de Manila University Press, 1988. p.8 - 12<br>Republic Act No. 11685, Mt. Pulag Protected Landscape Act (2022)<br>Proclamation No. 75, Declaring Mt. Pulog National Park (1987)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.808889,
+          16.141389
+        ]
+      },
+      "properties": {
+        "category": "Mountains and Sacred Sites",
+        "icon": "icons/mountain.svg",
+        "historical_name": "Mount Tapayac",
+        "modern_name": "No present data can be found. (A mountain range near San Nicolas, Pangasinan)",
+        "present_day_location": "Possible Caraballo range, east of San Nicolas, Pangasinan; ridge system overlooking Agno basin",
+        "primary_description": "\"Above the town of Leabang there's a very high place on the mountain called Tapayac, and they pass through there from Ilocos to the mine of Pancutcutan…\" (Antolín, 1789/1988, p.99, Chapter 9).",
+        "thematic_category": "Mountain range/ Frontier Landmark / Trade Corridor",
+        "introduction": "Antolín (1789) mentioned Mount Tapayac as a high point above Leabang, connected with Igorot settlements and trade routes. Its precise identification is debated, though it represents a culturally and strategically important mountain during the late 18th century.",
+        "supporting_notes": "Tapayac served as a major passage point along trans-Cordillera routes, linking Ilocos with Pancutcutan. In modern context, there is no valid information about this Mountain. So the plotted point is nothing more than assumption basing from Antolin's description",
+        "literature_review": "Tapayac is less referenced in modern literature compared to Pulag. Scholars note it appears in Antolín's descriptions as overlooking key Igorot frontiers. The name suggests a possible link with biblical references to 'tepeyac' or 'high places,' though localized meaning must be prioritized. Its connection with Leabang and Toboy River anchors its location within Nueva Vizcaya's uplands.",
+        "analysis": "Based on Antolín's details, Tapayac lies above Leabang, requiring a five-hour trek along the Toboy River. This indicates a mountain near present-day Benguet-Nueva Vizcaya border. Its significance lies not only in elevation but also as a cultural marker tied to trade movement and community defense.",
+        "discussion": "Tapayac represents how Antolín's accounts combine geography and narrative. It was not only a reference point for colonial mapping but also an Igorot stronghold, maintaining selective interaction with outsiders. As a symbol, Tapayac illustrates how mountains defined both territorial identity and spiritual imagination.",
+        "conclusion": "Though its exact modern equivalent is uncertain, Mount Tapayac highlights Antolín's ethnographic sensitivity to Igorot cultural landscapes. It stands as a testament to how mountains served as natural fortresses and sacred markers in colonial encounters.",
+        "references": "Antolín, Francisco. Notices of the Pagan Igorots in the Interior of the Island. Translated by William Henry Scott. Manila: Ateneo de Manila University Press, 1988. p.8 - 12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8025,
+          16.319444
+        ]
+      },
+      "properties": {
+        "category": "Mountains and Sacred Sites",
+        "icon": "icons/mountain.svg",
+        "historical_name": "Mount Maliongliong",
+        "modern_name": "Probable modern name: Mount Ugo., (Mountain crest near Pancutcutan, possibly in today's Bokod-Itogon, Benguet area. Antolin, 1789/1988,p.99)",
+        "present_day_location": "Likely a ridge in southern Benguet, near the headwaters of the Agno River",
+        "primary_description": "\"…passing through the crest of Maliongliong, which is below Pancutcutan. In between these two points… the Agno River comes down  near San Nicolas\" (Antolín, 1789/1988, p.99, Chapter 9).",
+        "thematic_category": "Mountain Range. Geographic Stronghold / Trail Network",
+        "introduction": "Mount Maliongliong, mentioned by Antolín (1789), remains an enigmatic reference among Cordillera mountains. Scholars propose it corresponds to modern Mount Ugo in the Benguet-Nueva Vizcaya borderlands. The debate highlights both the challenges and value of linking colonial texts with modern geography.",
+        "supporting_notes": "Maliongliong only mentioned once. Its mention as a crossing place shows the tactical and economic importance of such ridges in sustaining Igorot autonomy against Spanish expeditions. However, same as Mountain Tapayac, there is no present data that can justify its current location, only assumption.",
+        "literature_review": "Maliongliong appears sparsely in missionary records, but its placement matches routes described by Antolín connecting Benguet gold mines to Nueva Vizcaya. Modern researchers suggest a correlation with Mount Ugo, a site known for gold traces and a strategic location along trade corridors. Its mention reflects Spanish efforts to chart mining zones and local defenses.",
+        "analysis": "The linguistic resemblance between 'Maliongliong' and oral recollections of mountains around Itogon and Kayapa strengthens its identification with Mount Ugo. Its role as a mining-linked highland aligns with Antolín's broader focus on Igorot mineral wealth and Spanish interest in controlling upland access routes.",
+        "discussion": "Identifying Maliongliong with Ugo illustrates how colonial transcription preserved distorted versions of indigenous place-names. Beyond geography, the site underscores the contested frontier where Spanish expeditions, Igorot miners, and trade networks converged. This blending of cultural, economic, and political narratives shows its thematic weight in Antolín's text.",
+        "conclusion": "Mount Maliongliong is most plausibly modern Mount Ugo. While not conclusive, the overlap of location, mining references, and trade functions supports this hypothesis. Its presence in Antolín's Noticias underLINEs the symbolic and economic centrality of Cordillera mountains in both Igorot tradition and colonial ambition.",
+        "references": "Antolín, Francisco. Notices of the Pagan Igorots in the Interior of the Island. Translated by William Henry Scott. Manila: Ateneo de Manila University Press, 1988. p.8 - 12<br>Itogon Tourism Office. (n.d.). Mount Ugo. Google Sites."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              121.641,
+              18.3566
+            ],
+            [
+              121.7303,
+              17.6133
+            ],
+            [
+              121.033819,
+              16.297258
+            ],
+            [
+              121.5222,
+              16.5103
+            ],
+            [
+              121.3025,
+              15.7933
+            ],
+            [
+              122.43,
+              17.0589
+            ],
+            [
+              121.641,
+              18.3566
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Provinces and Territories",
+        "icon": "icons/fort.svg",
+        "historical_name": "Cagayan Valley",
+        "modern_name": "Cagayan Valley",
+        "present_day_location": "Cagayan Valley (Region II), Luzon",
+        "primary_description": "The Igorots once occupied slopes and savannahs near their mountains, charging Christian settlers land rent in rice and animals. When unpaid, they seized the land and launched ambuscades, raids, and burned towns, asserting control over frontier zones reaching toward the Cagayan coast. As Antolín noted, \"all the way to the seacoast of Cagayan are mountains populated by Tinguianes, Gaddanes, and other pagans of different tribes\" (Antolín, 1789, pp. 48-50).",
+        "thematic_category": "Mountainous and valley terrain inhabited by various ethno-linguistic groups",
+        "introduction": "Cagayan Valley is a mountainous region inhabited by Igorot tribes who strongly resisted Spanish attempts to control their territory. The region’s challenging terrain made it difficult for Spanish explorers to establish settlements or access gold mines. Antolín highlights the defensive tactics used by Igorots, including charging land rent and conducting raids against settlers (Antolín, 1789, pp. 48-50).",
+        "supporting_notes": "Cagayan Valley’s northeastern frontier, marked by the Sierra Madre and Cordillera ranges, was mapped by Spanish authorities as a launch point for missions and mining. Yet, as Antolín observed, \"no vein or gold mine has been discovered due to the resistance of the natives and the asperity… of those ranges and mountains… it cannot be expected that the said Tinguianes will give obedience or settle down\" (Antolín, 1789, pp. 167).",
+        "literature_review": "The Igorots in Cagayan Valley traded gold and other items with lowland Christian settlements, though they fiercely protected their land and autonomy. Spanish authorities mapped the area for mining and missions but faced indigenous opposition and geographical obstacles (Antolín, 1789, pp. 167, 230).",
+        "analysis": "Polygonal map data reveals the valley’s natural barriers which limited colonial expansion. This spatial evidence aligns with Antolín’s descriptions of ambushes and native control that kept missionaries and miners at bay.",
+        "discussion": "The mountains and rivers acted as natural defenses for the Igorots, underpinning their successful resistance. Spanish influence remained largely confined to foothills and coastal towns, failing to penetrate the highlands (Antolín, 1789, pp. 48-50, 167).",
+        "conclusion": "In Cagayan Valley, geography and indigenous resilience combined to maintain Igorot control over key areas, limiting Spanish colonial reach (Antolín, 1789).",
+        "references": "Antolín, F. (1789). Notices of the pagan Igorots in the interior of the island of Manila (pp. 48-50, 167, 230)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.7841,
+              18.5587
+            ],
+            [
+              120.386,
+              17.5747
+            ],
+            [
+              120.3167,
+              16.6167
+            ],
+            [
+              120.73,
+              16.98
+            ],
+            [
+              120.7,
+              17.95
+            ],
+            [
+              120.7841,
+              18.5587
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Provinces and Territories",
+        "icon": "icons/fort.svg",
+        "historical_name": "Ilocos",
+        "modern_name": "Ilocos",
+        "present_day_location": "Ilocos Region (Region I), Luzon",
+        "primary_description": "Ilocos was described as \"the plains and towns along the coast bordered by the mountains where the pagan Igorots dwell.\" Spanish control focused on coastal lowlands with \"missions established near the foothills\" and efforts of missionaries and alcaldes to govern these Christian towns. The coastal settlements were centers for \"the spread of Christianity and control of trade.\" Clear geographical boundaries separated the Christian towns from the independent pagan mountains (Antolín, 1789, pp. 190, 192-195).",
+        "thematic_category": "Mountainous highlands and coastal plains",
+        "introduction": "Ilocos has coastal lowlands controlled by the Spanish and mountainous highlands inhabited by pagan Igorot communities. The division between these zones was clearly marked geographically (Antolín, 1789, p. 190).",
+        "supporting_notes": "Ilocos was described as \"the plains and towns along the coast bordered by the mountains where the pagan Igorots dwell.\" Spanish control focused on coastal lowlands with \"missions established near the foothills\" and efforts of missionaries and alcaldes to govern these Christian towns. The coastal settlements were centers for \"the spread of Christianity and control of trade.\" Clear geographical boundaries separated the Christian towns from the independent pagan mountains (Antolín, 1789, pp. 190, 192-195).",
+        "literature_review": "Spanish missionaries and alcaldes governed the coastal Christian towns, spreading religion and overseeing trade. Meanwhile, the Igorots maintained independence in the mountains, refusing to submit to colonial control (Antolín, 1789, pp. 190, 193-195).",
+        "analysis": "The polygon data confirms sharp geographical and cultural boundaries separating Spanish lowland towns from highland Igorot territories. This border shaped economic and social exchanges noted by Antolín.",
+        "discussion": "The mountainous terrain preserved indigenous lands and culture, limiting Spanish intervention. Coastal settlements functioned as centers of colonial authority and Christianization (Antolín, 1789).",
+        "conclusion": "Ilocos exemplifies a colonial frontier with distinct spatial and cultural separation between Spanish and Indigenous control (Antolín, 1789).",
+        "references": "Antolín, F. (1789). Notices of the pagan Igorots in the interior of the island of Manila (pp. 190, 193-195)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.5411,
+              15.0723
+            ],
+            [
+              120.6928,
+              15.0292
+            ],
+            [
+              120.7696,
+              15.1515
+            ],
+            [
+              120.5734,
+              15.2251
+            ],
+            [
+              120.5918,
+              15.1563
+            ],
+            [
+              120.5411,
+              15.0723
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Provinces and Territories",
+        "icon": "icons/fort.svg",
+        "historical_name": "Pampanga",
+        "modern_name": "Pampanga",
+        "present_day_location": "Central Luzon (Region III), Luzon",
+        "primary_description": "Pampanga was described as part of the lowland plains adjacent to the rugged mountainous Igorot territory. It was identified as a boundary region where the Spanish exerted colonial control over the lowlands, while the pagan tribes considered unconquered lands lay beyond in the mountains (Antolín, 1789, pp. 198-200).",
+        "thematic_category": "Central plain region with highland areas",
+        "introduction": "Pampanga is a lowland province near the frontier with Igorot highland communities. Spanish settlements functioned as bases for expeditions into mountainous indigenous areas (Antolín, 1789, pp. 185-187).",
+        "supporting_notes": "Although separated from the highland Igorots, Pampanga’s proximity allowed it to serve as a base for expeditions. Its towns and missions were positioned near the frontier,providing troops and logistical support for campaigns into the mountains(Antolin,1789,pp. 185-187, 192).",
+        "literature_review": "The Spanish towns provided military and logistical support for campaigns against Igorot territories. However, the mountainous regions remained out of colonial reach, sustaining indigenous autonomy (Antolín, 1789, pp. 187-192).",
+        "analysis": "Mapped boundaries designate Pampanga as a contested border zone where Spanish influence ended and Igorot control began. This designation aligns with Antolín’s accounts of military expeditions.",
+        "discussion": "Pampanga was critical in sustaining colonial expansion, though Spanish authority diminished near the highlands. Geography and indigenous resistance maintained a colonial boundary (Antolín, 1789).",
+        "conclusion": "Pampanga’s plains supported Spanish colonial aims, but the mountains remained Igorot lands (Antolín, 1789).",
+        "references": "Antolín, F. (1789). Notices of the pagan Igorots in the interior of the island of Manila (pp. 185-192)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              120.8406,
+              15.9267
+            ],
+            [
+              120.7624714,
+              16.0703505
+            ],
+            [
+              120.6702443,
+              16.0037829
+            ],
+            [
+              120.23333,
+              16.01667
+            ],
+            [
+              120.8406,
+              15.9267
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Provinces and Territories",
+        "icon": "icons/fort.svg",
+        "historical_name": "Pangasinan",
+        "modern_name": "Pangasinan",
+        "present_day_location": "Ilocos Region (Region I), Luzon",
+        "primary_description": "Pangasinan shared a border with the unconquered Igorot mountains and was situated on the outskirts of lowland settlements under Spanish rule. The Igorots opposed missionaries' and governors' frequent attempts to establish direct roads across Pangasinan to the highlands, designating the region as a colonial frontier zone (Antolín, 1789, pp. 211-216).",
+        "thematic_category": "Mountainous highlands and coastal plains",
+        "introduction": "Pangasinan borders Igorot highlands and served as an important trade link between mountain tribes and Spanish settlers. It was a colonial frontier with contested access (Antolín, 1789).",
+        "supporting_notes": "The Igorots relied heavily on Pangasinan as a trading partner. The Igorots bought animals, rice, and other items from Pangasinan and traded gold. Pangasinan was an essential link between the lowland markets and the mountain mines since trade routes traveled via towns like Asingan and San Nicolas (Antolín, 1789, pp. 194, 230).",
+        "literature_review": "Antolín notes that Igorots resisted colonial attempts to build roads through the mountains, protecting their territories. Despite this, trade routes between lowland towns and mountain markets were active (Antolín, 1789, pp. 211-216).",
+        "analysis": "Polygons outline mixed terrain that supported trade but limited Spanish control over mountainous areas, confirming Antolín’s observations.",
+        "discussion": "Pangasinan was a dynamic frontier where commerce and indigenous resistance coexisted. Geography played a central role in maintaining this complex relationship (Antolín, 1789).",
+        "conclusion": "The region balanced economic exchange with native autonomy, illustrating colonial frontier complexity (Antolín, 1789).",
+        "references": "Antolín, F. (1789). Notices of the pagan Igorots in the interior of the island of Manila (pp. 211-216)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.517778,
+            16.423611
+          ],
+          [
+            120.494167,
+            16.442778
+          ],
+          [
+            120.437222,
+            16.358889
+          ],
+          [
+            120.366667,
+            16.316667
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Rivers and Trade Corridors",
+        "icon": "icons/water.svg",
+        "historical_name": "Agoo",
+        "modern_name": "Agoo",
+        "present_day_location": "Agoo, La Union",
+        "primary_description": "\"A river in the coastal lowlands where placer mining (pangot) for gold dust was practiced\" (Antolin, 1989, p.61).",
+        "thematic_category": "River",
+        "introduction": "Agoo, located in Ilocos, is where Antolín observed a transparent, glossy rock crystal.",
+        "supporting_notes": "\"Agoo, a part of Ilocos near the Igorots, is where Antolin discovered the rock crystal, that is glossy and rather transparent, which easily turns to calcium and makes a white mortar if placed in the fire\" (Antolin, 1988, p.13).",
+        "literature_review": "Antolín (1988) described the rock as converting to white mortar when burned, but did not specify the type or exact origin.",
+        "analysis": "While the transformation suggests calcium-rich minerals, there's insufficient evidence to identify the crystal or source.",
+        "discussion": "The mention of the crystal indicates mineral knowledge among locals, but more data is needed for modern validation.",
+        "conclusion": "Agoo's rock crystal remains a mystery due to lack of detail and confirmation of location or composition.",
+        "references": "Antolín, F. (1988)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.726084,
+            16.786398
+          ],
+          [
+            120.556074,
+            16.868574
+          ],
+          [
+            120.419983,
+            16.908069
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Rivers and Trade Corridors",
+        "icon": "icons/water.svg",
+        "historical_name": "Ambayeg / Ambayawang",
+        "modern_name": "Amburayan River (Ambayeg / Ambayawang)",
+        "present_day_location": "Originates in the Cordillera (parts of Benguet, possibly Bakun), flows west to Tagudin in Ilocos Sur / La Union.",
+        "primary_description": "Upland→coastal corridor / Local trade link",
+        "thematic_category": "\"Trip narratives place Ambayeg/Ambayawang as an upland stream used by Leaban/Igorot groups. Antolín identifies the Amburayan mouth near Tagudin, making it a corridor from mountains to coast for animals, small goods and communications\" (Antolin, 1789 pg. 63-66, pg. 78-81, pg. 315)\"",
+        "introduction": "Antolín describes Amburayan as an upland-to-coastal corridor, used by Igorot groups to move animals, goods, and communication to the Tagudin coast.",
+        "supporting_notes": "Useful for mapping upland villages (Apsay, Ambayeg, Bokod, Bucut) to the Tagudin coast.",
+        "literature_review": "Historical records identify Amburayan as an important river for linking interior settlements to the Ilocos/La Union coast.",
+        "analysis": "Text and mapping show Amburayan as an outlet stream, originating in Benguet and flowing west to Tagudin, enabling coastal trade.",
+        "discussion": "Amburayan represents a network that connected mountain communities to the coast, broadening exchange beyond gold to everyday goods.",
+        "conclusion": "Amburayan demonstrates how rivers extended upland connections to coastal areas, making them essential to regional integration.",
+        "references": "Antolín, F. (1988). Noticias / Notices of the pagan Igorots in the interior of the island of Manila.<br>La Union Provincial Development Plan."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.6167,
+            16.3167
+          ],
+          [
+            120.5333,
+            16.1167
+          ],
+          [
+            120.4,
+            16.0667
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Rivers and Trade Corridors",
+        "icon": "icons/water.svg",
+        "historical_name": "Angalacán / Angalaca",
+        "modern_name": "Angalacan (tributary)",
+        "present_day_location": "Located in Pangasinan (Mangaldan, Pozorrubio etc.), mostly lowland; fewer sources confirm deeper headwaters in Igorot territory.",
+        "primary_description": "Placer-gold tributary / Connector",
+        "thematic_category": "\"Antolín lists Angalacan among streams that bring placer gold; it forms part of the routes toward the Pangasinan plain and the Agno mines\" (Antolín, 1789 pg. 100, pg. 204).",
+        "introduction": "Antolín lists Angalacan as a placer-gold tributary and connector to the Pangasinan plain, emphasizing its role in transporting gold-bearing sediments.",
+        "supporting_notes": "Mark as a gold-bearing tributary and difficult troop route.",
+        "literature_review": "Antolín (1988) identifies Angalacan as part of the Agno system, linking mountain mines to lowland settlements.",
+        "analysis": "Angalacan emerges as a feeder stream contributing gold to the Agno, connecting difficult troop and trade routes.",
+        "discussion": "Rather than a major river, Angalacan acted as a strategic tributary, illustrating the fine-grained network of gold-bearing waterways.",
+        "conclusion": "Angalacan reflects the importance of smaller rivers in sustaining the wider gold economy of the Agno system.",
+        "references": "Antolín, F. (1988). Noticias / Notices of the pagan Igorots in the interior of the island of Manila.<br>Mapcarta — Angalacan River."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.8333,
+            16.5
+          ],
+          [
+            120.70448,
+            16.24004
+          ],
+          [
+            120.45,
+            15.8167
+          ],
+          [
+            120.1667,
+            16.0167
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Rivers and Trade Corridors",
+        "icon": "icons/water.svg",
+        "historical_name": "Río Agno",
+        "modern_name": "Agno River",
+        "present_day_location": "Originates in the Cordillera (Kabayan, Bokod, Itogon in Benguet), flows through Pangasinan, empties into Lingayen Gulf.",
+        "primary_description": "Gold corridor / Major trade route",
+        "thematic_category": "\"Antolín describes Agno as the principal river carrying gold particles from interior mines; both upland miners and lowland towns pan and market gold there. He also records seasonal floods and narrow, steep mountain channels\" (Antolín, 1789 Pg. 275-278; pg. 79-87).",
+        "introduction": "Antolín describes the Agno as the main river carrying gold particles from interior mines, linking upland miners to lowland towns and missions. Seasonal floods and steep channels made it both valuable and challenging.",
+        "supporting_notes": "Mark as placer + mine-sourced gold corridor; important mission & trade axis.",
+        "literature_review": "Antolín (1988) and related sources identify the Agno as the principal gold corridor of northern Luzon, historically central to Igorot-lowland exchange.",
+        "analysis": "Mapping and text show Agno as a trade axis, transporting gold and goods from Benguet mines to Pangasinan and out to the Lingayen Gulf.",
+        "discussion": "Agno represents a major artery of movement, supporting placer gold panning and forming a spine of economic activity while also posing natural hazards.",
+        "conclusion": "Agno functioned as a primary gold corridor linking upland and lowland communities, showing how rivers structured trade and mission routes.",
+        "references": "Antolín, F. (1988). Noticias / Notices of the pagan Igorots in the interior of the island of Manila.<br>Kyoto University / IHP River Catalogue — Agno."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.78043,
+            16.1457
+          ],
+          [
+            120.68438,
+            15.98192
+          ],
+          [
+            120.45177,
+            15.75941
+          ],
+          [
+            120.19935,
+            16.03569
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Rivers and Trade Corridors",
+        "icon": "icons/water.svg",
+        "historical_name": "Río Toboy",
+        "modern_name": "Toboy (Lebang area)",
+        "present_day_location": "Possible match is in Asingan Pangasinan, which also has a barangay named \"Toboy\", a small tributary to the agno river.",
+        "primary_description": "Mountain funnel / Access route",
+        "thematic_category": "\"Toboy is a narrow, stony mountain entrance used to reach Lebang, acts as a seasonal barrier for access to nearby mines\" (Antolín, 1789 Pg. 99-101).",
+        "introduction": "Antolín records Toboy as a narrow, stony mountain funnel providing access to Leabang and nearby mines, acting as a seasonal barrier to movement.",
+        "supporting_notes": "Used as an access checkpoint and also for seasonal flood hazards.",
+        "literature_review": "Antolín (1988) places Toboy in Pangasinan, marking it as a minor tributary but strategically important as an access route.",
+        "analysis": "Toboy appears as an entry point into mountain mining areas and a checkpoint on trade routes.",
+        "discussion": "Rather than a single site, Toboy served as a critical crossing point whose usability varied with seasonal floods, emphasizing local knowledge and timing.",
+        "conclusion": "Toboy highlights the challenges of mountain access, showing how smaller rivers acted as gates or choke points in trade corridors.",
+        "references": "Antolín, F. (1988). Noticias / Notices of the pagan Igorots in the interior of the island of Manila."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.034,
+          16.2968
+        ]
+      },
+      "properties": {
+        "category": "Spanish Missions and Outposts",
+        "icon": "icons/flag.svg",
+        "historical_name": "Ajanas",
+        "modern_name": "Aritao",
+        "present_day_location": "Nueva Vizcaya",
+        "primary_description": "\"A military garrison was built and Aritao became one of the Christian towns (Antolín, 1789 p.60).<br> A church was established which was now named as Iglesia de San Jose (1776-1786) (Antolín, 1789 p.1).",
+        "thematic_category": "Communities and settlements",
+        "introduction": "Aritao, formerly Ajanas, was established as both a military garrison and an ecclesiastical mission with the Iglesia de San Jose.",
+        "supporting_notes": "As the Kiangan have shown their ruthless practices and are fierce, a military garrison is required in places like Aritao. (Antolín, 1789 p. 177).<br>Aritao was one of the Cristian towns where hundreds of converted Igorots to Christians were resettled (Antolín, 1789 p. 209).",
+        "literature_review": "Antolin (1789) recorded that the Panipuyes tribe was displaced by military pressure. Scott (1970) emphasized its role as a frontier for controlling Igorots.",
+        "analysis": "The mission combined militarization with religious expansion, restricting trade and forcing Igorot displacement into the mountains.",
+        "discussion": "Aritao demonstrates how missions functioned as tools of both evangelization and colonial surveillance, intertwining religion and military dominance.",
+        "conclusion": "The mission succeeded in forming a Christian town but at the cost of displacing local tribes and restricting indigenous autonomy.",
+        "references": "Antolin & Scott (1970)<br>Antolin, Scott & Carrillo (1971)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2667,
+          16.6
+        ]
+      },
+      "properties": {
+        "category": "Spanish Missions and Outposts",
+        "icon": "icons/flag.svg",
+        "historical_name": "Bagabag",
+        "modern_name": "Bagabag",
+        "present_day_location": "Nueva Viscaya",
+        "primary_description": "\"Military garrisons were meant to confront the Igorots of Kiangan who have remained unconquered because they are many and in fertile land, and for causing injuries and deaths among the Christians. Spaniards were unable to fully conquer the Kiangan tribe and were unable to establish a Christian town as they had strongly resisted\" (Antolín, 1789 p.61).",
+        "thematic_category": "Communities and settlements",
+        "introduction": "Bambang's mission established the Santa Catalina de Alexandria Parish Church, dedicated to Saint Catherine of Sienna, under the broader Ituy mission.",
+        "supporting_notes": "Military garrison is required in Aritao and another in Bagabag to to subdue/confront these independent, headtaking neighbors which are the Kiangan (Antolín, 1789 p. 177).",
+        "literature_review": "Antolin (1789) recorded frequent Igorot attacks, but over time Christian perseverance resulted in successful resettlement. Gala (2015) documented the parish's religious significance.",
+        "analysis": "The mission withstood hostilities and gradually gained converts, resettling Igorots into Christian towns.",
+        "discussion": "Bambang represents a pattern where persistence and fortified religious presence eventually overcame indigenous resistance.",
+        "conclusion": "The mission was successful, leaving a lasting parish and community that endures to this day.",
+        "references": "Antolin & Scott (1970)<br>Gala (2015)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1075,
+          16.3872
+        ]
+      },
+      "properties": {
+        "category": "Spanish Missions and Outposts",
+        "icon": "icons/flag.svg",
+        "historical_name": "Bambang",
+        "modern_name": "Bambang",
+        "present_day_location": "Nueva Viscaya",
+        "primary_description": "\"It was one of the Christian towns where some converted Igorots were resettled. The mission was successfully established in the area.\"",
+        "thematic_category": "Communities and settlements",
+        "introduction": "Bambang's mission established the Santa Catalina de Alexandria Parish Church, dedicated to Saint Catherine of Sienna, under the broader Ituy mission.",
+        "supporting_notes": "Established Santa Catalina de Alexandria Parish Church as a part of an Ituy mission dedicated to Saint Catherine of Sienna, otherwise known as the Bambang Church (Gala, 2015)\"",
+        "literature_review": "Antolin (1789) recorded frequent Igorot attacks, but over time Christian perseverance resulted in successful resettlement. Gala (2015) documented the parish's religious significance.",
+        "analysis": "The mission withstood hostilities and gradually gained converts, resettling Igorots into Christian towns.",
+        "discussion": "Bambang represents a pattern where persistence and fortified religious presence eventually overcame indigenous resistance.",
+        "conclusion": "The mission was successful, leaving a lasting parish and community that endures to this day.",
+        "references": "Antolin & Scott (1970)<br>Gala (2015)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1047,
+          16.4817
+        ]
+      },
+      "properties": {
+        "category": "Spanish Missions and Outposts",
+        "icon": "icons/flag.svg",
+        "historical_name": "Bayombong",
+        "modern_name": "Bayombong",
+        "present_day_location": "Nueva Viscaya",
+        "primary_description": "Part of the Mission of Paniqui, which has a goal to convert and resettle Igorot villages as a Christian town (Antolín, 1789p.3).",
+        "thematic_category": "Communities and settlements",
+        "introduction": "Bayombong was established as part of the Paniqui mission, aiming to convert and resettle Igorots into a Christian town.",
+        "supporting_notes": "The church established in Bayombong, Iglesia de Santo Domingo de Guzman was founded as an ecclesiastical mission in 1741 under the advocacy of Santo Domingo de Guzman.  (Noche, 2004)\"",
+        "literature_review": "According to Antolin (1789), conflicts between Christians and pagan neighbors were common. Scott (1970) highlighted Bayombong's role as a trading ground, even involving slave trade.",
+        "analysis": "The mission faced opposition from Igorots who resisted resettlement, retreating into the mountains. Still, converts formed the basis of the Christian town.",
+        "discussion": "Bayombong illustrates how mission towns became centers of both Christianization and conflict, while also engaging in colonial-era commerce, including morally controversial practices like slave trade.",
+        "conclusion": "Despite tension, Bayombong emerged as a successful Christian town and a central hub of colonial activity in Nueva Vizcaya.",
+        "references": "Antolin & Scott (1970)<br>Antolin, Scott & Carrillo (1971)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.1939,
+          16.1382
+        ]
+      },
+      "properties": {
+        "category": "Spanish Missions and Outposts",
+        "icon": "icons/flag.svg",
+        "historical_name": "Dupaj/Dupax",
+        "modern_name": "Dupax del Sur/Dupax del Norte",
+        "present_day_location": "Nueva Viscaya",
+        "primary_description": "Part of the mission of Ituy to establish Christian communities in Dupax and to spread Christianity and convert the indigenous peoples   (Antolín, 1789 p.1).",
+        "thematic_category": "Communities and settlements",
+        "introduction": "The mission of Dupax was part of the Dominican expansion in the Ituy region, aiming to establish Christian communities and convert indigenous Igorots.",
+        "supporting_notes": "The mission was successful, but was later on abandoned due to territorial disputes with the Franciscans (Dupax Del Sur - Wikiwand, n.d.).",
+        "literature_review": "Antolin (1789, as cited in Scott, 1970) noted the Igorots were subdued by military presence. The mission was later abandoned due to jurisdictional disputes between Dominicans and Franciscans (Dupax del Sur - Wikiwand, n.d.).",
+        "analysis": "The mission began under Nuestra Señora del Perpetuo Socorro but later shifted to San Vicente Ferrer. Despite initial success in conversions, disputes weakened its continuity.",
+        "discussion": "Dupax shows how religious expansion was not only resisted by locals but also hampered by colonial rivalries, which undermined missionary permanence.",
+        "conclusion": "Though abandoned, Dupax remains significant for showing the fragility of missions when ecclesiastical disputes overlapped with indigenous resistance.",
+        "references": "Antolin & Scott (1970)<br>Antolin, Scott & Carrillo (1971)<br>Dupax del Sur - Wikiwand (n.d.)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.6833,
+            16.0
+          ],
+          [
+            120.9833,
+            15.7833
+          ],
+          [
+            121.05,
+            15.9667
+          ],
+          [
+            121.0,
+            16.15
+          ],
+          [
+            121.2833,
+            15.8833
+          ],
+          [
+            121.1,
+            15.3
+          ],
+          [
+            121.1236,
+            14.6982
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Trade Routes",
+        "icon": "icons/route.svg",
+        "historical_name": "Pampanga",
+        "modern_name": "Pampanga",
+        "present_day_location": "Pampanga",
+        "primary_description": "\"when they [provisions for the missions] had to be carried almost all from Pangasinan through San José and Caranglán, towns of Pampanga, the detour was insufferable, with neither horses nor people able to endure this painful work\" (Antolín, 1789 Page 82 (Chapter 7).",
+        "thematic_category": "Transit Corridor and Secondary Supplier",
+        "introduction": "This section explores the more indirect eastern trade corridor toward the vast colonial province of Pampanga. Unlike the direct routes to Ilocos and Pangasinan, trade with Pampanga often occurred through transit towns in what are now Nueva Ecija and Nueva Vizcaya, following major river systems. This route highlights the broader geographic and economic connections of the Igorot trade network.",
+        "supporting_notes": "\"From Asingan the Igorot land begins... to the East they continue with a cordillera of mountains that passes through the Caraballo, Santor, Gapán and reaches to the town of San Mateo, near the city of Manila\" (Antolín, 1789 Page 40 (Chapter 1). This situates Pampanga (via Gapan) as a geographic reference point, not a trade partner\").",
+        "literature_review": "Antolín's text is the main source, describing the geographic relationship between the Igorot lands and \"Upper Pampanga\" (modern Nueva Ecija). His accounts of trade in towns like Dupax and Bayombong, and the finding of unique items like eagle-stones, help piece together this corridor. Scott's works provide additional context on the political landscape of this region",
+        "analysis": "The analysis of the Pampanga transit corridor shows that trade did not follow a direct route to Pampanga proper but moved through the foothills and river valleys of the vast province. Key areas included the mountains of Carranglan and Pantabangan in Nueva Ecija, where Antolín documented the finding of eagle-stones. Trade also flowed through the mission towns of Ituy along the Magat River, such as Dupax and Bayombong in Nueva Vizcaya, where transactions for slaves and other goods were recorded. The Igorots traded commodities like copper, gold, and slaves in these areas, obtaining cattle, cotton blankets, G-strings, and crude iron tools from the lowland communities in this transit corridor.",
+        "discussion": "Putting the evidence together, the Pampanga corridor was a network of trails connecting the Igorot highlands to the eastern lowlands via the Magat and other river systems. This route was less a single path and more a zone of interaction, involving trade with communities in Nueva Vizcaya and Nueva Ecija that were under the political jurisdiction of Pampanga. This indirectness may have served as another layer of buffering and controlling contact with the colonial center in Manila.",
+        "conclusion": "In conclusion, the eastern trade toward Pampanga was characterized by its indirect nature, utilizing transit corridors through the Caraballo Sur mountains. This route facilitated essential exchange while allowing the Igorots to maintain their distance from the core of Spanish power, demonstrating the adaptability and strategic depth of their trade and resistance practices",
+        "references": "Antolin, F. (1789). Notices of the pagan Igorots in the interior of the island of Manila.<br>Scott, W. H. (1977). Discovery of the Igorots"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.25,
+            16.283
+          ],
+          [
+            120.231,
+            16.0215
+          ],
+          [
+            120.617,
+            16.33299
+          ],
+          [
+            120.4464,
+            16.9361
+          ],
+          [
+            120.231,
+            16.0215
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Trade Routes",
+        "icon": "icons/route.svg",
+        "historical_name": "San Carlos",
+        "modern_name": "San Carlos",
+        "present_day_location": "San Carlos, Pangasinan",
+        "primary_description": "\"Finally they reached the peak of the hills, where the Igorots have their main settlement, on account of the rich gold mines they enjoy there, and which they trade to the Ilocos and Pangasinán for things of sustenance, clothes and what else they need\" (Antolín, 1789 Page 50 (Chapter 3). Antolín is quoting Father Francisco Colín's 17th-century history).",
+        "thematic_category": "Primary Lowland Trading Partner and Gateway for the Igorots",
+        "introduction": "This section examines the southern trade route linking the Igorot cordillera to the Pangasinan lowlands. This corridor facilitated the flow of gold and other highland products to centers like San Carlos and Dagupan, in exchange for livestock, salt, and other sustenance goods. The route demonstrates the Igorots' economic reach and their strategic use of the terrain.",
+        "supporting_notes": "\"They sold their foodstuffs: two dried fish from Pangasinan for a half-real, two cakes of sugarcane sugar for a half-real, a ganta of cleaned rice for a real and a half..\" (Antolín, 1789 pg. 104 (Chapter 7). From a scout's report on the gold-washing site of Dapiag\").",
+        "literature_review": "Antolín's \"Notices\" provides the foundational descriptions of this route, mentioning descent towards Pangasinan and specific waypoints like Ambuklao. Olivia Habana's research further identifies the Antamok mines (in Boa) and the Acupan mines as key sources of gold that supplied this southern trade",
+        "analysis": "The analysis of the southern route to Pangasinan starts from the Polac/Boa region, the gold-rich heartland of Igorotland near modern Baguio. Traders would pass through towns on the route such as Ambuklao in Benguet, which served as a noted stopover and grazing area. The Boa area, part of the Baguio gold belt and home to the Antamok mines, was a central mining center that supplied the trade. The route ended at key lowland partners like San Carlos in Pangasinan, where Igorots traded directly for sustenance goods. The commodities exchanged by the Igorots were similar to the Ilocos route, including gold and copper, which were bartered for lowland products such as livestock, salt, rice, dried fish, and molasses from Pangasinan.",
+        "discussion": "The analysis shows the Mt. Polac to Pangasinan route involved descending from the central cordillera through towns like Ambuklao, from the mining areas of Boa and Acupan, to the Pangasinan plains. This route was crucial for acquiring bulk sustenance goods and livestock. The trade was direct and economically vital for both highlanders and lowlanders, yet it was similarly protected by the Igorots, who controlled the flow of people and information along these mountain paths as a form of resistance.",
+        "conclusion": "The southern trade route to Pangasinan was an essential economic lifeLINE. It allowed for the exchange of the Igorots' mineral wealth for the agricultural and manufactured products of the lowlands, all while being managed with strategic discretion to preserve their independence.",
+        "references": "Antolin, F. (1789). Notices of the pagan Igorots in the interior of the island of Manila.<br>Habana, O. M. (2012). Gold Mining in Benguet to 1898"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.4464,
+            16.9361
+          ],
+          [
+            120.423,
+            16.893
+          ],
+          [
+            120.2521,
+            16.0014
+          ],
+          [
+            121.083,
+            16.383
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Trade Routes",
+        "icon": "icons/route.svg",
+        "historical_name": "Tagudin",
+        "modern_name": "Tagudin",
+        "present_day_location": "Tagudin, Ilocos Sur",
+        "primary_description": "\"..to go to Ilocos through a gorge in the mountains, and come out at Bangar or Tagudín\"<br>Source: Antolín, 1789 Page 80 (Chapter 7). This is from a letter by Fr. Campo discussing a planned expedition.<br>\"to the west that of Tagudín in Ilocos, to the south the Agno in Pangasinan, and to the east the Matunu in the missions of Ituy\" (Antolín, 1789 Page 33 (Chapter 1)).",
+        "thematic_category": "End Point of the Mt.polac to Ilocos Trade Route",
+        "introduction": "This section reconstructs the western trade route connecting the Igorot gold mining heartland around Mt. Polac (modern Pulag) to the Ilocos coast. Based on Antolín's \"Notices,\" this corridor was vital for the exchange of highland minerals and goods for lowland manufactured products, particularly Ilocano textiles. The route was characterized by active commerce, but also by the Igorots' strategic secrecy and control over access to their trails.",
+        "supporting_notes": "Finally they reached the peak of the hills, where the Igorots have their main settlement, on account of the rich gold mines they enjoy there, and which they trade to the Ilocos and Pangasinán for things of sustenance, clothes and what else they need\"((Antolín, 1789 Page 50 (Chapter 3). Antolín is quoting Father Francisco Colín's 17th-century history, confirming this trade route was long-established).",
+        "literature_review": "The primary source is Francisco Antolín's 1789 account, which details the journey from Tinoc to the Ilocos coast via Kabayan. William Henry Scott's works provide context on the political dynamics of this trade, while Olivia Habana's research on Benguet gold mining confirms the importance of sites like Acupan and the broader Pancutcutan area, which fed gold into this trade network.",
+        "analysis": "The analysis of the route from Mt. Polac to Ilocos begins in the northern area of Tinoc in Ifugao, which Antolín identifies as a source of copper and slaves. Traders would then pass through Buguias in Benguet, a key trading point on the main trail network. The journey proceeded to Kabayan, Benguet, a major trading hub whose residents were noted for carrying the most gold to the lowlands. A critical and hazardous river crossing was located at Salipang, in the modern Kibungan or Bakun area, where an annual bridge was built. The route terminated at Tagudin, Ilocos Sur, the specified end point on the Ilocos coast where the trail from the mountains emerged. The primary commodities traded by the Igorots along this route included gold, copper, slaves, and handcrafted items, which they exchanged for lowland goods such as Ilocano textiles (blankets and G-strings), livestock, iron tools, salt, and glass beads.",
+        "discussion": "Putting the evidence together, the Mt. Polac to Ilocos route was a well-established economic artery. The journey began in resource-rich northern areas like Tinoc, moved through central hubs like Buguias and the wealthy Kabayan, and navigated strategic chokepoints like the river crossing at Salipang. The relationship was ambivalent, mixing commerce for essential goods like blankets with raiding and a deep-seated mistrust that led the Igorots to guard these trails fiercely, often misleading or refusing passage to outsiders to maintain their autonomy.",
+        "conclusion": "In conclusion, the western trade route to Ilocos was a sophisticated network that allowed the Igorots to convert their mineral wealth into necessary lowland goods. However, this trade was conducted entirely on their terms, with deliberate secrecy and control over the routes serving as a primary strategy to resist Spanish encroachment.",
+        "references": "Antolin, F. (1789). Notices of the pagan Igorots in the interior of the island of Manila.<br>Habana, O. M. (2012). Gold Mining in Benguet to 1898.<br>· Scott, W. H. (1977). Discovery of the Igorots"
+      }
+    }
+  ]
+}

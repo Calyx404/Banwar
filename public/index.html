@@ -1,640 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/root.css">
-    <link rel="icon" type="image" href="assets/logo.png">
-    <title>Prototype</title>
-</head>
-<body>
-    <!-- RADIO BUTTONS (FOR SWITCHING SECTIONS, DON'T EDIT) -->
-    <input type="radio" id="home" name="selection" hidden checked>
-    <input type="radio" id="about" name="selection" hidden>
-    <input type="radio" id="maps" name="selection"  hidden>
-    <input type="radio" id="context" name="selection"  hidden>
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="robots" content="index, follow" />
 
-    <!-- HEADER SECTION (NAVBAR)-->
-    <header>
-        <div class="col-1">
-            <label for="home"><img class="logo" src="assets/logo-word-light.png" alt="Logo"></label>
+    <meta name="author" content="Banwar Project Team" />
+    <meta
+      name="description"
+      content="Banwar : Explore the Cordillera, home of the Indigenous Igorots, through a digital map of historic sites from Francisco Antolín's Notices of the Pagan Igorots."
+    />
+
+    <!-- TITLE & FAVICON -->
+    <title>Banwar | Cordillera Digital Mapping</title>
+    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
+
+    <!-- PRELOAD STYLES -->
+    <link
+      rel="preload"
+      href="./styles/root.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./styles/pages/home_page.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+
+    <!-- COMPONENT : HEADER -->
+    <link rel="stylesheet" href="./components/header/header.css" />
+    <script defer src="./components/header/header.js"></script>
+
+    <!-- COMPONENT : FOOTER -->
+    <link rel="stylesheet" href="./components/footer/footer.css" />
+    <script defer src="./components/footer/footer.js"></script>
+
+    <!-- COMPONENT : SEARCH -->
+    <link rel="stylesheet" href="./components/search/search.css" />
+
+    <!-- COMPONENT : CAROUSEL -->
+    <link rel="stylesheet" href="./components/carousel/carousel.css" />
+
+    <!-- PAGE CONTROLLER -->
+    <script type="module" src="./scripts/pages/home_page.js"></script>
+  </head>
+
+  <body>
+    <!-- PAGE HERO -->
+    <article id="hero">
+      <img
+        src="./assets/logos/logo-name-dark.png"
+        alt="Banwar"
+        title="Banwar"
+        class="logo-name hero-item"
+        onclick="document.location='./index.html'"
+      />
+      <form class="hero-item" id="hero-search">
+        <input
+          type="search"
+          name="search"
+          placeholder="Explore the Cordillera!"
+          autocomplete="off"
+        />
+        <div id="search-results"></div>
+        <button type="submit" title="Explore Map">
+          <img src="./assets/icons/search.svg" alt="Explore" />
+        </button>
+      </form>
+      <div class="hero-item" #hero-actions>
+        <button class="action" onclick="document.location='#main'">
+          <span>Know More About Us</span>
+        </button>
+      </div>
+      <div class="hero-item" id="animation">
+        <img
+          class="character"
+          src="./assets/images/walking.gif"
+          alt="Igorot walking"
+        />
+        <img
+          class="earth"
+          src="./assets/images/earth.png"
+          alt="Rotating Earth"
+        />
+      </div>
+    </article>
+
+    <!-- PAGE HEADER -->
+    <header id="header"></header>
+
+    <!-- PAGE MAIN CONTENT -->
+    <main id="main">
+      <!-- MAIN : FEATURES -->
+      <section class="main-item" id="features">
+        <div class="feature-item" id="purpose">
+          <div class="description">
+            <h4 class="label">Project Banwar</h4>
+            <h1 class="title">Journey Into the Cordillera's Living History</h1>
+            <p class="detail">
+              What if the mountains could tell their stories?
+              <strong>Banwar</strong> maps places described in an
+              <strong>18th-century Spanish chronicle</strong> that documented
+              the <strong>Cordillera region</strong> in Northern
+              Philippines—home to resilient communities, thriving trade, and
+              untold encounters. We transformed these writings into digital
+              markers you can freely explore. Click, navigate, and let the past
+              unfold like never before.
+            </p>
+            <div class="actions">
+              <button class="action" onclick="document.location='#feature'">
+                <span>See App Features</span>
+              </button>
+            </div>
+          </div>
+          <div class="graphics"></div>
         </div>
 
-        <div class="col-2">
-            <div class="search-bar">
-                <img src="assets/search-icon.svg" alt="Icon">
-                <input type="text" placeholder="Search...">
+        <div class="separator"></div>
+
+        <div class="feature-item" id="feature">
+          <div class="description">
+            <h4 class="label">Explore Our Features</h4>
+            <h1 class="title">
+              Trace Centuries of Stories Through a Living Map
+            </h1>
+            <p class="detail">
+              Banwar turns historical research into an interactive journey.
+              <strong>Navigate</strong> through a digital map filled with places
+              mentioned in centuries-old texts. <strong>Search</strong> using
+              their original names and watch history appear right where it
+              happened. <strong>Export</strong> clean PNG or PDF maps for your
+              study, teaching, or personal exploration. It is history made easy
+              to explore.
+            </p>
+            <div class="actions">
+              <button
+                class="action unfill export"
+                onclick="document.location='./map.html'"
+              >
+                <span>Export Data</span>
+              </button>
+              <button class="action" onclick="document.location='./map.html'">
+                <span>Explore Map</span>
+              </button>
             </div>
-
-            <div class="export-btn">
-                <h4>Export</h4>
-            </div>
-
-            <div class="theme-btn">
-                <div class="icon"></div>
-            </div>
-        </div>
-    </header>
-
-    <!-- MAIN CONTENTS -->
-
-    <!-- HOME-PAGE CONTENT (DON'T EDIT)-->
-    <div class="content-container">
-        <section id="home-content">
-            <div class="hero">
-                <div class="col-1">
-                    <h1 class="home-title">Explore Cordillera Like Never Before</h1>
-                    <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </p>
-                </div>
-
-                <div class="col-2">
-                    <img src="assets/map.png" alt="Map Image">
-                </div>
-            </div>
-
-            <!-- CAROUSEL CONTAINER (CAUTION WHEN EDITING!)-->
-            <div class="carousel-container">
-                <h3>EXPLORE OUR WEBSITE</h3>
-
-                <div class="carousel">
-                    <input type="radio" class="car-radio" name="slides" id="slide-1" checked>
-                    <input type="radio" class="car-radio" name="slides" id="slide-2">
-    
-                    <div class="track">
-                        <div class="slides">
-
-                            <!-- ADD SLIDE IF YOU WANT TO ADD MORE -->
-                            <div class="slide">
-                                <div class="card">
-                                    <!-- FEEL FREE TO REPLACE THE IMAGE AND THE TEXT! -->
-                                    <img src="https://images.unsplash.com/photo-1473186578172-c141e6798cf4?q=80&w=1400&auto=format&fit=crop" alt=" Book cover placeholder">
-                                    <div class="text">
-                                        <div class="kicker">ABOUT THE BOOK</div>
-                                        <h4>Notices of the Pagan Igorots</h4>
-                                        <p>Explore the manuscript</p>
-                                    </div>
-                                    <div class="corner"><a href="#book">➜</a></div>
-                                </div>
-    
-                                <div class="card">
-                                    <!-- FEEL FREE TO REPLACE THE IMAGE AND THE TEXT! -->
-                                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1400&auto=format&fit=crop" alt="Historic portrait placeholder">
-                                    <div class="text">
-                                        <div class="kicker">ABOUT THE AUTHOR</div>
-                                        <h4>Francisco Antolín</h4>
-                                        <p>Discover the life and work</p>
-                                    </div>
-                                    <div class="corner"><a href="#author">➜</a></div>
-                                </div>
-                            </div>
-    
-                            <div class="slide">
-                                <div class="card">
-                                    <!-- FEEL FREE TO REPLACE THE IMAGE AND THE TEXT! -->
-                                    <img src="https://images.unsplash.com/photo-1543191878-f6a3e470454e?q=80&w=1170&auto=format&fit=crop" alt="Map">
-                                    <div class="text">
-                                        <div class="kicker">MAPS</div>
-                                        <h4>Cordillera Map</h4>
-                                        <p>Explore the cordilleran map</p>
-                                    </div>
-                                    <div class="corner"><label for="maps">➜</label></div>
-                                </div>
-    
-                                <div class="card">
-                                    <!-- FEEL FREE TO REPLACE THE IMAGE! -->
-                                    <img src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?q=80&w=1400&auto=format&fit=crop" alt="Archive shelves">
-                                    <div class="text">
-                                        <div class="kicker">ABOUT US</div>
-                                        <h4>Purpose & References</h4>
-                                        <p>View the creators and sources</p>
-                                    </div>
-                                    <div class="corner"><label for="about">➜</label></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="car-arrows">
-                        <label for="slide-2" class="arrow prev for-1" title="Previous">‹</label>
-                        <label for="slide-2" class="arrow next for-1" title="Next">›</label>
-                        
-                        <label for="slide-1" class="arrow prev for-2" title="Previous">‹</label>
-                        <label for="slide-1" class="arrow next for-2" title="Next">›</label>
-                    </div>
-    
-                    <div class="car-dots">
-                        <label for="slide-1" class="dot dot-1"></label>
-                        <label for="slide-2" class="dot dot-2"></label>
-                    </div>
-                </div>
-            </div>
-
-            <!-- BOOK DETAILS CONTAINER -->
-            <div class="book-details-container" id="book">
-                <div class="card">
-                    <img class="book" src="assets/book.png" alt="Notices of the Pagan Igorots in the Interior of the Island of Manila">
-
-                    <div>
-                        <h2 class="section-title">
-                            Notices of the Pagan Igorots in the Interior of the Island of Manila
-                        </h2>
-                        <div class="rule"></div>
-
-                        <p class="lead">ABOUT THE BOOK</p>
-                        <p class="desc" style="margin-bottom: 0.8rem;">
-                            “Notices of the Pagan Igorots in the interior of the Island of Manila” is an 18th-century ethnographic account of the indigenous Igorot peoples of northern Luzon,
-                            wirrten by Francisco Antolín in 1789. The manuscript documents Igorot society, culture, and economic activities, particualrly their gold and copper mining operations.
-                        </p>
-                        <div class="desc">
-                            It captures these highland communities during Spanish colonial influence and serves as one of the few contemporary colonial accounts focusing specifically on the Igorot peoples.
-                            The work has become an essential primary source for historians and anthropologists studying pre-modern Philippine societies.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- AUTHOR DETAILS CONTAINER -->
-            <div class="author-details-container" id="author">
-                <div class="card card-2">
-                    <div>
-                        <h2 class="section-title">
-                            Francisco Antolín
-                        </h2>
-                        <div class="rule"></div>
-
-                        <p class="lead">ABOUT THE AUTHOR</p>
-                        <p class="desc" style="margin-bottom: 0.8rem;">
-                            Francisco Antolín was a Spanish Dominican friar who served as Provincial historian and missionary in the Philippines during the late 18th century. He combined his
-                            religious duties with scholarly pursuits, dedicating his career to documenting the indigenous peoples of the Philippine archipelago.
-                        </p>
-
-                        <p class="desc">
-                            Antolín completed his work on the Igorots in summer 1789, demonstrating his commitment to preserving knowledge about indigenous communities during colonial change.
-                            He died in 1796, leaving behind valuable documentary evidence that continues to be referenced by modern scholars.
-                        </p>
-                    </div>
-
-                    <img src="assets/francisco-antolin.jpg" alt="Francisco Antolín">
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- ABOUT-US PAGE CONTENT (FEEL FREE TO EDIT)-->
-    <div class="content-container">
-        <section id="about-content">
-             <h1>ABOUT US</h1>
-            <div class="ABheader">
-                <div class ="ABtitle">
-                    About Us Page
-                </div>
-
-                <div class="ABcontent">
-                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam iste, ut iusto et veniam totam perferendis in dignissimos repudiandae ab atque aliquid quibusdam unde laborum officiis! Provident deserunt rem dolores."</p>
-                </div>
-            </div>
-
-            <div class="ABheader">
-                <div class ="ABtitle">
-                    PURPOSE
-                </div>
-
-                <div class="ABcontent">
-                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam iste, ut iusto et veniam totam perferendis in dignissimos repudiandae ab atque aliquid quibusdam unde laborum officiis! Provident deserunt rem dolores."</p>
-                </div>
-            </div>
-
-            <div class="ABheader">
-                <div class ="ABtitle">
-                    REFERENCES
-                </div>
-
-                <div class="ABcontent">
-                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam iste, ut iusto et veniam totam perferendis in dignissimos repudiandae ab atque aliquid quibusdam unde laborum officiis! Provident deserunt rem dolores."</p>
-                </div>
-            </div>
-
-           <div class ="ABspace">
-                <h1>THE CREATORS</h1>
-           </div>
-                
-            <div class="ABboxes">
-                <div class="ABcreators">
-                    <div class ="ABtitle">
-                        &#x2654; Executive Committee
-                    </div>
-
-                    <div class= "ABcreatorscont">
-                        WHO YOU IRAQ? ????? <.<
-                    </div>
-                    <br>
-                    <h3>MEMBERS</h3>
-                    <hr>
-                    <p>
-                        <b>Arian Dave S. Abat</b><br>
-                        abat.arian13@gmail.com<br>
-                        <br>
-                        Jovic Kyle G. Acyapas &emsp; trials<br> 
-                        email@gmail.com<br>
-                        <br>
-                        Raymond Allen W. Agustin<br>
-                        email@gmail.com<br>
-                        <br>
-                        Kurt G. Dumepnas<br>
-                        email@gmail.com<br>
-                        <br>
-                        Allison Marie A. Kingkingan<br>
-                        allixonkk@gmail.com<br>
-                    </p>
-                </div> 
-
-                <div class="ABcreators">
-                    <div class ="ABtitle">
-                        &#x2702; Design Committee
-                    </div>
-
-                    <div class= "ABcreatorscont">
-                        Focuses on creating professional visual assets, layouts, and user-centered designs to enhance usability and overall user experience.
-                    </div>
-
-                    <div class="ABmembers">
-                        <br>
-                        <h3>Members</h3>
-                        <hr>
-
-                        <div class ="ABmemberslist">
-                            <div class ="ABmembersnames">
-                                <b>Allison Marie A. Kingkingan</b><br>
-                                allixonkk@gmail.com<br>
-                                <br>
-                            </div> 
-
-                            <div class ="ABmembersnames">
-                                Basiliza A. Binay-an<br> 
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-
-                            <div class ="ABmembersnames">
-                                MJ G. De Ocampo<br>
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-
-                            <div class ="ABmembersnames">
-                                Christa Grace B. Ebusca<br>
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-
-                            <div class ="ABmembersnames">
-                                Gemma W. Epad<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-
-                            <div class ="ABmembersnames">
-                               Mayumi P. Facsoy<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-
-                            <div class ="ABmembersnames">
-                                Ryan Kurt L. Laoyan<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-
-                            <div class ="ABmembersnames">
-                                Eathan John T. Na-oy<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>       
-                        </div>
-                    </div>
-                    </div>
-                
-
-                <div class="ABcreators">
-                    <div class ="ABtitle">
-                        &#x2752; Front-End Committee
-                    </div>
-
-                    <div class= "ABcreatorscont">
-                        Responsible for developing and maintaining the user interface, ensuring that the platform is accessible, responsive, and visually consistent.
-                    </div>
-
-                    <br>
-                    <h3>Members</h3>
-                    <hr>
-
-                    <p> 
-                        <b>Arian Dave S. Abat</b><br>
-                        abat.arian13@gmail.com<br>
-                        <br>
-                        Emerson L. Baliag<br> 
-                        email@gmail.com<br>
-                        <br>
-                        Raven Jesrael E. Garcia<br>
-                        email@gmail.com<br>
-                        <br>
-                        Jandervien B. Lastimozo<br>
-                        email@gmail.com<br>
-                        <br>
-                        Carl Andrei V. Valdez<br>
-                        allixonkk@gmail.com<br>
-                    </p>
-                </div> 
-
-                <div class="ABcreators">
-                    <div class ="ABtitle">
-                        &#x2601; Back-End Committee
-                    </div>
-
-                    <div class= "ABcreatorscont">
-                        Oversees server-side development, database management, and system integration to ensure secure, efficient, and reliable functionality.
-                    </div>
-
-                    <br>
-                    <h3>Members</h3>
-                    <hr>
-
-                    <p> 
-                        <b>Raymond Allen W. Agustin</b><br>
-                        email@gmail.com<br>
-                        <br>
-                        Sander T. Listana<br> 
-                        email@gmail.com<br>
-                        <br>
-                        Jared A. Peralta<br>
-                        email@gmail.com<br>
-                        <br>
-                        Raymond G. Torio<br>
-                        email@gmail.com<br>
-                        <br>
-                    </p>
-                </div>
-
-                <div class="ABcreators">
-                    <div class ="ABtitle">
-                        &#x1F50E;&#xFE0E; Research Committee
-                    </div>
-                    <div class= "ABcreatorscont">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae ea magni mollitia illo qui minus ipsam assumenda debitis! Nobis fugiat cumque unde vero ipsa ut enim veniam adipisci odio.
-                    </div>
-                    <br>
-                    <h3>Members</h3>
-                    <hr>
-                        <div class ="ABmemberslist">
-                            <div class ="ABmembersnames">
-                                <b>Jovic Kyle G. Acyapas</b><br>
-                                email@gmail.com<br>
-                                <br>
-                            </div> 
-                            <div class ="ABmembersnames">
-                                Grach Banganan<br> 
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-                            <div class ="ABmembersnames">
-                                Kochina A. Batan<br>
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-                            <div class ="ABmembersnames">
-                                Rheniel Bay-an<br>
-                                email@gmail.com<br>
-                                <br>
-                            </div>
-                            <div class ="ABmembersnames">
-                                Frances Burgos<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Christopher S. Cadalig<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Harvey Cangsan<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Rhollie A. Domingo<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>
-                            <div class ="ABmembersnames">
-                                Wilmoore Dorencio<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Johanna Fay N. Estoque<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Justin D. Fama<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Dan Anilov Fontanos<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Jade Rhyss Francis<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Aijelle T. Gumatin<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Denise Mae Jose<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>   
-                            <div class ="ABmembersnames">
-                                Joshua Lag-ey<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Jarmaine Reisha A. Lomayna<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Macklien Luaña<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Rhamztyn Manadao<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Rolan Mangiwet<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Gwyneth Gail D. Nana<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Romel Necer<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Rjhay Pagtiilan<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Genesis Quintero<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Jeryl Anne A. Santos<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Patrick S. Tundagui Jr.<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Mekaiah Joyce C. Ulban<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                            <div class ="ABmembersnames">
-                                Hans Dave P. Yamoto<br>
-                                email@gmail.combr<br>
-                                <br>
-                            </div>  
-                        </div>
-                </div> 
-            </div>
-
-        </section>
-    </div>
-    
-
-    <!-- MAPS PAGE CONTENT-->
-    <div class="content-container">
-        <section id="maps-content">
-            <!-- EDIT HERE -->
-            Maps Page
-        </section>
-    </div>
-    
-
-    <!-- CONTEXT PAGE CONTENT-->
-    <div class="content-container">
-        <section id="context-content">
-            <!-- EDIT HERE -->
-            Context Page
-        </section>
-    </div>
-
-
-    <!-- ERROR PAGE CONTENT-->
-    <div class="content-container">
-        <section id="error-content">
-            <!-- EDIT HERE -->
-            Error Page
-        </section>
-    </div>
-
-
-    <!-- FOOTER CONTENT (DON'T EDIT)-->
-    <footer>
-        <div class="content-container footgrid">
-            <div class="col">
-                <div class="logos">
-                    <img src="assets/logo-dark.png" alt="Logo 1">
-                    <img src="assets/logo-word-light.png" alt="Logo 2">
-                </div>
-                <p>From Antolín’s 18th-century writings to modern cartography, trace the ancestral domains of Northen Luzon's peaks, valleys, and rivers.</p>
-                <div class="btn">
-                    <img src="assets/arrow-top-icon.svg" alt="Icon">
-                    <span>Back to Top</span>
-                </div>
-            </div>
-
-            <div class="col ref-list">
-                <div class="col">
-                    <h3>Site Map</h3>
-                    <ul class="linklist">
-                        <li><label for="home">Homepage</label></li>
-                        <li><label for="maps">Map</label></li>
-                        <li><label for="about">About Us</label></li>
-                        <li><label for="">Contact Us</label></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h3>Legal</h3>
-                    <ul class="linklist">
-                        <li>Privacy Policy</li>
-                        <li>Terms of Use</li>
-                    </ul>
-                </div>
-            </div>
-            
-
-            <div class="col">
-                <p class="disclaimer">Disclaimer: This site is an academic project. The information provided is for education purposes only and should not be considered authoritative for navigation or land-use decisions.</p>
-                <p class="subtle">Map data © OpenStreetMap contributors. Historical sources adapted from Antolín’s Notices of the Pagan Igorots (Scrott, 1974).</p>
-            </div>
-
-            <!-- BACKGROUND LOGO (DON'T EDIT!) -->
-            <img class="logo" src="assets/logo-dark.png" alt="Logo">
+          </div>
+          <div class="graphics">
+            <div id="feature-carousel"></div>
+          </div>
         </div>
 
-        <div class="footnote">
-            <p>Copyright © 2025, Banwar, All Rights Reserved.</p>
+        <div class="separator"></div>
+
+        <div class="feature-item" id="source">
+          <div class="description">
+            <h4 class="label">The Story Behind Banwar</h4>
+            <h1 class="title">
+              Born From an 18th-Century Chronicle of Igorot Life
+            </h1>
+            <p class="detail">
+              Banwar is rooted in the writings of
+              <strong>Francisco Antolin</strong>, a Spanish missionary who
+              explored the Cordillera in the mid-1700s. His accounts describe
+              Igorot communities, bustling gold and copper mines, and encounters
+              with colonial expeditions. Translated by historian
+              <strong>William Henry Scott</strong>, this rare chronicle offers
+              one of the earliest windows into Cordilleran life. We transformed
+              these historical descriptions into digital points, linking written
+              memory to living geography.
+            </p>
+            <div class="actions">
+              <button
+                class="action"
+                onclick="document.location='https://asianethnology.org/article/1773/download'"
+              >
+                <span>Read the Source</span>
+              </button>
+            </div>
+          </div>
+          <div class="graphics">
+            <div id="source-carousel"></div>
+          </div>
         </div>
-    </footer>
 
+        <div class="separator"></div>
 
-    <!-- BACKGROUND SECTION (DON'T EDIT!) -->
-    <div class="overlay"></div>
-    <img class="background-img" src="assets/background.png" alt="Background Image">
+        <div class="feature-item">
+          <div class="description">
+            <h4 class="label">Who Made This Possible</h4>
+            <h1 class="title">
+              Proud Igorot Students Mapping Cultural Heritage
+            </h1>
+            <p class="detail">
+              Banwar was created by Information Technology students from the
+              College of Information Sciences, Benguet State University. Through
+              research, design, and code, we built a digital bridge between
+              history and technology. This project is more than coursework—it is
+              a collaborative effort to preserve and share the Cordillera's
+              heritage with the world.
+            </p>
+            <div class="actions">
+              <button
+                class="action unfill"
+                onclick="document.location='./legal.html'"
+              >
+                <span>Legal Information</span>
+              </button>
+              <button class="action" onclick="document.location='#team'">
+                <span>Meet the Team</span>
+              </button>
+            </div>
+          </div>
+          <div class="graphics" id="team">
+            <div id="team-carousel"></div>
+            <div id="team-context"></div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-
-    <!-- FOR TESTING PURPOSES (DELETE IF NEEDED) -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const themeBtn = document.querySelector(".theme-btn");
-
-            if (themeBtn) {
-                themeBtn.addEventListener("click", () => {
-                    themeBtn.classList.toggle("clicked");
-                    console.log("Theme button clicked!");
-                });
-            }
-        });
-    </script>
-</body>
+    <!-- PAGE FOOTER -->
+    <footer id="footer"></footer>
+  </body>
 </html>

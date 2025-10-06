@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META DESCRIPTIONS -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta name="author" content="Banwar Project Team" />
+    <meta name="description" content="Banwar : Page Not Found" />
+
+    <!-- TITLE & FAVICON -->
+    <title>Banwar | Page Not Found</title>
+    <link rel="icon" href="./assets/logos/logo-icon.png" type="image/png" />
+
+    <!-- PRELOAD -->
+    <link
+      rel="preload"
+      href="./styles/root.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./styles/pages/error_page.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+
+    <!-- COMPONENT : HEADER -->
+    <link rel="stylesheet" href="./components/header/header.css" />
+    <script defer src="./components/header/header.js"></script>
+
+    <!-- COMPONENT : FOOTER -->
+    <link rel="stylesheet" href="./components/footer/footer.css" />
+    <script defer src="./components/footer/footer.js"></script>
+  </head>
+  <body>
+    <!-- PAGE HEADER -->
+    <header id="header"></header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main">
+      <div class="main-item">
+        <h1>404 — Lost on the Trails</h1>
+        <h2>
+          The peak you seek isn't on this map. <br />
+          Looks like you've wandered off the map.
+        </h2>
+        <p>
+          Page can't be found. Please check if the website address is correct.
+          <br />
+          Stay on track, go to <a href="./index.html">home</a>, or
+          <a href="./index.html">reconnect</a>.
+        </p>
+      </div>
+      <div class="main-item">
+        <img src="./assets/images/error.png" alt="404" id="mask" />
+      </div>
+    </main>
+
+    <!-- PAGE FOOTER -->
+    <footer id="footer"></footer>
+  </body>
+</html>
