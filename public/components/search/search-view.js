@@ -33,7 +33,7 @@ export class SearchView {
         .map(
           (f) => `
           <div class="search-result" data-id="${f.__fid}">
-            <img src="./assets/icons/${this._escapeHtml(
+            <img class="icon" src="./assets/${this._escapeHtml(
               f.properties?.icon || "map.svg"
             )}" alt="${this._escapeHtml(f.properties?.category || "Icon")}">
             <div class="result-description">
