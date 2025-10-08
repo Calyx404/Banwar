@@ -28,11 +28,11 @@
   --font-text: "SF Pro", "Merriweather Sans", system-ui, sans-serif;
 
   /* ROOT : Font Sizes */
-  --font-size-h1: clamp(2rem, 5vw, 3rem);
-  --font-size-h2: clamp(1.5rem, 4vw, 2rem);
-  --font-size-h3: clamp(1.2rem, 3.5vw, 1.5rem);
-  --font-size-h4: clamp(1rem, 3vw, 1.25rem);
-  --font-size-base: clamp(0.875rem, 2.5vw, 1rem);
+  --font-size-h1: 3rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-base: 1rem;
 
   /* ROOT : Colors - Light Theme */
 
@@ -47,10 +47,10 @@
   --radius-md: 15px;
   --radius-lg: 24px;
 
-  --padding-xs: clamp(0.25rem, 1vw, 0.5rem);
-  --padding-sm: clamp(0.5rem, 2vw, 1rem);
-  --padding-md: clamp(1.5rem, 5vw, 3rem);
-  --padding-lg: clamp(2.5rem, 8vw, 5rem);
+  --padding-xs: 0.5rem;
+  --padding-sm: 1rem;
+  --padding-md: 3rem;
+  --padding-lg: 5rem;
 
   /* ROOT : Transitions */
   --transition-fast: all 0.25s ease-in;

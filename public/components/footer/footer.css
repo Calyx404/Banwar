@@ -2,7 +2,7 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: var(--padding-sm) var(--padding-sm);
+  padding: var(--padding-xs) var(--padding-lg);
   justify-content: space-between;
   border-top: 2px solid var(--color-accent);
   background: var(--color-primary);
@@ -11,6 +11,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   position: relative;
+  margin-top: var(--padding-md);
 
   & .footer-item {
     display: grid;
@@ -20,19 +21,19 @@ footer {
 
     &#footer-content {
       flex: 1;
-      padding: var(--padding-sm) 0;
-      grid-template-columns: 1fr;
+      padding: var(--padding-md) 0;
+      grid-template-columns: 1fr 2fr;
 
       & .content-item {
         align-items: start;
         justify-content: start;
-        padding: var(--padding-sm) 0;
+        padding: var(--padding-lg) 0;
         height: 100%;
 
         &#content-details {
           display: flex;
           flex-direction: column;
-          gap: var(--padding-xs);
+          gap: var(--padding-md);
 
           & .detail {
             width: 100%;
@@ -49,8 +50,8 @@ footer {
         &#content-lists {
           flex: 1;
           display: grid;
-          grid-template-columns: 1fr;
-          gap: var(--padding-sm);
+          grid-template-columns: repeat(3, 1fr);
+          gap: var(--padding-lg);
           position: relative;
           overflow: hidden;
 
@@ -63,7 +64,7 @@ footer {
             background-size: contain;
             opacity: 0.25;
             pointer-events: none;
-            margin: var(--padding-xs);
+            margin: var(--padding-sm);
           }
 
           & .list {
@@ -76,7 +77,7 @@ footer {
             & ul {
               display: flex;
               flex-direction: column;
-              gap: var(--padding-xs);
+              gap: var(--padding-sm);
             }
 
             & .separator {
@@ -91,42 +92,8 @@ footer {
     }
 
     &#footer-copyright {
-      text-align: center;
-      grid-template-columns: 1fr;
-      gap: var(--padding-xs);
+      grid-template-columns: auto auto;
       border-top: 1px solid var(--color-text);
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  footer {
-    padding: var(--padding-md) var(--padding-lg);
-
-    & .footer-item {
-      &#footer-content {
-        grid-template-columns: 1fr 2fr;
-      }
-      
-      & #content-lists {
-        grid-template-columns: repeat(3, 1fr) !important;
-      }
-
-      &#footer-copyright {
-        grid-template-columns: auto auto;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  footer {
-    & .footer-item {
-      &#footer-content {
-        &#content-lists {
-          grid-template-columns: repeat(3, 1fr);
-        }
-      }
     }
   }
 }
