@@ -25,7 +25,9 @@ export class AppController {
       "modern_name",
       "present_day_location",
       "category",
+      "thematic_category",
       "primary_description",
+      "supporting_notes",
     ];
 
     this.profileView = new ProfileView(

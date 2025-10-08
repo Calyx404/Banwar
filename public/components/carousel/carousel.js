@@ -65,7 +65,6 @@ export class Carousel {
       else slide.classList.add("hidden");
     });
 
-    // Trigger callback with current key
     this.onChange(this.slides[this.current]);
   }
 

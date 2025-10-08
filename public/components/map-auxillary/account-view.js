@@ -91,7 +91,7 @@ export class AccountView {
       const props = feature.properties || {};
 
       for (const [key, value] of Object.entries(props)) {
-        if (this.excludeFields.has(key)) continue;
+        if (this.excludeFields.has(key) || key == "icon") continue;
         const val = value ?? "Information not available.";
         content += AccountView._createContentItem(key, val);
       }
@@ -128,7 +128,8 @@ export class AccountView {
         const category = feature.properties?.category || "Uncategorized";
         if (!categories[category]) {
           categories[category] = {
-            icon: feature.properties?.icon || "map.svg",
+            icon: feature.properties?.icon || "icons/map.svg",
+            className: "icon",
             features: [],
           };
         }
@@ -136,7 +137,7 @@ export class AccountView {
       }
 
       const content = `
-      <section class="content-item">
+      <section class="content-item content-carousel">
         <div id="account-carousel"></div>
         <div id="account-carousel-context"></div>
       </section>
@@ -169,8 +170,7 @@ export class AccountView {
       // Import dynamically (lazy load) to avoid circular imports at module top
       import("../carousel/carousel.js").then(({ Carousel }) => {
         const carousel = new Carousel(carouselContainerSelector, {
-          autoplay: true,
-          interval: 4000,
+          autoplay: false,
         });
 
         carousel.init(categories, (activeKey) => {
@@ -180,17 +180,71 @@ export class AccountView {
             return;
           }
 
-          const featureList = categoryData.features
-            .map(
-              (f) => `<li>${f.properties?.historical_name || "Unnamed"}</li>`
-            )
-            .join("");
+          const categoryHTML = categoryData
+            ? `<div class="profile">
+            <div class="category">
+              <img class="category-icon" src="./assets/${categoryData.icon}" alt="Category">
+            </div>
+            <div class="details">
+              <q class="details-content">Sites are organized by category to help you find what you need quickly. Browse through the list to explore the category.</q>
+              <div class="separator"></div>
+              <div class="details-card">
+                <div class="card-icon">
+                  <img src="./assets/icons/map.svg" alt="category">
+                </div>
+                <div class="card-description">
+                  <h3>${activeKey}</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </div>
+          </div>`
+            : "";
 
-          contextEl.innerHTML = `
-          <h4>${activeKey}</h4>
-          <p>${categoryData.features.length} features</p>
-          <ul>${featureList}</ul>
-        `;
+          const locationsHTML = categoryData.features
+            ? `<div class="account">
+              <h2 class="category">${activeKey} Site List</h2>
+              <div class="separator"></div>
+              <div class="features" id="feature-list">
+                ${categoryData.features
+                  .map(
+                    (feature) => `
+                  <div class="feature">
+                    <div class="feature-icon">
+                      <img src="./assets/icons/location.svg" alt="Location">
+                    </div>
+                    <div class="feature-description">
+                      <h3>${
+                        feature.properties?.historical_name || "Unknown"
+                      }</h3>
+                      <p>Site</p>
+                    </div>
+                  </div>
+                `
+                  )
+                  .join("")}
+                </div>
+            </div>`
+            : "";
+
+          contextEl.innerHTML = categoryHTML + locationsHTML;
+
+          document
+            .getElementById("feature-list")
+            .querySelectorAll(".feature")
+            .forEach((feature) =>
+              feature.addEventListener("click", () => {
+                const feature = this.service.getById(feature.dataset.id);
+                if (feature) {
+                  this.bus.emit("feature:selected", { feature });
+                } else {
+                  console.warn(
+                    "[SearchView] Feature not found for id:",
+                    feature.dataset.id
+                  );
+                }
+              })
+            );
         });
       });
     } catch (e) {

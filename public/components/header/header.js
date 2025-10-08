@@ -31,7 +31,7 @@ function Header() {
       <form class="feature-item" id="header-search">
         <input type="search" name="search" placeholder="Explore the Cordillera!" autocomplete="off"/>
         <div id="search-results"></div>
-        <button type="submit" title="Explore Map">
+        <button title="Explore Map" onclick="document.location='./map.html'">
           <img src="./assets/icons/search.svg" alt="Explore" />
         </button>
       </form>
