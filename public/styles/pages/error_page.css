@@ -69,3 +69,33 @@
     }
   }
 }
+
+
+/***** RESPONSIVE STYLES *****/
+@media (max-width: 768px) {
+  #main {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: var(--padding-md) var(--padding-md);
+    min-height: 80svh;
+    justify-content: center;
+
+    & .main-item {
+      align-items: center;
+      width: 100%;
+
+      & #mask {
+        width: 80%;
+        max-width: 300px;
+      }
+    }
+  }
+
+  .error-wrapper {
+    padding: var(--padding-md);
+
+    & .error-graphics {
+      display: none;
+    }
+  }
+}

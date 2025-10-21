@@ -93,3 +93,32 @@
     }
   }
 }
+
+
+/***** RESPONSIVE STYLES *****/
+#main {
+  padding: 0 var(--padding-md);
+
+  & #nav {
+    width: 100%;
+    /* position: static; */
+    flex-direction: column;
+    gap: var(--padding-sm);
+    padding: var(--padding-sm) var(--padding-md);
+
+    & .selection {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--padding-xs);
+
+      & .separator {
+        display: none;
+      }
+    }
+  }
+
+  & .main-content {
+    scroll-margin-top: 1rem;
+  }
+}
