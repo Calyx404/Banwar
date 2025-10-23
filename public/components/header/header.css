@@ -82,5 +82,121 @@
         background: var(--color-text);
       }
     }
+
+    & #header-hamburger {
+      display: none;
+      aspect-ratio: 1/1;
+      padding: var(--padding-xs);
+      border: 2px solid var(--color-accent);
+      background: var(--color-secondary);
+      border-radius: var(--radius-sm);
+
+      & img {
+        height: var(--font-size-h3);
+        width: var(--font-size-h3);
+        filter: none;
+      }
+
+      &:hover {
+        background: var(--color-accent);
+
+        & img {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+}
+
+/***** RESPONSIVE STYLES *****/
+@media (max-width: 480px) {
+  #header {
+    padding: var(--padding-sm);
+
+    & .header-item {
+      &#header-feature {
+        & .feature-item {
+          &#header-buttons {
+            right: 0;
+            width: 100%;
+            justify-content: flex-end;
+          }
+  
+          &#header-search {
+            max-width: none;
+          }
+  
+          &#header-buttons {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    gap: var(--padding-sm);
+    padding: var(--padding-sm) var(--padding-md);
+
+    & .header-item {
+      &#header-logo {
+        width: 100%;
+        justify-content: center;
+      }
+
+      &#header-feature {
+        width: 100%;
+        position: relative;
+        justify-content: flex-end;
+
+        & #header-hamburger {
+          display: flex;
+          margin-left: var(--padding-sm);
+        }
+
+        & .feature-item {
+          &#header-search {
+            flex: 1;
+            width: auto;
+            max-width: 400px;
+          }
+
+          &#header-buttons {
+            z-index: 1100;
+            display: none;
+            position: absolute;
+            top: 120%;
+            right: 0;
+            width: auto;
+            flex-direction: row;
+            border: 2px solid var(--color-accent);
+            border-radius: var(--radius-sm);
+            padding: var(--padding-sm);
+            gap: var(--padding-sm);
+            background: var(--color-primary);
+            box-shadow: var(--shadow-sm);
+
+            &.is-open {
+              display: flex;
+            }
+
+            & > button {
+              width: auto;
+            }
+
+            & #header-theme {
+              width: 5rem;
+            }
+          }
+        }
+
+        & .separator {
+          display: none;
+        }
+      }
+    }
   }
 }

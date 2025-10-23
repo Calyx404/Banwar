@@ -97,3 +97,41 @@ footer {
     }
   }
 }
+
+
+/***** RESPONSIVE STYLES *****/
+@media (max-width: 768px) {
+  footer {
+    padding: var(--padding-xs) var(--padding-md);
+    min-height: auto;
+
+    & .footer-item {
+      &#footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--padding-md);
+
+        & .content-item {
+          &#content-lists {
+            grid-template-columns: 1fr;
+            gap: var(--padding-md);
+            padding: var(--padding-sm) 0;
+          }
+
+          &#content-details {
+            & .detail {
+              & .message {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      &#footer-copyright {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--padding-xs);
+      }
+    }
+  }
+}
